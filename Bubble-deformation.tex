@@ -6,7 +6,7 @@
 %  Authors: Mitsuhiro Ohta, Tetsuya Ueta, Yozo Toei, Edwin Jimenez, and
 %           Mark Sussman
 %  
-%  Modified: 22 May 2022
+%  Modified: 22 December 2022
 %  -----------------------------------------------------------------------------
 %  -----------------------------------------------------------------------------
 
@@ -228,40 +228,43 @@ approaches \cite{CriBlaLoe01, JanAnd07}, lattice Boltzmann methods \cite{Ina06,
 KomShaEskDer14}, front tracking schemes \cite{UnvTry92}, and interface-tracking
 level set methods \cite{SusSmeOsh94}.  
 
-In contrast, and to the best of our knowledge, few computational studies on
-bubble deformation and breakup in shear flow have been conducted
-\cite{WanShiZha15}.  This type of bubble dynamics in shear flow is also of
-critical importance to further our understanding of a variety of scientific and
-engineering processes.  In this article, we present computational studies of
-shear-driven deformation and breakup of a bubble in insoluble viscous liquids.
-The physical properties that distinguish bubble and drop studies are expressed in
-terms of the density ratio $\lambda = \rho_b / \rho_m$ and the viscosity ratio
-$\eta = \mu_b / \mu_m$, where $\rho$ is the fluid density, $\mu$ is the
-viscosity and the subscripts ``b'' and ``m'' denote the ``bubble'' or
-``drop'' and the ``matrix fluid'', respectively.  For a bubble in an insoluble
-viscous liquid, the density ratio $\lambda \simeq 0$ and the viscosity ratio
-$\eta \simeq 0$, whereas most studies dealing with a drop in an immiscible
-viscous liquid take $\lambda =1$ and $\eta \simeq 1$.  
+In contrast, few computational studies on bubble deformation and breakup in
+shear flow have been conducted \cite{WanShiZha15}.  This type of bubble
+dynamics in shear flow is also of critical importance for a variety of
+scientific and engineering processes, particularly high performance plastics
+applications that motivated this work.  In this article, we present
+computational studies of shear-driven deformation and breakup of a bubble in
+insoluble viscous liquids.  The physical properties that distinguish bubble and
+drop studies are expressed in terms of the density ratio $\lambda = \rho_b /
+\rho_m$ and the viscosity ratio $\eta = \mu_b / \mu_m$, where $\rho$ is the
+fluid density, $\mu$ is the viscosity and the subscripts ``b'' and ``m'' denote
+the ``bubble'' or ``drop'' and the ``matrix fluid'', respectively.  For a
+bubble in an insoluble viscous liquid, the density ratio $\lambda \simeq 0$ and
+the viscosity ratio $\eta \simeq 0$, whereas most studies dealing with a drop
+in an immiscible viscous liquid take $\lambda =1$ and $\eta \simeq 1$.  
 
 In this work we focus on identifying critical flow states numerically, in terms
 of dimensionless quantities, that specify the extreme conditions at which a
-bubble or drop in shear flow first transitions from deformation to breakup.  An
-advantage of studying shear-driven bubble deformation and breakup
-computationally, rather than experimentally, is that we can easily modify fluid
-physical properties to ascertain the sensitivity of deformation and breakup to
-physical parameters.  In our computations, the time-evolution of the boundary
-between gas and liquid is tracked with a coupled level set/volume-of-fluid
-(CLSVOF) interface capturing algorithm \cite{SusPuc00}.  We focus on
-determining critical physical conditions in which the breakup of a bubble
-occurs in shear flow because it is important to identify the parameter regimes
-in which a relatively simple system transitions from stable to unstable.
-Specifically, we identify the critical Reynolds number $Re_{c}$ corresponding
-to the bubble breakup onset condition as a function of the Capillary number
-$Ca$.  Although the $Re_{c}$ for drop breakup was reported previously
-\cite{LiRenRen00}, in this work we determine, for the first time, the critical
-Reynolds number that leads to \emph{bubble} breakup.  Additionally, our
-computational studies reveal characteristics that distinguish the deformation
-and breakup processes of a drop versus those of a bubble.
+bubble or drop in shear flow first transitions from deformation to breakup.
+We validate our numerical methods through comparisons with previous
+shear-driven drop dynamics results and we also examine the effect of drop
+deformation and breakup sensitivity on domain and grid size.  An advantage of
+studying shear-driven bubble deformation and breakup computationally, rather
+than experimentally, is that we can easily modify fluid physical properties to
+ascertain the sensitivity of deformation and breakup to physical parameters.
+In our computations, the time-evolution of the boundary between gas and liquid
+is tracked with a coupled level set/volume-of-fluid (CLSVOF) interface
+capturing algorithm \cite{SusPuc00}.  We focus on determining critical physical
+conditions in which the breakup of a bubble occurs in shear flow because it is
+important to identify the parameter regimes in which a relatively simple system
+transitions from stable to unstable.  Specifically, we identify the critical
+Reynolds number $Re_{c}$ corresponding to the bubble breakup onset condition as
+a function of the Capillary number $Ca$.  Although the $Re_{c}$ for drop
+breakup was reported previously \cite{LiRenRen00}, in this work we determine,
+for the first time, the critical Reynolds number that leads to \emph{bubble}
+breakup.  Additionally, our computational studies reveal characteristics that
+distinguish the deformation and breakup processes of a drop versus those of a
+bubble.
 
 
 %  -----------------------------------------------------------------------------
@@ -324,7 +327,7 @@ for breakup.
            flow and (b) (\textit{upper panel}) a two-level adaptive mesh 
            refinement (AMR) grid schematic with an actual computational 
            example (\textit{lower panel}) of bubble deformation in simple linear 
-           shear flow on the same grid system.}
+           shear flow.}
   \label{fig:SchemAndGrid}
 \end{figure}
 %
@@ -333,10 +336,20 @@ for breakup.
 %  -----------------------------------------------------------------------------
 Numerical results were obtained using the interface-tracking CLSVOF method,
 which is based on a fixed grid finite difference algorithm.  In our studies,
-two-phase fluid flow is comprised of air and a viscous Newtonian liquid. A
-single set of three-dimensional equations governs the motion of both fluids,
-which are taken to be incompressible, and consists of the continuity equation
-and the Navier-Stokes equations with surface tension forces:
+two-phase fluid flow is comprised of air and a viscous Newtonian liquid.  The
+Heaviside function, $\Hea(\phi)$, which is defined as
+%
+\begin{equation}\label{heavyeqn}
+  \Hea(\phi) = \begin{cases}
+               1 & \phi \geq 0 \\
+               0 & \phi <0 
+               \end{cases}
+\end{equation}
+%
+will be used below to distinguish each of the two fluids.  A single set of
+three-dimensional equations governs the motion of both fluids, which are taken
+to be incompressible, and consists of the continuity equation and the
+Navier-Stokes equations with surface tension forces:
 %
 \begin{align}
   \nabla\cdot\bmu &=0  \label{divu} \\
@@ -359,15 +372,16 @@ and the Navier-Stokes equations with surface tension forces:
 where $\bmu$ is the velocity vector, $t$ represents time, $p$ is the pressure,
 $\bmI$ is the unit tensor, $\bmD$ is the rate of deformation tensor
 ($\bmD=\frac{1}{2}(\nabla\bmu+(\nabla\bmu)^{T})$), $\rho$ is the density, $\mu$
-is the viscosity, $\kappa$ is the interfacial curvature, and $\Hea(\phi)$ is
-the Heaviside function as a function of the level set (LS) function $\phi$. The
-singular term (last term) in the right hand side of equation~\eqref{nseqn} is a
-body force due to surface tension and is equivalent to specifying that the jump
-in the normal stress is equal to $\sigma\kappa$.  The interfacial curvature
-$\kappa$ is computed with second order accuracy directly from the
-volume-of-fluid (VOF) function using the height function technique.  We remark
-that we get the same results if we were to compute $\kappa$ directly from the
-LS function using the ``level set'' height function technique.
+is the viscosity, $\kappa$ is the interfacial curvature, and the Heaviside
+function $\Hea(\phi)$ is a function of the level set (LS) function $\phi$. The
+singular Heaviside gradient term in the right hand side of
+equation~\eqref{nseqn} is a body force due to surface tension and is equivalent
+to specifying that the jump in the normal stress is equal to
+$\sigma\kappa$~\cite{TanguyEtAl2007}.  The interfacial curvature $\kappa$ is
+computed with second order accuracy directly from the volume-of-fluid (VOF)
+function using the height function technique.  We remark that we get the same
+results if we were to compute $\kappa$ directly from the LS function using the
+``level set'' height function technique.
 
 Since $\rho$ and $\mu$ are taken to be constant in each fluid, with a jump at
 the interface, they can be expressed in terms of the Heaviside function,
@@ -377,18 +391,10 @@ the interface, they can be expressed in terms of the Heaviside function,
   \mu=\mu_{\rm m}\Hea+\mu_{\rm b}(1-\Hea).
 \end{eqnarray}
 %
-The subscripts ``b'' and ``m'' refer to ``drop or bubble'' and ``matrix fluid'',
-respectively.  The Heaviside function, $\Hea(\phi)$, is defined as follows:
-%
-\begin{equation}\label{heavyeqn}
-  \Hea(\phi) = \begin{cases}
-               1 & \phi \geq 0 \\
-               0 & \phi <0 
-               \end{cases}
-\end{equation}
-%
-To represent the free surface with the CLSVOF method, we must evolve the solution
-to both the VOF equation for $F$ and the LS equation for $\phi$:
+The subscripts ``b'' and ``m'' refer to ``drop or bubble'' and ``matrix
+fluid'', respectively. To represent the free surface with the CLSVOF method, we
+must evolve the solution to both the VOF equation for $F$ and the LS equation
+for $\phi$:
 %
 %\begin{subequations}\label{eq:clsvof}
 \begin{align}\label{eq:clsvof}
@@ -401,7 +407,7 @@ In all computations the discretized variables $p$, $\phi$ and $F$ are located at
 cell centers and the discrete variable $\bmu$ is located at cell face centers.
 Our computations are performed using an overall second-order accurate
 hydrodynamic scheme.  The spatial discretization uses second-order accurate,
-slope limited, upwind techniques for the nonlinear advective terms.  The
+slope-limited, upwind techniques for the nonlinear advective terms.  The
 velocity and pressure fields are computed using an implicit pressure projection
 procedure. 
 
@@ -447,8 +453,13 @@ Table~\ref{tab:DeComparison} indicates that our numerical results are in good
 agreement with previous computations for drop deformation and breakup.
 %
 \begin{table}[tbh]
-\caption{Comparison of the Taylor deformation parameter $De$ as a function 
-         of $Re$ ($Ca=0.3$, $\lambda = \eta = 1$).}
+\caption{Comparison of the Taylor deformation parameter $De$ for a drop as a function 
+         of $Re$ ($Ca=0.3$, $\lambda = \eta = 1$). In all cases, the domain 
+         size is $\lwh{8}{4}{8}$, where $R$ is the drop radius.
+         CLSVOF method computations used a two-level AMR computational domain 
+         with a level-0 discretization $\Delta x^{\ell=0} = \Delta y^{\ell=0} 
+         = \Delta z^{\ell=0} = R/8$ and a level-1 discretization
+         $\Delta x^{\ell=1} = \Delta y^{\ell=1} = \Delta z^{\ell=1} = R/16$.}
 \label{tab:DeComparison}
 %\footnotesize
 \center
@@ -467,21 +478,30 @@ $De$(Our study)                      & 0.3960  & 0.4570  & 0.4758  & Breakup   \
   \centering
   \includegraphics[width=\textwidth]{DropBreakComparison}
   \caption{Comparison with results reported in~\cite{RenCri01-2} (shown in boxes) 
-           for drop breakup in shear flow. (Reprinted with permission from 
+           for drop breakup in shear flow.  (The computational domain
+           dimensions $W=4R$ and $H=8R$ were fixed, while $L$ was changed depending 
+           on $Re$ and $Ca$ conditions, and the grid size was set to 
+           $\Delta x=\Delta y=\Delta z=R/8$.  Reprinted with permission from 
            reference~\cite{RenCri01-2}. Copyright 2001, AIP Publishing). Results
-           obtained with our CLSVOF algorithm are shown outside boxes. The onset
-           of drop breakup is demonstrated for (a) $Re=10$, $Ca=0.16$,
-           (b) $Re=12$, $Ca=0.1753$, and (c) $Re=15$, $Ca=0.196$.}
+           obtained with our CLSVOF algorithm, corresponding to each case in
+           reference~\cite{RenCri01-2}, are shown outside boxes.  The
+           CLSVOF method used a two-level AMR computational domain 
+           with a level-0 discretization $\Delta x^{\ell=0} = \Delta y^{\ell=0} 
+           = \Delta z^{\ell=0} = R/8$ and a level-1 discretization
+           $\Delta x^{\ell=1} = \Delta y^{\ell=1} = \Delta z^{\ell=1} = R/16$. 
+           The onset of drop breakup is demonstrated for (a) $Re=10$,
+           $Ca=0.16$, (b) $Re=12$, $Ca=0.1753$, and (c) $Re=15$, $Ca=0.196$.
+           For all three $Re$ and $Ca$ conditions, $\lambda = \eta = 1$.}
   \label{fig:DropBreakComp}
 \end{figure}
 %
 
 Next, we present a comparison with numerical results for drop breakup reported
-in~\cite{RenCri01-2}.  Figure~\ref{fig:DropBreakComp} demonstrates drop
-breakup with pinch-off behavior for three $Re$ and $Ca$ conditions and with
-constant values of $\lambda = \eta = 1$ for all cases.  The three cases that we
-consider correspond to (a) $Re = 10, \, Ca = 0.16$, (b) $Re = 12, \, Ca =
-0.1753$, and (c) $Re = 15, \, Ca = 0.196$, and which are illustrated in
+in~\cite{RenCri01-2}.  Figure~\ref{fig:DropBreakComp} demonstrates drop breakup
+with pinch-off behavior for three $Re$ and $Ca$ conditions and with constant
+values of $\lambda = \eta = 1$ for all cases.  The three cases that we consider
+correspond to (a) $Re = 10, \, Ca = 0.16$, (b) $Re = 12, \, Ca = 0.1753$, and
+(c) $Re = 15, \, Ca = 0.196$, and which are illustrated in
 Figures~\ref{fig:DropBreakComp}(a)-(c), respectively.  The results reported
 in~\cite{RenCri01-2}, which were obtained with a VOF method, are shown inside
 boxes while results obtained with our CLSVOF approach are displayed outside
@@ -490,8 +510,9 @@ $W=4R$ and $H=8R$ were fixed, while $L$ was changed depending on $Re$ and $Ca$
 conditions, and the grid size was set to $\Delta x=\Delta y=\Delta z=R/8$.  To
 compare with their results, we performed simulations with the CLSVOF method
 over a two-level AMR computational domain of the same dimensions and the same
-(level-0) discretization; we set the finer level-1 grid size $\Delta x^{\ell=1}
-= \Delta y^{\ell=1} = \Delta z^{\ell=1} = R/16$.  The results shown in
+level-0 discretization: $\Delta x^{\ell=0} = \Delta y^{\ell=0} = \Delta
+z^{\ell=0} = R/8$; we set the finer level-1 grid size $\Delta x^{\ell=1} =
+\Delta y^{\ell=1} = \Delta z^{\ell=1} = R/16$.  The results shown in
 Figure~\ref{fig:DropBreakComp} verify that our numerical approach can reproduce
 the same drop breakup behavior presented in~\cite{RenCri01-2}.  Slight
 differences between the results can be attributed to the increased resolution
@@ -510,21 +531,14 @@ examined in~\cite{LiRenRen00} for Stokes flows and various $Ca$ conditions and
 in~\cite{KomShaEskDer14} for $Re=1$ and $Ca=0.27$.  Other related studies
 investigated drop breakup sensitivity~\cite{RenCri01-1} and drop deformation
 sensitivity~\cite{RenCriLi02} with respect to the entire domain size.
-
-Here we investigate the drop dynamics sensitivity to domain size around the
-critical Reynolds number $Re_{c}=0.75$.  Specifically, we consider domain size
-sensitivity for the condition of $Re=0.75$, $Ca=0.3$, and $\lambda = \eta = 1$,
-which is a condition used in the comparison studies of the previous section.
-As shown in Table~\ref{tab:DeComparison}, the drop breaks up for the condition
-of $Re=0.75$ and $Ca=0.3$ with a domain size of $\lwh{8}{4}{8}$.  Results for
-domain size sensitivity for six domain systems, all of which use a level-1 grid
-size $\Delta x^{\ell=1} = \Delta y^{\ell=1}= \Delta z^{\ell=1} = R/16$, are
-tabulated in Table~\ref{tab:DomComparison}. Note that the domain size used in
-the comparison study (Table~\ref{tab:DeComparison}) corresponds to System 1.
 %
 \begin{table}[tbh]
-\caption{Comparison of the Taylor deformation parameter $De$ as a function of
-         domain size ($Re=0.75$, $Ca=0.3$, $\lambda = \eta = 1$).}
+\caption{Comparison of the Taylor deformation parameter $De$ for a drop as a function of
+         domain size ($Re=0.75$, $Ca=0.3$, $\lambda = \eta = 1$).
+         CLSVOF method computations used a two-level AMR computational domain 
+         with a level-0 discretization $\Delta x^{\ell=0} = \Delta y^{\ell=0} 
+         = \Delta z^{\ell=0} = R/8$ and a level-1 discretization
+         $\Delta x^{\ell=1} = \Delta y^{\ell=1} = \Delta z^{\ell=1} = R/16$.}
 \label{tab:DomComparison}
 %\footnotesize
 \center
@@ -543,6 +557,17 @@ System 6    & $8R  \times 16R \times 16R$  & 0.460   \\
 \end{tabular}
 \end{table}
 %
+
+Here we investigate the drop dynamics sensitivity to domain size around the
+critical Reynolds number $Re_{c}=0.75$.  Specifically, we consider domain size
+sensitivity for the condition of $Re=0.75$, $Ca=0.3$, and $\lambda = \eta = 1$,
+which is a condition used in the comparison studies of the previous section.
+As shown in Table~\ref{tab:DeComparison}, the drop breaks up for the condition
+of $Re=0.75$ and $Ca=0.3$ with a domain size of $\lwh{8}{4}{8}$.  Results for
+domain size sensitivity for six domain systems, all of which use a level-1 grid
+size $\Delta x^{\ell=1} = \Delta y^{\ell=1}= \Delta z^{\ell=1} = R/16$, are
+tabulated in Table~\ref{tab:DomComparison}. Note that the domain size used in
+the comparison study (Table~\ref{tab:DeComparison}) corresponds to System 1.
 
 The results in Table~\ref{tab:DomComparison} suggest that drop deformation is
 promoted when we use a domain size with $W=4R$.  In contrast, the drop does not
@@ -585,17 +610,17 @@ deformation parameter $De$ over time for the two grid systems; the $x$-axis is
 a dimensionless time defined by $T=\mathit{\Gamma} t$ and the $y$-axis is $De$.
 The results show that bubble breakup occurs at $Re_c = 35$ for the grid system
 with $\Delta x^{\ell=1}=R/16$, while the finer computational grid with $\Delta
-x^{\ell=1}=R/24$ predicts a critical value of $Re_c = 34$. Although there is
-only a relatively small difference ($\sim 3\%$) between the critical Reynolds
-numbers, and the time evolution of $De$ for the two grid systems is consistent
-in both cases, the computational time using the grid system with
-$\Delta x^{\ell=1}=R/24$ was more than 6 times longer than the one based on the
-coarser system with $\Delta x^{\ell=1}=R/16$.  We note that in our search for
-$Re_c$, we considered a wide range of values of $Ca$ and we found it necessary
-to use a large $L$ ($\sim 24R$) since for certain shear flows the bubble can
-stretch significantly without breaking up.  Nevertheless, for the conditions
-presented in this section, the results indicate that our numerical approach,
-even with a finest-level resolution set to $\Delta x^{\ell=1}=R/16$, is capable of
+x^{\ell=1}=R/24$ predicts a critical value of $Re_c = 34$.  Note that although
+the time evolution of $De$ for the two grid systems is consistent for both
+resolutions (the predicted critical Reynolds numbers differ by $\sim 3\%$), the
+computational time using the grid system with $\Delta x^{\ell=1}=R/24$ was more
+than 6 times longer than the one based on the coarser system with $\Delta
+x^{\ell=1}=R/16$.  We remark that in our search for $Re_c$, we considered a
+wide range of values of $Ca$ and we found it necessary to use a large $L$
+($\sim 24R$) since for certain shear flows the bubble can stretch significantly
+without breaking up.  Nevertheless, for the conditions presented in this
+section, the results indicate that our numerical approach, even with a
+finest-level resolution set to $\Delta x^{\ell=1}=R/16$, is capable of
 accurately reproducing bubble deformation and breakup without sacrificing any
 essential dynamical features.
 
@@ -824,7 +849,8 @@ effects of very small density and viscosity ratios ($\lambda$ = $\eta$ = 1.0
 $\times$ $10^{-3}$) act synergistically in deformation and breakup processes.
 %
 \begin{table}[tbh]
-\caption{Critical Reynolds number corresponding to Capillary number}
+\caption{Shear-induced bubble breakup for various flow conditions described in terms
+         of column pairs of critical Reynolds numbers and corresponding Capillary numbers.}
 \label{tab:CaRecComparison}
 \footnotesize
 \center
