@@ -242,7 +242,12 @@ In particular, it is the study of bubble deformation as it pertains
 to high performance plastics applications which motivates this work.  
 In this article, we present
 computational studies of shear-driven deformation and breakup of a bubble in
-insoluble viscous liquids.  The physical properties that distinguish bubble and
+insoluble viscous liquids.  
+Studying bubble break-up via computation rather
+than experiments simplifies the process of setting a combination of
+precise simple shear flow conditions, low $Ca$ conditions, low density ratio, 
+and low viscosity ratios.
+The physical properties that distinguish bubble and
 drop studies are expressed in terms of the density ratio $\lambda = \rho_b /
 \rho_m$ and the viscosity ratio $\eta = \mu_b / \mu_m$, where $\rho$ is the
 fluid density, $\mu$ is the viscosity and the subscripts ``b'' and ``m'' denote
@@ -927,6 +932,19 @@ exponential model is the best fit:
 \begin{eqnarray}
 Re_{c}=138.3 e^{-1.41 (Ca)} \label{bestfit}
 \end{eqnarray}
+(\ref{bestfit}) was derived from the linear least squares best fit
+of the log of $Re_{c}$:
+\begin{eqnarray}
+	\log(Re_{c})=4.9-1.41 (Ca)  \label{bestfitraw}
+\end{eqnarray}
+%% variance for X^T X c = b
+%% (S/(n-m)) (X^T X)^{-1}
+%% standard deviation: sqrt(2.1E-3)=.05 and sqrt(4.2E-3)=0.06
+The predicted variances for the parameters 
+``$4.9$'' and ``$-1.41$'' which appear in (\ref{bestfitraw}) are
+$2.1E-3$ and $4.2E-3$ respectively.  In other words, even with just
+four data points, we have computed a reasonable best fit curve.
+
 In Figure~\ref{fig:CaRecFit} we plot our best fit curve and make the
 hypothesis that a given $(Ca,Re)$ pair will result in bubble break up
 if the point $(Ca,Re)$ is above the critical curve.
@@ -951,6 +969,29 @@ Critical Reynolds number $Re_c$  & 93   & 67   & 43   & 35   \\
 \hline
 \end{tabular}
 \end{table}
+
+%% variance for X^T X c = b
+%% (S/(n-m)) (X^T X)^{-1}
+\begin{figure}%[h!]
+  \centering
+  \includegraphics[width=\textwidth]{critical_Reynolds_Number_label}
+  \caption{A plot of the critical Reynolds number versus Capillary number
+	for the data listed in Table \ref{tab:CaRecComparison}.  The
+	linear least squares best fit for the $\log(Re_{c})$ is
+	$\log(Re_{c})=4.9-1.41(Ca)$ (i.e. $Re_{c}=138.3 e^{-1.41 Ca}$)
+	with a predicted variance
+	for the parameters ``$4.9$'' and ``$-1.41$'' being
+	$2.1E-3$ and $4.2E-3$ respectively.  Even for the
+	given data that we computed, it is suggested that 
+	a ``bubble break-up map''
+	can be derived, in which for the conditions that
+	$\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$ and $0<Ca<1$, one
+	can predict whether a given $(Ca,Re)$ pair will result in shear
+	induced bubble break-up or not.  
+	   }
+  \label{fig:CaRecFit}
+\end{figure}
+%
 
 %  -----------------------------------------------------------------------------
 \section{Conclusions}
