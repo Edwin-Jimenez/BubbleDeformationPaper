@@ -316,7 +316,7 @@ follows:
 		                -V \\ 0 \\ 0 
 	\end{array} \right)  \nonumber \\
 	\bmu(x+L,y,z,t)=\bmu(x,y,z,t) \hspace{20pt} 
-	\bmu(x,y+W,z,t)=\bmu(x,y,z,t). \nonumber
+	\bmu(x,y+W,z,t)=\bmu(x,y,z,t) \nonumber
 \end{eqnarray}
 $\phi(x,y,z,t)$ is a material indicator function which is positive 
 in the ``matrix'' fluid and negative in the bubble (or drop) fluid.
@@ -940,39 +940,23 @@ of surface tension for $Ca = 0.8$.
 Table~\ref{tab:CaRecComparison} 
 lists, for representative $Ca$ values,
 the corresponding critical Reynolds number, $Re_{c}$, for shear-induced 
-bubble breakup for a variety of flow
-conditions.  The results indicate that sufficiently large shear forces are
-required for bubble breakup even for large Capillary numbers. The combined
-effects of very small density and viscosity ratios 
-($\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$) 
-act synergistically in deformation and breakup processes.
-We conducted a linear least squares best fit analysis (linear vs. 
-power law vs. exponential models) of the data that we 
-list in Table~\ref{tab:CaRecComparison} and have found that the following
-exponential model is the best fit:
-%  Re = \frac{\rho_{b}UR}{\mu_{b}}, \quad
-%  Ca = \frac{\mu_{b}U}{\sigma}, \quad
-\begin{eqnarray}
-Re_{c}=138.3 e^{-1.41 (Ca)} \label{bestfit}
-\end{eqnarray}
-(\ref{bestfit}) was derived from the linear least squares best fit
-of the log of $Re_{c}$:
-\begin{eqnarray}
-	\log(Re_{c})=4.9-1.41 (Ca)  \label{bestfitraw}
-\end{eqnarray}
-%% variance for X^T X c = b
-%% (S/(n-m)) (X^T X)^{-1}
-%% standard deviation: sqrt(4.2E-3)=.07 and sqrt(8.4E-3)=0.09
-The predicted variances for the parameters 
-``$4.9$'' and ``$-1.41$'' which appear in (\ref{bestfitraw}) are
-$4.2E-3$ and $8.4E-3$ respectively.  In other words, even with just
-four data points, we have computed a reasonable best fit curve.
-
-In Figure~\ref{fig:CaRecFit} we plot our best fit curve and make the
-hypothesis that a given $(Ca,Re)$ pair will result in bubble break up
-if the point $(Ca,Re)$ is above the critical curve, 
-$0.3<Ca<1$, and the initial/boundary conditions are given
-by (\ref{IC_BC}).
+bubble breakup.  The data in 
+Table~\ref{tab:CaRecComparison} 
+corresponds to $\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$, $0.3<Ca<1$, and
+the initial/boundary conditions are given by (\ref{IC_BC}).
+The results in 
+Table~\ref{tab:CaRecComparison}
+indicate that sufficiently large shear forces are
+required for bubble breakup even for large Capillary numbers. 
+In Figure~\ref{fig:CaRecFit} we plot the cubic interpolant of the
+data given in 
+Table~\ref{tab:CaRecComparison}
+and make the
+hypothesis that given a new data point, $(Ca,Re)$, 
+shear induced bubble break up
+will occur if the point $(Ca,Re)$ is above the given critical curve, 
+and the bubble will not break if the $(Ca,Re)$ pair is below the 
+critical curve.
 
 %
 \begin{table}[tbh]
@@ -999,21 +983,14 @@ Critical Reynolds number $Re_c$  & 93   & 67   & 43   & 35   \\
 %% (S/(n-m)) (X^T X)^{-1}
 \begin{figure}%[h!]
   \centering
-  \includegraphics[width=\textwidth]{Fig12-Critical-Re}
+  \includegraphics[width=\textwidth]{Fig11-Critical-Re1_cubic}
   \caption{A plot of the critical Reynolds number versus Capillary number
-	for the data listed in Table \ref{tab:CaRecComparison}.  The
-	linear least squares best fit for the $\log(Re_{c})$ is
-	$\log(Re_{c})=4.9-1.41(Ca)$ (i.e. $Re_{c}=138.3 e^{-1.41 Ca}$)
-	with a predicted variance
-	for the parameters ``$4.9$'' and ``$-1.41$'' being
-	$4.2E-3$ and $8.4E-3$ respectively.  Even for the
-	given data that we computed, it is suggested that 
-	a ``bubble break-up map''
-	can be derived, in which for the conditions that
+	for the data listed in Table~\ref{tab:CaRecComparison}.  
 	$\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$, $0.3<Ca<1$, and
-        the initial/boundary conditions are given by (\ref{IC_BC}),	
-	one
-	can predict whether a given $(Ca,Re)$ pair will result in shear
+        the initial/boundary conditions are given by (\ref{IC_BC}).
+	Given a new data point, $(Ca,Re)$, one
+	can reliably predict whether the 
+	given $(Ca,Re)$ pair will result in shear
 	induced bubble break-up or not.  
 	   }
   \label{fig:CaRecFit}
