@@ -56,12 +56,9 @@
 %floatfix,
 ]{revtex4-2}
 
-\usepackage[dvipdfmx]{graphicx}% Include figure files
-%\usepackage{graphicx}% Include figure files
+\usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
-\usepackage{comment}
-\usepackage{color}
 %\usepackage{hyperref}% add hypertext capabilities
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
@@ -222,8 +219,8 @@ access to powerful computing resources led to a surge of research focused on
 direct simulations of this problem.  In particular, detailed computational
 investigations of drop breakup, 
 based on a Volume-of-Fluid (VOF) method \cite{HirNic81} were
-presented in \cite{LiRenRen00, RenCri01-1, RenCri01-2, RenCriLi02,KhiRenCri03,Ren06,Ren07,Ren08-2}.  
-Since then, the literature on computational
+presented in \cite{LiRenRen00, RenCri01-1, RenCri01-2, RenCriLi02,
+KhiRenCri03,Ren06,Ren07,Ren08-2}.  Since then, the literature on computational
 studies on the deformation and breakup of a single or several drops in shear
 flow has continued to grow \cite{CriGuiAlfBlaLoe03, InaTomOgi03,ZhaMikBan06,
 BazAndMei06, JanAnd08, CroGriSch10,KomShaEskDer14,KomShaEskDer15, IoaLiuZha16,
@@ -233,14 +230,14 @@ approaches \cite{CriBlaLoe01, JanAnd07}, lattice Boltzmann methods \cite{Ina06,
 KomShaEskDer14}, front tracking schemes \cite{UnvTry92}, and interface-tracking
 level set methods \cite{SusSmeOsh94}.  
 
-{\color{red} In contrast, only a few computational studies on bubble deformation and breakup in
-shear flow can be found \cite{WeiQiaXu12,WanShiZha15}. 
-In these previous studies, the dynamics of bubble deformation in shear flow has mainly been exmained.}
-This type of bubble dynamics in shear flow is of critical importance for a variety of
+In contrast, few computational studies on bubble deformation and breakup in
+shear flow have been conducted \cite{WanShiZha15}.  This type of bubble
+dynamics in shear flow is of critical importance for a variety of
 scientific and engineering processes. We refer the reader to the 
 following experimental studies relating to bubble deformation in foaming
 processes, microfluidic devices, and micro bubbles in the blood 
-circulation system,\cite{ChuFinBouAtaHamPug19,MulTobDreFisWin08,BenRodFauPinFerPerGarMirLim18,DreSai15}.
+circulation system,
+\cite{CHU2019108,muller2008single,bento2018deformation,drenckhan2015science}.
 In particular, it is the study of bubble deformation as it pertains
 to high performance plastics applications which motivates this work.  
 In this article, we present
@@ -251,12 +248,12 @@ than experiments simplifies the process of setting a combination of
 precise simple shear flow conditions, low $Ca$ conditions, low density ratio, 
 and low viscosity ratios.
 The physical properties that distinguish bubble and
-drop studies are expressed in terms of the density ratio $\lambda = \rho_{\rm b} /
-\rho_{\rm m}$ and the viscosity ratio $\eta = \mu_{\rm b} / \mu_{\rm m}$, where $\rho$ is the
+drop studies are expressed in terms of the density ratio $\lambda = \rho_b /
+\rho_m$ and the viscosity ratio $\eta = \mu_b / \mu_m$, where $\rho$ is the
 fluid density, $\mu$ is the viscosity and the subscripts ``b'' and ``m'' denote
 the ``bubble'' or ``drop'' and the ``matrix fluid'', respectively.  For a
-bubble in an insoluble viscous liquid, $\lambda \simeq 0$ and $\eta \simeq 0$, 
-whereas most studies dealing with a drop
+bubble in an insoluble viscous liquid, the density ratio $\lambda \simeq 0$ and
+the viscosity ratio $\eta \simeq 0$, whereas most studies dealing with a drop
 in an immiscible viscous liquid take $\lambda =1$ and $\eta \simeq 1$.  
 
 In this work we focus on identifying critical flow states numerically, in terms
@@ -274,16 +271,15 @@ capturing algorithm \cite{SusPuc00}.  We focus on determining critical physical
 conditions in which the breakup of a bubble occurs in shear flow because it is
 important to identify the parameter regimes in which a relatively simple system
 transitions from stable to unstable.  Specifically, we identify the critical
-Reynolds number ($Re_{\rm c}$) corresponding to the bubble breakup onset condition as
-a function of the Capillary number ($Ca$). 
-The critical Reynolds number, $Re_{\rm c}$, for drop breakup was 
-reported previously by \cite{LiRenRen00}.
-{\color{red} In previous studies on the motion of bubble deformation
-in a simple shear flow \cite{RusMan02, MulTobDreFisWin08}, 
-only findings for bubble defomation under very low $Re$ number conditions have been reported.}
-In this work we determine, for the first time, the critical Reynolds number that leads to \emph{bubble}
+Reynolds number $Re_{c}$ corresponding to the bubble breakup onset condition as
+a function of the Capillary number $Ca$.  The critical Reynolds number, 
+$Re_{c}$, for drop
+breakup was reported previously \cite{LiRenRen00}, in this work we determine,
+for the first time, the critical Reynolds number that leads to \emph{bubble}
 breakup.  Additionally, our computational studies reveal characteristics that
-distinguish the deformation and breakup processes of a drop versus those of a bubble.
+distinguish the deformation and breakup processes of a drop versus those of a
+bubble.
+
 
 %  -----------------------------------------------------------------------------
 \section{Problem Description}
@@ -291,14 +287,14 @@ distinguish the deformation and breakup processes of a drop versus those of a bu
 
 Figure~\ref{fig:SchemAndGrid}(a) shows a schematic of the computational system
 for our studies of a bubble (or drop) in shear flow.  The computational domain
-consists of a three-dimensional rectangular domain of $L$ (length) $\times$
-$W$ (width) $\times$ $H$ (height).  The size of $L$, $W$ and $H$
+consists of a three-dimensional rectangular domain of $L(x)$ (length) $\times$
+$W(y)$ (width) $\times$ $H(z)$ (height).  The size of $L(x)$, $W(y)$ and $H(z)$
 was determined after consideration of numerical result sensitivity to domain
 size; numerical studies of domain-size dependence are presented in
 Section~\ref{sec:DomGrdSize}.  All computational results that follow were
 obtained from numerical solutions of the three-dimensional governing equations
 for gas-liquid/liquid-liquid flows.  Computations are initialized with a
-spherical bubble {\color{red} (or drop) of radius $R$ = 5 mm} set at the center of the domain that is then subjected to a
+spherical bubble set at the center of the domain that is then subjected to a
 linear shear flow generated by the motion of the top and bottom plates, which 
 have constant velocity $+V$ and $-V$, respectively.  In the interior of the
 domain, the initial velocity condition is assumed to be a simple linear profile
@@ -328,66 +324,47 @@ $\bmu(x,y,z,t)$ is the velocity.
 
 Common dimensionless physical parameters used to describe gas-liquid or
 liquid-liquid two-phase flows include the Reynolds ($Re$), Weber ($We$) (or
-$Ca$ (= $We/Re$)) and Froude ($Fr$) numbers.  Gas-Liquid and 
-Liquid-Liquid two-phase flow problems are also determined by the
-density ratio $\lambda$ and the viscosity ratio $\eta$.  
-In the present study, the effect of gravity is not considered so
-that we ignore the effect of the $Fr$ number.
-
-When comparing with previous drop studies, we fix
-$\lambda=1$.  As a result, (for $\lambda=1$) the
+$Ca$ (= $We/Re$)) and Froude ($Fr$) numbers, and the density ratio $\lambda$
+and viscosity ratio $\eta$.  For comparison with previous drop studies, we set
+$\lambda=1$ and, since in this case the effect of gravity is not considered, we
+may ignore the Froude number $Fr$.  As a result, (for $\lambda=1$) the
 following dimensionless physical parameters are used to describe the problem of
-drop deformation/breakup in shear flow
+drop or bubble deformation/breakup in shear flow
 %
 \begin{eqnarray}\label{dimensonless}
-  Re = \frac{\rho_{\rm {\color{red}m}}UR}{\mu_{\rm {\color{red}m}}}, \quad
-  Ca = \frac{\mu_{\rm {\color{red}m}}U}{\sigma}, \quad
-  \eta = \frac{\mu_{\rm b}}{\mu_{\rm m}}
-\end{eqnarray}
+  Re = \frac{\rho_{b}UR}{\mu_{b}}, \quad
+  Ca = \frac{\mu_{b}U}{\sigma}, \quad
+  \eta = \frac{\mu_{b}}{\mu_{m}}
+\end{eqnarray} 
 %
-$U$ is the velocity scale and $\sigma$ denotes the surface tension. 
-For the problem of shear-induced drop deformation and breakup, 
-the velocity is set to 
-$U = \mathit{\Gamma} R$, where the shear-rate is $\mathit{\Gamma} = 2V/H$.  
-As mentioned in the introduction, most previous drop studies set 
-$\eta = 1$\cite{?}. 
-Thus, for comparison with previous drop deformation and breakup problems,
-we set $\lambda = \eta = 1$ (and also neglect the 
-effect of gravity so that $g=0$). On the other hand, in 
-our computations for bubble deformation, 
-we set the density and viscosity of air to be
-$\rho_{\rm b}$ = 1.2 kg/m$^{3}$ and $\mu_{\rm b} = 1.8
-\times 10^{-5}$ Pa$\cdot$s respectively.
-We emphasize that for consistency with previous studies, 
-we computationally examine the
-deformation and breakup of a bubble in simple linear shear flow as a 
-function of the $Re$ and $Ca$ numbers. 
-{\color{red} That is to say, by setting $g=0$, we are focussing our attention
-only on the cases in which varying $Re$ and $Ca$ influences bubble 
-deformation and breakup.  In our controlled study, we determine 
-the critical $Re_{\rm c}$ versus $Ca$ curve 
-in which $Re_{\rm c}$ corresponds to the threshold of 
-bubble (or drop) breakup.  
-We determine the
-critical $Re_{\rm c}$ versus $Ca$ curve for representative pairs of the
-density ratio and viscosity ratio. }
-
-{\color{red} In our computations, the density of the matrix fluid 
-is fixed at
-$\rho_{\rm m}$ = 1000 kg/m$^3$.  The surface tension at the bubble (drop)
-interface is $\sigma =2.5 \times 10^{-2}$ N/m.
-The values of $Re$ and $Ca$ in our simulations are controlled by
-changing the values of $\mu_{\rm m}$ and $V$.
-For studying bubble deformation and break-up, 
-the density and viscosity ratios satisfy 
-$\lambda = 1.2 \times 10^{-3}$ and $\eta < 1.0 \times 10^{-3}$.}
-
+where $R$ is the drop or bubble radius, $\sigma$ denotes the surface tension,
+and $U$ is the velocity scale. For the problem of shear-induced drop
+deformation and breakup, the velocity is set to $U = \mathit{\Gamma} R$, where
+the shear-rate $\mathit{\Gamma} = 2V/H$.  As mentioned in the introduction,
+most previous drop studies set $\eta = 1$. Thus, for comparison, in this case
+we will set $\lambda = \eta = 1$ (and also neglect the effect of gravity so
+that $g=0$). On the other hand, in our computations for a bubble, we set the
+density and viscosity of air to $\rho_{b}$ = 1.2 kg/m$^{3}$ and $\mu_{b}$ = 1.8
+$\times$ $10^{-5}$ Pa$\cdot$s, and we take the 
+density ratio 
+%%$\lambda$ = 1.2 $\times$ $10^{-3}$ 
+$\lambda$ = 1.0 $\times$ $10^{-3}$ 
+and the 
+viscosity ratio 
+%%$\eta$ $<$ 1.0 $\times$ $10^{-3}$.
+$\eta$ $=$ 1.0 $\times$ $10^{-3}$.
+For consistency with previous studies, we will computationally examine the
+deformation and breakup of a bubble in simple linear shear flow as a
+function of $Re$ and $Ca$ numbers.  In particular, 
+for a certain $Ca$ value, we
+focus on determining the critical value 
+$Re_{c}$ that corresponds to the threshold
+for breakup.
 
 %  -----------------------------------------------------------------------------
 \section{Numerical Analysis}
 %  -----------------------------------------------------------------------------
 % 
-\begin{comment} 
 \begin{figure}%[h!]
   \centering
   \includegraphics[width=\textwidth]{SchematicAndGrid}
@@ -398,35 +375,15 @@ $\lambda = 1.2 \times 10^{-3}$ and $\eta < 1.0 \times 10^{-3}$.}
            shear flow.}
   \label{fig:SchemAndGrid}
 \end{figure}
-\end{comment}
 %
 
 \subsection{Numerical method and governing equations}
 %  -----------------------------------------------------------------------------
-Numerical results were obtained using the {\color{red} interface capturing} CLSVOF method \cite{SusPuc00},
-which is based on a fixed grid finite volume algorithm.  
-{\color{red}The CLSVOF method is  is  a robust  numerical  technique  that  combines  some  of  the  advantages  of 
-both the VOF (\cite{HirNic81}) and LS (\cite{SusSmeOsh94}) methods while overcoming their weaknesses. 
-In the VOF method,  $F$ (VOF function) is used to represent the interface. The values of $F$ correspond 
-to the volume fraction of liquid in a given computational cell. In other words, $F = 0$ when a computational cell contains 
-only gas and $F = 1$ when a computational cell contains only liquid. If $0 < F < 1$, then a computational cell contains 
-the gas-liquid interface. The VOF method has a great advantage that accurate algorithms for advecting $F$ can be used 
-so that mass is conserved while still maintaining a sharp representation of the interface. 
-On the other hand, the disadvantage of the VOF method is that tangled and difficult reconstruction procedures are required 
-for determining the slope of the piecewise linear VOF reconstructed interface.
-In the LS method, $\phi$ (LS function) is used to track the interface. The interface is implicitly represented by the set of points in which $\phi = 0$. 
-Liquid and gas regions are defined as $\phi > 0$ in the liquid and $\phi < 0$ in the gas, respectively.  
-One of the advantages of the LS method is that we can track and present smoothly the interface, but the LS method has the disadvantage 
-that mass is not explicitly conserved. 
-In the CLSVOF method, the coupling between the LS function and the VOF function occurs when computing the normal of the reconstructed 
-interface in the VOF calculation process and also when assigning the LS function with the exact signed normal distance to the reconstructed 
-interface in the LS calculation process. That is to say, the piecewise linear approximation (the volume-of-fluid reconstruction step) for the 
-VOF method is determined using the unit normal vector ($\bm n$) estimated from information of the LS function. By taking advantage of both 
-methods, the evolution of the liquid–gas interface location with a high degree of accuracy can be computationally captured. }
-
-In our studies,
+Numerical results were obtained using the interface-tracking CLSVOF method,
+which is based on a fixed grid finite volume algorithm.  In our studies,
 the two-phase fluid flow is comprised of air and a 
-viscous Newtonian liquid.  The Heaviside function, $\Hea(\phi)$, which is defined as
+viscous Newtonian liquid.  The
+Heaviside function, $\Hea(\phi)$, which is defined as
 %
 \begin{equation}\label{heavyeqn}
   \Hea(\phi) = \begin{cases}
@@ -463,15 +420,13 @@ $\bmI$ is the unit tensor, $\bmD$ is the rate of deformation tensor
 ($\bmD=\frac{1}{2}(\nabla\bmu+(\nabla\bmu)^{T})$), $\rho$ is the density, $\mu$
 is the viscosity, $\kappa$ is the interfacial curvature, and the Heaviside
 function $\Hea(\phi)$ is a function of the level set (LS) function $\phi$. The
-singular Heaviside gradient term in the right hand side of equation~\eqref{nseqn} is a body 
-force representing the surface tension force and is equivalent to specifying that the jump 
-in the normal stress is equal to
-$\sigma\kappa$~\cite{TanguyEtAl2007}. {\color{red} The surface tension force expressed 
-by the singular Heaviside gradient term acts only on the gas-liquid interface.}
-
-The interfacial curvature $\kappa$ is
+singular Heaviside gradient term in the right hand side of
+equation~\eqref{nseqn} is a body force representing the surface tension force
+and is equivalent
+to specifying that the jump in the normal stress is equal to
+$\sigma\kappa$~\cite{TanguyEtAl2007}.  The interfacial curvature $\kappa$ is
 computed with second order accuracy directly from the volume-of-fluid (VOF)
-function using the height function technique~\cite{Sus03}.  
+function using the height function technique~\cite{sussman2003second}.  
 We remark that we get the same
 results if we were to compute $\kappa$ directly from the LS function using the
 ``level set'' height function technique.
@@ -534,21 +489,21 @@ are presented in order to verify the accuracy of our computational
 method.  First, we compare quantitatively against the steady-state drop
 deformation results reported by Li et al.~\cite{LiRenRen00}.  The shape of a
 deformed drop in simple linear shear flow is described in terms of the Taylor
-deformation parameter {\color{red} $D$}=$(a-b)/(a+b)$, where $a$ and $b$ are the major and
+deformation parameter $De=(a-b)/(a+b)$, where $a$ and $b$ are the major and
 minor axes of the deformed drop.  For consistency, we perform numerical
 simulations using CLSVOF over the same computational domain and grid size used
 in~\cite{LiRenRen00}, which has dimensions $\lwh{8}{4}{8}$ (recall that $R$ is
 the bubble/drop radius) and a level-0 grid size $\Delta x=\Delta y=\Delta
 z=R/8$; our two-level AMR grid structure also uses a finer level-1 grid size
 $\Delta x^{\ell=1} = \Delta y^{\ell=1} = \Delta z^{\ell=1} = R/16$.  Numerical
-results are listed in Table~\ref{tab:DeComparison} for {\color{red} $D$} as a function of
+results are listed in Table~\ref{tab:DeComparison} for $De$ as a function of
 $Re$, with $Ca=0.3$ and $\lambda = \eta = 1$ fixed in every case, obtained with
 the VOF method used in \cite{LiRenRen00}, and also with our CLSVOF algorithm.
 Table~\ref{tab:DeComparison} indicates that our numerical results are in good
 agreement with previous computations for drop deformation and breakup.
 %
 \begin{table}[tbh]
-\caption{Comparison of the Taylor deformation parameter {\color{red} $D$} for a drop as a function 
+\caption{Comparison of the Taylor deformation parameter $De$ for a drop as a function 
          of $Re$ ($Ca=0.3$, $\lambda = \eta = 1$). In all cases, the domain 
          size is $\lwh{8}{4}{8}$, where $R$ is the drop radius.
          CLSVOF method computations used a two-level AMR computational domain 
@@ -562,14 +517,13 @@ agreement with previous computations for drop deformation and breakup.
 \hline
 \hline
 Reynolds number                      & 0.1     & 0.5     & 0.6     & 0.75      \\
-{\color{red} $D$}(Li et al. (\cite{LiRenRen00}))  & 0.3968  & 0.45    & 0.4768  & Breakup   \\
-{\color{red} $D$}(Our study)                      & 0.3960  & 0.4570  & 0.4758  & Breakup   \\
+$De$(Li et al. (\cite{LiRenRen00}))  & 0.3968  & 0.45    & 0.4768  & Breakup   \\
+$De$(Our study)                      & 0.3960  & 0.4570  & 0.4758  & Breakup   \\
 \hline
 \hline
 \end{tabular}
 \end{table}
 %
-\begin{comment} 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\textwidth]{DropBreakComparison}
@@ -590,7 +544,6 @@ Reynolds number                      & 0.1     & 0.5     & 0.6     & 0.75      \
            For all three $Re$ and $Ca$ conditions, $\lambda = \eta = 1$.}
   \label{fig:DropBreakComp}
 \end{figure}
-\end{comment} 
 %
 
 Next, we present a comparison with numerical results for drop breakup reported
@@ -615,10 +568,8 @@ the same drop breakup behavior presented in~\cite{RenCri01-2}.  Slight
 differences between the results can be attributed to the increased resolution
 used in our study in the level-1 grid around the elongated drop.  The numerical
 validation studies performed in this section demonstrate that our numerical
-method is capable of {\color{red} minimum} accurately simulating shear-induced drop deformation and
+method is capable of accurately simulating shear-induced drop deformation and
 breakup.
-{\color{red} More refinements may be desirable to perform a more accuracy evaluation 
-for bubble deformation and breakup. }
 
 \subsection{Consideration of domain and grid sizes}\label{sec:DomGrdSize}
 %  -----------------------------------------------------------------------------
@@ -632,7 +583,7 @@ investigated drop breakup sensitivity~\cite{RenCri01-1} and drop deformation
 sensitivity~\cite{RenCriLi02} with respect to the entire domain size.
 %
 \begin{table}[tbh]
-\caption{Comparison of the Taylor deformation parameter {\color{red} $D$} for a drop as a function of
+\caption{Comparison of the Taylor deformation parameter $De$ for a drop as a function of
          domain size ($Re=0.75$, $Ca=0.3$, $\lambda = \eta = 1$).
          CLSVOF method computations used a two-level AMR computational domain 
          with a level-0 discretization $\Delta x^{\ell=0} = \Delta y^{\ell=0} 
@@ -644,7 +595,7 @@ sensitivity~\cite{RenCriLi02} with respect to the entire domain size.
 \begin{tabular}{ c  c  c}
 \hline
 \hline
-System      & Domain size ($\LWH$)         & {\color{red} $D$}    \\
+System      & Domain size ($\LWH$)         & $De$    \\
 System 1    & $8R  \times 4R  \times 8R$   & Breakup \\
 System 2    & $12R \times 4R  \times 8R$   & Breakup \\
 System 3    & $8R  \times 4R  \times 6R$   & 0.541   \\
@@ -658,7 +609,7 @@ System 6    & $8R  \times 16R \times 16R$  & 0.460   \\
 %
 
 Here we investigate the drop dynamics sensitivity to domain size around the
-critical Reynolds number $Re_{\rm c}=0.75$.  Specifically, we consider domain size
+critical Reynolds number $Re_{c}=0.75$.  Specifically, we consider domain size
 sensitivity for the condition of $Re=0.75$, $Ca=0.3$, and $\lambda = \eta = 1$,
 which is a condition used in the comparison studies of the previous section.
 As shown in Table~\ref{tab:DeComparison}, the drop breaks up for the condition
@@ -671,35 +622,33 @@ the comparison study (Table~\ref{tab:DeComparison}) corresponds to System 1.
 The results in Table~\ref{tab:DomComparison} suggest that drop deformation is
 promoted when we use a domain size with $W=4R$.  In contrast, the drop does not
 break up and becomes stable with a deformed shape if we set $L$ large enough
-and $W \geq 6R$ and $H \geq 6R$.  Since the value of {\color{red} $D$} for the domain size
+and $W \geq 6R$ and $H \geq 6R$.  Since the value of $De$ for the domain size
 $\lwh{8}{6}{6}$ differs by only $1.3\%$ with the value for the domain size of
 $\lwh{8}{16}{16}$, in the results that follow we set the width to $W=6R$ and the
 height to $H=6R$ to minimize the number of computational grid nodes along those
-directions.  To determine the critical Reynolds number $Re_{\rm c}$ (with $Ca=0.3$),
+directions.  To determine the critical Reynolds number $Re_c$ (with $Ca=0.3$),
 we consider a domain size of $\lwh{24}{6}{6}$, and we find that the drop
-reaches a stable state with deformation parameter {\color{red} $D$}=0.549 for $Re=1.0$,
+reaches a stable state with deformation parameter $De=0.549$ for $Re=1.0$,
 while a value of $Re=1.1$ leads to drop breakup.
 % 
-\begin{comment} 
 \begin{figure}%[h!]
   \centering
   \includegraphics[width=\textwidth]{DeEvolution}
-  \caption{Time evolution of the deformation parameter {\color{red} $D$} versus 
+  \caption{Time evolution of the deformation parameter $De$ versus 
    a dimensionless
    time $T = \mathit{\Gamma} t$ for a bubble, obtained 
    with two grid systems at different resolutions. Both systems use a 
    two-level AMR grid with a uniform 
    finest-level grid size $\Delta x^{\ell=1} = \Delta y^{\ell=1} = 
-   \Delta z ^{\ell=1}$. The evolution of {\color{red} $D$} using the first system, where
+   \Delta z ^{\ell=1}$. The evolution of $De$ using the first system, where
    $\Delta x^{\ell=1} = R/16$, is shown in black and it predicts that 
    bubble breakup occurs at a Reynolds number $Re=35$. 
    Results with the second system, shown in red, use $\Delta x^{\ell=1} 
    = R/24$, and they predict that breakup occurs at $Re=34$.  The capillary
    number corresponding to these results is $Ca=1.0$.
-   ($\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$)}
+   ($\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$)}
   \label{fig:DeEvolution}
 \end{figure}
-\end{comment} 
 %
 
 The numerical results presented in this and the previous section used a
@@ -709,17 +658,17 @@ grid refinement results for a bubble breakup simulation with $Ca=1.0$, which
 corresponds to the most deformable and stretchable bubble case considered in
 our numerical studies. We use two different grid systems, one with $\Delta
 x^{\ell=1}=R/16$ and another with $\Delta x^{\ell=1}=R/24$, to determine
-$Re_{\rm c}$.  Figure~\ref{fig:DeEvolution} shows the time evolution of the
-deformation parameter {\color{red} $D$} over time for the two grid systems; the $x$-axis is
-a dimensionless time defined by $T=\mathit{\Gamma} t$ and the $y$-axis is {\color{red} $D$}.
-The results show that bubble breakup occurs at $Re_{\rm c}$ = 35 for the grid system
+$Re_c$.  Figure~\ref{fig:DeEvolution} shows the time evolution of the
+deformation parameter $De$ over time for the two grid systems; the $x$-axis is
+a dimensionless time defined by $T=\mathit{\Gamma} t$ and the $y$-axis is $De$.
+The results show that bubble breakup occurs at $Re_c = 35$ for the grid system
 with $\Delta x^{\ell=1}=R/16$, while the finer computational grid with $\Delta
-x^{\ell=1}=R/24$ predicts a critical value of $Re_{\rm c}$ = 34.  Note that although
-the time evolution of {\color{red} $D$} for the two grid systems is consistent for both
+x^{\ell=1}=R/24$ predicts a critical value of $Re_c = 34$.  Note that although
+the time evolution of $De$ for the two grid systems is consistent for both
 resolutions (the predicted critical Reynolds numbers differ by $\sim 3\%$), the
 computational time using the grid system with $\Delta x^{\ell=1}=R/24$ was more
 than 6 times longer than the one based on the coarser system with $\Delta
-x^{\ell=1}=R/16$.  We remark that in our search for $Re_{\rm c}$, we considered a
+x^{\ell=1}=R/16$.  We remark that in our search for $Re_c$, we considered a
 wide range of values of $Ca$ and we found it necessary to use a large $L$
 ($\sim 24R$) since for certain shear flows the bubble can stretch significantly
 without breaking up.  Nevertheless, for the conditions presented in this
@@ -736,28 +685,26 @@ essential dynamical features.
 \subsection{Drop deformation and breakup}\label{sec:DropBreak}
 %  -----------------------------------------------------------------------------
 % 
-\begin{comment} 
 \begin{figure}%[h!]
   \centering
   \includegraphics[width=\textwidth]{DropBreakEvol}
   \caption{Time evolution of drop deformation and breakup in shear flow at the
            condition of $Ca=0.3$ with (a) $Re=1.0$ and (b) $Re=1.1$.  The
 	   ``drop'' critical Reynolds number corresponding to $Ca=0.3$ is
-	   $1.0<Re_{\rm c}<1.1$.
+	   $1.0<Re_{c}<1.1$.
 	   ($\lambda$ = $\eta$ = 1.0)}
   \label{fig:DropBreak}
 \end{figure}
-\end{comment} 
 %
 To illustrate the differences in deformation and breakup between a drop and a
 bubble around critical conditions, we first present numerical results for drop
 deformation.  The time evolution of drop deformation and breakup in simple
 linear shear flow for two conditions is shown in Figure~\ref{fig:DropBreak};
 the first case, shown in Figure~\ref{fig:DropBreak}(a), uses $Ca=0.3$ and
-$Re=1.0$, while the second case, depicted in Figure~\ref{fig:DropBreak}({\color{red}b}),
+$Re=1.0$, while the second case, depicted in Figure~\ref{fig:DropBreak}(a),
 uses $Ca=0.3$ and $Re=1.1$.  Using a domain size of $\lwh{24}{6}{6}$, in the
 case with $Re=1.0$, the drop gradually deforms and finally attains a stable
-deformed state with {\color{red} $D$}= 0.549.  Over the same domain, for the case with
+deformed state with $De$= 0.549.  Over the same domain, for the case with
 $Re=1.1$, the ``mother'' drop elongates over time and the volume at the ends of
 the deforming drop expands; that is, both ends of the drop become bulb-shaped.
 As time progresses, particularly over the time interval $48.4 \leq T \leq
@@ -770,7 +717,6 @@ one satellite drop is also generated between the pinched off daughter drops.
 \subsection{Bubble deformation and breakup}
 %  -----------------------------------------------------------------------------
 % 
-\begin{comment} 
 \begin{figure}%[h!]
   \centering
   \includegraphics[width=\textwidth]{BubbleBreakCa0p3Re92}
@@ -778,8 +724,8 @@ one satellite drop is also generated between the pinched off daughter drops.
            condition of $Ca=0.3$ and $Re=92$.  
 	   The ``bubble'' 
 	   critical Reynolds number corresponding to $Ca=0.3$ is
-	   $92<Re_{\rm c}<93$.  In contrast to the drop deformation case,
-           when $Re$ is slightly below $Re_{\rm c}$
+	   $92<Re_{c}<93$.  In contrast to the drop deformation case,
+           when $Re$ is slightly below $Re_{c}$
            (See Figure \ref{fig:DropBreak} $Re=1.0$ for the drop case), 
            the bubble shape will
            not reach a steady shape, instead the bubble shape alternates
@@ -787,13 +733,11 @@ one satellite drop is also generated between the pinched off daughter drops.
            fully stretched and ``doglegged'' ($T=27.8$) and ``almost''
            back to the original ``slightly stretched'' case 
            ($T=34.4$). 
-           ($\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$) 
+           ($\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$) 
 	   }
   \label{fig:BubbleBreakCa0p3Re92}
 \end{figure}
-\end{comment} 
 %
-\begin{comment}
 \begin{figure}%[h!]
   \centering
   \includegraphics[width=\textwidth]{BubbleBreakCa0p3Re93}
@@ -801,12 +745,11 @@ one satellite drop is also generated between the pinched off daughter drops.
            condition of $Ca=0.3$ and $Re=93$.
 	   The ``bubble'' 
 	   critical Reynolds number corresponding to $Ca=0.3$ is
-	   $92<Re_{\rm c}<93$.
-           ($\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$) 
+	   $92<Re_{c}<93$.
+           ($\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$) 
 	   }
   \label{fig:BubbleBreakCa0p3Re93}
 \end{figure}
-\end{comment} 
 %
 Next we present numerical results that illustrate the conditions that lead to
 bubble deformation without breakup as well as conditions where the bubble
@@ -815,12 +758,12 @@ deformation without breakup at the condition of $Ca=0.3$ and $Re=92$ is
 depicted in Figure~\ref{fig:BubbleBreakCa0p3Re92} and the bubble breakup
 process with flow condition of $Ca=0.3$ and $Re=93$ is illustrated in
 Figure~\ref{fig:BubbleBreakCa0p3Re93}.  The results indicate that the critical
-Reynolds number is approximately $Re_{\rm c}$ = 93 (with $Ca=0.3$).  A comparison
+Reynolds number is approximately $Re_c = 93$ (with $Ca=0.3$).  A comparison
 with the drop breakup dynamics presented in Section~\ref{sec:DropBreak} and the
 corresponding processes for bubble deformation and breakup exhibit very
 distinct features.  First, we note that a relatively large shear force
 magnitude is required for bubble breakup 
-($\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$) 
+($\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$) 
 compared with the case of the drop ($\lambda$ = $\eta$ = 1). Then,
 for the same value of $Ca=0.3$, the critical Reynolds number for the bubble is
 around 85 times larger than that for the drop.  Focusing on the bubble dynamics
@@ -842,7 +785,6 @@ begins to stretch again ($T = 38.2$) and the bubble oscillates between its
 elongated shape and shortened geometry.  
 
 %
-\begin{comment} 
 \begin{figure}%[h!]
   \centering
   \includegraphics[width=\textwidth]{BubBreakCa0p3Re93Detail}
@@ -850,15 +792,14 @@ elongated shape and shortened geometry.
            of $Ca=0.3$ and $Re=93$.
 	   The ``bubble'' 
 	   critical Reynolds number corresponding to $Ca=0.3$ is
-	   $92<Re_{\rm c}<93$.
-           ($\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$) 
+	   $92<Re_{c}<93$.
+           ($\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$) 
 	   }
   \label{fig:BubBreakCa0p3Re93Detail}
 \end{figure}
-\end{comment} 
 %
 For the case of bubble breakup (Figure~\ref{fig:BubbleBreakCa0p3Re93}), we
-observe that the deformation process is almost {\color{red}the} same as the no-breakup case
+observe that the deformation process is the almost same as the no-breakup case
 until the doglegged shape is formed at $T \sim 27.4$. The bubble finally breaks
 during the time interval $27.7 \leq T \leq 29.5$.  For a closer examination of
 the bubble breakup process, a detailed panel of cross-sectional slices in the
@@ -884,7 +825,6 @@ different from the analogous drop breakup process.
 \subsection{Velocity field outside and inside the breaking bubble}
 %  -----------------------------------------------------------------------------
 %
-\begin{comment} 
 \begin{figure}%[h!]
   \centering
   \includegraphics[width=\textwidth]{BubbleFieldCa0p3Re93}
@@ -892,12 +832,11 @@ different from the analogous drop breakup process.
            shear flow at the condition $Ca=0.3$ and $Re=93$.
 	   The ``bubble'' 
 	   critical Reynolds number corresponding to $Ca=0.3$ is
-	   $92<Re_{\rm c}<93$.
-           ($\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$) 
+	   $92<Re_{c}<93$.
+           ($\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$) 
 	   }
   \label{fig:BubbleFieldCa0p3Re93}
 \end{figure}
-\end{comment} 
 %
 In this section, we consider the fluid flow velocity field outside and inside
 the bubble during the shear-induced breakup process.
@@ -935,7 +874,6 @@ the top-left end.
 \subsection{Effect of surface tension on bubble deformation and breakup}
 %  -----------------------------------------------------------------------------
 %
-\begin{comment}
 \begin{figure}%[h!]
   \centering
   \includegraphics[width=\textwidth]{BubbleDeformCa0p8Re42}
@@ -943,14 +881,12 @@ the top-left end.
            condition of $Ca=0.8$ and $Re=42$.
 	   The ``bubble'' 
 	   critical Reynolds number corresponding to $Ca=0.8$ is
-	   $42<Re_{\rm c}<43$.
-           ($\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$) 
+	   $42<Re_{c}<43$.
+           ($\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$) 
 	   }
   \label{fig:BubDefCa0p8Re42}
 \end{figure}
-\end{comment} 
 %
-\begin{comment} 
 \begin{figure}%[h!]
   \centering
   \includegraphics[width=\textwidth]{BubbleBreakCa0p8Re43}
@@ -958,12 +894,11 @@ the top-left end.
            condition of $Ca=0.8$ and $Re=43$.
 	   The ``bubble'' 
 	   critical Reynolds number corresponding to $Ca=0.8$ is
-	   $42<Re_{\rm c}<43$.
-           ($\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$) 
+	   $42<Re_{c}<43$.
+           ($\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$) 
 	   }
   \label{fig:BubBrkCa0p8Re43}
 \end{figure}
-\end{comment} 
 %
 %It means that the effect of the surface tension for the condition of $Ca = 0.8$
 %is smaller than that for the condition of $Ca = 0.3$.
@@ -975,10 +910,10 @@ interfacial tension on bubble deformation and breakup.  Using $Ca=0.8$ for both
 cases, Figures~\ref{fig:BubDefCa0p8Re42} and~\ref{fig:BubBrkCa0p8Re43} present
 the time evolution of shear-induced bubble deformation and breakup with $Re=42$
 and $Re=43$, respectively.  We note that the bubble critical Reynolds number is
-around $Re_{\rm c} \approx 43$, whereas $Re_{\rm c} \approx 0$ for the corresponding
+around $Re_{c} \approx 43$, whereas $Re_{c} \approx 0$ for the corresponding
 case of the drop with 
 $\lambda$ = $\eta$ = 1 (see e.g.~\cite{LiRenRen00}).
-Note that $Re_{\rm c}$ for $Ca = 0.8$ is smaller than that for the condition of $Ca
+Note that $Re_{c}$ for $Ca = 0.8$ is smaller than that for the condition of $Ca
 = 0.3$ since the bubble at $Ca = 0.8$ is more elastic due to the weaker effect
 of surface tension in this case.  The results shown in
 Figs.~\ref{fig:BubDefCa0p8Re42} and~\ref{fig:BubBrkCa0p8Re43} indicate that the
@@ -1004,21 +939,24 @@ of surface tension for $Ca = 0.8$.
 
 Table~\ref{tab:CaRecComparison} 
 lists, for representative $Ca$ values,
-the corresponding critical Reynolds number, $Re_{\rm c}$, for shear-induced 
+the corresponding critical Reynolds number, $Re_{c}$, for shear-induced 
 bubble breakup.  The data in 
 Table~\ref{tab:CaRecComparison} 
-corresponds to $\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$, $0.3<Ca<1$, and
+corresponds to $\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$, $0.3<Ca<1$, and
 the initial/boundary conditions are given by (\ref{IC_BC}).
-The results in Table~\ref{tab:CaRecComparison}
-indicate that sufficiently large shear forces are required for bubble breakup even for large Capillary numbers. 
-In Figure~\ref{fig:CaRecFit} we plot the smooth interpolant of the data given in Table~\ref{tab:CaRecComparison} and 
-make the hypothesis that given a new data point, $(Ca,Re)$,  shear induced bubble break up will occur if the point $(Ca,Re)$ 
-is above the given critical curve, and the bubble will not break if the $(Ca,Re)$ pair is below the critical curve.
-{\color {red} For comparison purpose, a drop critical curve with $\lambda =\eta = 1$ is also indicated in Fig.~\ref{fig:CaRecFit}.
-From Fig.~\ref{fig:CaRecFit}, it is recognized that the difference between both critical curves is 
-Hereafter, we will settle $Re_{\rm c}$ numbers for the condition of 
-high $Ca$ numbers to determine a general critical curve 
-for a wide range of $Ca$ numbers.}
+The results in 
+Table~\ref{tab:CaRecComparison}
+indicate that sufficiently large shear forces are
+required for bubble breakup even for large Capillary numbers. 
+In Figure~\ref{fig:CaRecFit} we plot the cubic interpolant of the
+data given in 
+Table~\ref{tab:CaRecComparison}
+and make the
+hypothesis that given a new data point, $(Ca,Re)$, 
+shear induced bubble break up
+will occur if the point $(Ca,Re)$ is above the given critical curve, 
+and the bubble will not break if the $(Ca,Re)$ pair is below the 
+critical curve.
 
 %
 \begin{table}[tbh]
@@ -1026,7 +964,7 @@ for a wide range of $Ca$ numbers.}
 	conditions described in terms
         of column pairs of critical Reynolds numbers and 
 	corresponding Capillary numbers.
-        ($\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$) 
+        ($\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$) 
 	}
 \label{tab:CaRecComparison}
 \footnotesize
@@ -1035,7 +973,7 @@ for a wide range of $Ca$ numbers.}
 \hline
 \hline
 Capillary number $Ca$            & 0.3  & 0.5  & 0.8  & 1.0  \\
-Critical Reynolds number $Re_{\rm c}$  & 93   & 67   & 43   & 35   \\
+Critical Reynolds number $Re_c$  & 93   & 67   & 43   & 35   \\
 \hline
 \hline
 \end{tabular}
@@ -1043,13 +981,12 @@ Critical Reynolds number $Re_{\rm c}$  & 93   & 67   & 43   & 35   \\
 
 %% variance for X^T X c = b
 %% (S/(n-m)) (X^T X)^{-1}
-\begin{comment} 
 \begin{figure}%[h!]
   \centering
   \includegraphics[width=\textwidth]{Fig11-Critical-Re1_cubic}
   \caption{A plot of the critical Reynolds number versus Capillary number
 	for the data listed in Table~\ref{tab:CaRecComparison}.  
-	$\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$, $0.3<Ca<1$, and
+	$\lambda$ = $\eta$ = 1.0 $\times$ $10^{-3}$, $0.3<Ca<1$, and
         the initial/boundary conditions are given by (\ref{IC_BC}).
 	Given a new data point, $(Ca,Re)$, one
 	can reliably predict whether the 
@@ -1058,7 +995,6 @@ Critical Reynolds number $Re_{\rm c}$  & 93   & 67   & 43   & 35   \\
 	   }
   \label{fig:CaRecFit}
 \end{figure}
-\end{comment} 
 %
 
 %  -----------------------------------------------------------------------------
@@ -1066,7 +1002,7 @@ Critical Reynolds number $Re_{\rm c}$  & 93   & 67   & 43   & 35   \\
 %  -----------------------------------------------------------------------------
 The bubble deformation and breakup process in simple linear shear flow liquid
 was explored numerically using the CLSVOF computational method.  In this study,
-the critical Reynolds number $Re_{\rm c}$, at which bubble breakup first occurs,
+the critical Reynolds number $Re_{c}$, at which bubble breakup first occurs,
 was determined for several flow conditions, and the differences between bubble
 deformation and breakup were compared with the well-known analogous process of
 drop deformation and breakup.
@@ -1080,7 +1016,7 @@ behavior of bubble breakup was very similar through the $Ca$ number range
 considered in our computations: the bubble underwent a similar breakup
 mechanism in which rupture occurred at a thread-bridge part that followed a
 doglegged shape formation stage.  In bubble deformation without breakup, near
-$Re_{\rm c}$, the bubble did not maintain a stable deformed shape, in contrast to
+$Re_{c}$, the bubble did not maintain a stable deformed shape, in contrast to
 drop deformation near the critical Reynolds number.  The bubble exhibited
 pronounced underdamped behavior: the bubble oscillated between elongating and
 shrinking motions for non-rupturing flow conditions.
