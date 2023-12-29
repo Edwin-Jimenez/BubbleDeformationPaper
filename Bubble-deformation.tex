@@ -458,7 +458,8 @@ Navier-Stokes equations with surface tension forces:
   \nabla\cdot\bmu &=0  \label{divu} \\
   \frac{\partial\bmu}{\partial t}+(\bmu\cdot\nabla)\bmu &=
   \frac{1}{\rho}\nabla\cdot(-p\bmI+2\mu\bmD)+\bmg-
-  \frac{\sigma\kappa}{\rho}\nabla \Hea  \label{nseqn}
+  \frac{\sigma\kappa}{\rho}\nabla \Hea  
+  \label{nseqn}
 \end{align}
 %
 %%
@@ -547,12 +548,16 @@ details): }
     \nabla\cdot(2\mu\bmD^{n})+ 
     \nabla\cdot(2\mu\bmD^{\ast})}{\rho}
  \end{eqnarray*}
-\item[Step 4. Pressure projection]
+\item[Step 4. Pressure projection and ghost fluid surface tension algorithm]
  \begin{eqnarray*}
  \bmV=\bmu^{n}+\Delta t(-{\cal A}+g\vec{z}+
    \frac{1}{2}\frac{
     \nabla\cdot(2\mu\bmD^{n})+ 
     \nabla\cdot(2\mu\bmD^{\ast})}{\rho})
+ \end{eqnarray*}
+ \begin{eqnarray*}
+ \bmV=\bmV-
+   \Delta t \frac{\sigma\kappa(\phi^{n+1})}{\rho}\nabla \Hea(\phi^{n+1}) 
  \end{eqnarray*}
  \begin{eqnarray*}
  \nabla\cdot\frac{\nabla p}{\rho}=\frac{1}{\Delta t}\nabla\cdot\bmV
