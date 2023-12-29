@@ -1,0 +1,470 @@
+%  -----------------------------------------------------------------------------
+%  Modified: 17 December 2023
+%  -----------------------------------------------------------------------------
+\documentclass{letter} 
+
+
+ \date{\today}
+ 
+\usepackage{color}
+
+\begin{document}
+\begin{letter}{
+Physical Review Fluids\\
+Professor Eric S. G. Shaqfeh, Editor\\}
+
+\opening{Dear Prof. Shaqfeh,}
+
+Please find enclosed the revised version of our manuscript (FZ10233):
+``Numerical Simulation of Bubble Deformation and Breakup under Simple Linear Shear Flows''
+We thank the reviewers for their comments and thoughts regarding improvement 
+of our paper. We believe that we have addressed all of the reviewers’ 
+concerns; the changes are itemized in detail below.
+
+
+\par\noindent
+NOTE: all references to equations and figures below are with
+reference to the numbering scheme of the revised version of the paper,
+not the original version.  Also, changes are hi-lighted in red.
+\par\noindent
+
+%% REVIEWER 1 and REVIEWER 2 COMMENTS HAVE TO BE SEPARATE.
+Changes made in response to comments of Reviewer 2: 
+\begin{enumerate}
+
+\item
+\textsf
+{Page 3: The CLSVOF method is not an interface tracking one (in such methods
+the interface is calculated simultaneously with the velocity and pressure
+fields), but an interface capturing method (in such methods the interface is
+reconstructed after the velocity field is calculated at each time step).
+Although this is a matter of nomenclature, using the wrong name can be
+confusing because the interface tracking algorithms, such as ALE, are
+completely different from CLSVOF.}
+\vspace{3 mm}
+
+Response: \\
+We agree with the reviewer's opinion. We have changed the ``interface tracking''
+wording to ``interface capturing method''.
+\\
+Please see the 1st line from the top in ``I\hspace{-1.2pt}I\hspace{-1.2pt}I. A. Numerical method and governing equations''.
+\\
+
+\par\noindent
+\item
+\textsf
+{Page 3: The definitions of the dimensionless numbers, Re, and Ca, are not
+appropriate.  These numbers are defined here using the properties of air (the
+dispersed material), whereas in the related references, which are used for
+validation, they are defined using the properties of the continuous phase.
+This is not so important in the validation tests where viscosity and density
+ratios between the two phases are set equal to one, but it is important for the
+new results. In general, the deformation of the inclusion is caused by the
+forces exerted on it by the fluid in the matrix, and even more so when the
+inclusion is just an air bubble, which has negligible density and viscosity.
+Moreover, the capillary number is the ratio of viscous forces over capillarity
+and the Reynolds number is the ratio of inertia over viscous forces, and the
+viscous forces are negligible for air in comparison to viscous forces in the
+liquid.}
+\vspace{3 mm}
+
+Response: \\
+Thank you very much for your suggestion.  We have modified the definitions of
+$Re$ and $Ca$ because we had typos in the definitions of $Re$ and $Ca$.  The
+computations presented were performed using $Re$ and $Ca$ defined by the
+density and the viscosity of the surrounding liquid.
+\\
+Please see Eq.(2).
+\\
+
+\par\noindent
+\item
+\textsf
+{Page 3: The direction of gravity is not specified. Is it acting along the
+z-direction? If so, see point \#9 below.  If not, in what direction does it
+act? In other studies, an air bubble was considered under the action of both
+gravity and velocity gradient in the same direction, ref. [3] and [4].
+Interesting variations arise from the occurrence of a lift force on a
+deformable bubble. Again, these additional works need to be cited and
+discussed.}
+\vspace{3 mm}
+
+Response: \\
+We have added the direction of gravity in Fig. 1. Regarding the setting of
+gravity in this study, we will describe it in our response for Question \#9. 
+\\
+
+\par\noindent
+\item
+\textsf
+{Page 4, top: “The singular Heaviside gradient term in the right hand side of
+equation (5) is a body force...”. Although this term arises along with gravity
+as a body force, in fact, it presumably acts only on the fluid/fluid
+interface.}
+\vspace{3 mm}
+
+Response: \\
+Following to reviewer's comment, we have provided an additional explanation
+``The surface tension force expressed by the singular Heaviside gradient term
+acts only on the gas-liquid interface.''
+\\
+Please see the 5th line from the top of Page 4.
+\\
+
+\par\noindent
+\item
+\textsf
+{Page 4: Eq. (7a) determines the evolution of F, but the need to introduce F in
+addition to the colour function required by VOF (which is determined by eq.
+(7b)) is not discussed. F was not even mentioned before eq. (7). The authors
+should also reference previous works where the need for this distinction has
+been explained.}
+\vspace{3 mm}
+
+Response: \\
+We agree with reviewer's comment. We have added details of the CLSVOF method at
+the beginning of Section ``A. Numerical method and governing equations.''
+\\
+
+\par\noindent
+\item
+\textsf
+{Page 5: ``The results shown in Figure 2 verify that our numerical approach can
+reproduce the same drop breakup behavior presented in [8].'' The comparison is
+only qualitative, not quantitative. One can readily see several differences in
+all three cases presented.  The comparison could be improved either by
+superimposing the plots or even better by extracting numerical values for the
+velocity field or the drop shape. The latter may be more involved, which makes
+addressing issue \#7 below even more important.}
+\vspace{3 mm}
+
+Response: \\
+Though there are differences between previous studies and our study, 
+we think a major cause of differences is attributable to the grid size 
+(Renardy: $\Delta x =R/8$, our study: Renardy: $\Delta x =R/16$) as we 
+mentioned in the paper.
+{\color{red}
+%As a quantitative comparison (regarding Question \#8), we have newly made a
+%comparison for bubble deformation as Table I\hspace{-1.2pt}I. 
+We present a new quantitative comparison, in terms of the Taylor deformation
+parameter $D$ as a function of $Ca$, in Table I\hspace{-1.2pt}I for bubble
+deformation.  Note that it took several months to obtain additional
+computational results for bubble deformation.  Comparisons of our results
+against past studies (summarized in Table I\hspace{-1.2pt}I) support the
+validity of our bubble deformation computations.
+%We confirmed the validity of our computations about bubble deformation.
+}
+\\
+
+\par\noindent
+\item
+\textsf
+Page 6: It is well-known that interface capturing methods have drawbacks in
+terms of accuracy, which in this problem could lead to uncertainty or
+inaccuracy concerning the breakup conditions and the related bubble shapes.
+Indeed, the topological changes may affect the small characteristic size of the
+filament formed by the distorted drop or bubble, when it becomes comparable
+with the grid size. For instance, in their study of two bubbles rising in line
+(using VOF and Basilisk as a solver), Zang and Magnaudet, ref. [5], found that
+refinement up to R/272 (i.e. the local grid size is 272 times smaller than the
+bubble radius) is required in the proximity of the interface to properly
+capture the topological changes of millimetric bubbles, since only then the
+characteristic size of the grid is smaller than the average film thickness in
+typical coalescence conditions. Instead, the authors use R/24 local grid size
+at the most. Moreover, the Adaptive Mesh Refinement (AMR) technique is usually
+employed for 3-4 consecutive levels of refinement, at least. In the present
+work, only two levels of refinement have been used, why? The mesh convergence
+study seems quite incomplete.  A more complete study with figures to verify it
+should be included in an appendix concerning the mesh and time step
+independence of the results. The type of time discretization used is not
+stated; is it explicit and which algorithm is used?
+\vspace{3 mm}
+
+Response: \\
+First, we would like to emphasize to the reviewer that very long
+computational times are required for drop/bubble deformation and breakup in
+shear flow. For bubble simulations, in particular, even longer computational
+times are needed because the time step is much smaller than that for the drop.
+In our study, time steps smaller than values determined theoretically from
+various time-step constraints were used: the time step was $O(10^{-4}$) s for
+the drop and $O(10^{-5}$) s for the bubble.  In addition, it is especially difficult to
+solve stably two-phase flows with $\lambda$ (density ratio) $\simeq 0$ and
+$\eta$ (viscosity ratio) $\simeq 0$. In some cases, computational times
+over a few months long were required.  To overcome the problem of very long
+computational times, various computational countermeasures were employed in
+past studies. For example, in Renardy's study (Phys. Fluids, 2000) a domain
+size with $W$ (width ($y$-directional length)) = 2$D$ ($D$: diameter of
+drop/bubble) was employed to reduce the number of computational grid
+points.  As shown in Table I\hspace{-1.2pt}I\hspace{-1.2pt}I in this study, using a width of $W =
+2D$ accentuates drop deformation. Regarding the grid size, relatively coarse
+discretizations have been used in recent studies: $\Delta x =R/48$ (Komrakova et al.,
+CES, 2015), $\Delta x =2R/15, R/15, R/25, R/30$ (Hernandez and Rangel, Comput.
+Fluids, 2017), $\Delta x =R/15$ (Amania et al., CES, 2019), $\Delta x =R/30$
+(Zhang et al., CES, 2021).
+
+\medskip
+Komrakova et al. (CES, 2015) and Zhang et al. (CES, 2021) used a LBM method for
+two-phase flows, Hernandez and Rangel (Comput. Fluid., 2017) used a VOF method
+and Amania et al. (CES, 2019) applied a level set method to computations.
+Although Komrakova et al. (CES, 2015) set a higher grid resolution ($\Delta x
+=R/48$, which corresponds to $R$=48 lattice units in the LBM method), they
+performed computations over a quarter of the full domain, which is inappropriate
+for high $Re$ conditions.  In the study by Hernandez and Rangel (Comput.
+Fluids, 2017), it was shown that the grid resolution should be $\Delta x \leq
+R/15$ for approximately a 5\% error. Zhang et al. (CES, 2021) used a higher grid
+resolution ($R$=60 lattice units), but the height of the computational domain was
+$4R$ for 3D-computations.  Additionally, the LBM method (Komrakova et al.,
+CES(2015), Zhang et al., CES(2021)) allows the use of higher grid resolutions
+due to shorter computational times that result from not solving the continuity
+equation simultaneously; the decreased computational times come at the
+expense of diminished accuracy.
+
+Our simulations were performed under stringent computational settings, in terms
+of domain sizes and grid resolutions, selected to guarantee a minimum accuracy
+in our numerical results.  The critical $Re$ numbers found from the bubble
+simulations presented in this study will provide a minimum standard for future
+studies.  Anticipating future increased computational resources and the
+development of new numerical algorithms, we have added the following comment:
+Additional grid refinements may be desirable to perform further accuracy
+evaluations for bubble deformation and breakup.  (see the last line at the
+section “C. Consideration of domain and grid sizes”, Page 9)
+
+Regarding the refinement level of AMR, the use of 3-4 consecutive refinement levels is not
+always preferred.  A small refinement level is rather suitable in terms of
+stable computations and we found that our mesh setting for this purpose was
+reasonable.
+
+{\color{red}
+We briefly described the type of time discretization, the temporal discretization, 
+and the algorithm of our numerical method. Also, we have added information 
+on our paper as a reference to obtain more details about the numerical method used in 
+this study.}
+\\
+
+\par\noindent
+\item
+\textsf
+{\color{red} Several experimental studies concerning bubbles in shear flow
+exist (for example, ref. [6]) so alternatively one could compare the numerical
+results with experiments and avoid the comparison with other numerical results,
+which are older and may not have achieved convergence due to lack of access to
+the software and hardware we have today.}
+\vspace{3 mm}
+
+Response: \\
+{\color{red} 
+%As a quantitative comparison, we have newly made a comparison for bubble 
+%deformation as Table I\hspace{-1.2pt}I:
+We added a new quantitative comparison for bubble deformation in Table
+I\hspace{-1.2pt}I to verify the validity of our computational results; in the
+table we compare against the experimental results of Muller-Fischer et al.
+(Experiments in fluids, 2008) and Rust and Manga (Journal of Colloid and
+Interface Science, 2002). The new numerical results for bubble deformation
+indicate that our computations are consistent with past studies.
+%We believe that the effectivity of our computations could be proved for bubble deformation.
+}
+\\
+
+\par\noindent
+\item
+\textsf
+{The following is the most disturbing issue with this study: It is fine to
+examine conditions leading to bubble breakup or other flow instabilities, but
+the range of parameter values investigated must correspond to existing
+materials and achievable flow conditions.  The authors have given the governing
+equations in dimensional form and defined dimensionless numbers incorrectly as
+stated in point \#2, but also assigned them values that may not be physically
+relevant. Moreover, the bubble size is nowhere stated.................\\
+Finally, the Reynolds number of the channel in this case would be: $Re_{\rm
+channel} \simeq 6000$.  This high value of Re corresponds to turbulence
+conditions.................}
+\vspace{3 mm}
+
+Response: \\
+As we have stated in response to your comment \#2, correct dimensionless
+numbers based on the density and the viscosity of the surrounding liquid were
+used in real computations.  Regarding physical properties and conditions in our
+computations, we will give you an example for the case of $Ca$ = 0.3 and $Re$
+=93.\\
+
+Physical properties (a silicone oil has a very similar physical properties with these values.):\\
+\quad $\rho_{\rm m}$ (density of liquid) = 1000 kg/m$^3$, $\mu_{\rm m}$ (viscosity of liquid) = 0.2 Pa$\cdot$s,
+$\sigma$ (surface tension) = 0.025 N/m, $R$ (bubble radius) = 5.0 mm.\\
+From ${\it \Gamma}$ = $2V/H$ = $2V/6R$, \  $V$ = 3${\it \Gamma} R$ = $\frac{3\sigma Ca}{\mu_{\rm m}} $ = 1.1 m/s.
+Also, we obtain $Fr$ (Froude number) = $\frac{{\it \Gamma}R}{\sqrt {gR}}$ = 1.7. \\
+In this flow system, the effect of gravity may not be completely negligible. However, in our computations, 
+we set $g = 0$ because we wanted to clearly manifest only the effect of density and viscosity ratios. 
+From another perspective, it can be said that we investigated phenomena in space.
+At the end of the Problem Description section, we added a detailed explanation about physical properties and conditions.
+
+Also, regarding the channel $Re$ number, we obtain $Re_{\rm channel} =
+\frac{\rho_{\rm m}2VH}{\mu_{\rm m}}$ = 3300 for a simple linear shear-flow.  As
+expected, $Re_{\rm channel} = 3300$ falls within turbulence conditions for
+simple linear shear-flow of a single phase fluid.  It is important to note that
+the generation of turbulence is suppressed and turbulent eddy dissipation
+becomes large if bubbles exist in fluid flows. However, as far as we know,
+there are no conclusive results on turbulence in a simple linear shear-flow
+which includes bubbles.  We predict that the generation of turbulence is
+considerably suppressed when bubbles occupy a significant portion of the
+flow in a channel, as in this study. At present, we believe that our
+computations based on the assumption of laminar flows are reasonable and not
+unrealistic.\\
+
+\par\noindent
+\item
+\textsf
+{Page 9, Fig. 5 and related discussion: It is quite strange that the bubble
+does not reach a final steady shape, but seems to expand, contract and then
+expand again. Here, it is even more important to verify that the simulations
+have converged (via mesh and time refinement) and to extend them much further
+in time to determine if this periodic motion will prevail or finally lead to a
+steady state.}
+\vspace{3 mm}
+
+Response: \\
+{\color{red}  
+Regarding Question \#12, we have made a new figure (shear stress profile) for
+the case of $Re$ = 50 and $Ca$ = 0.3.  In the case of $Re$ = 50, the bubble
+finally settles into a steady deformed shape. Additionally, we observed a
+steady deformed bubble at the $Re$ = 70 (not presented in this paper).  As
+discussed in detail in the new Section~I\hspace{-1.2pt}V.C, in the limit, as the value of $Re$
+approaches the critical $Re_{\rm c}$ condition, the bubble does not maintain
+its deformed state but instead alternates in an elongation and contraction
+process.  
+%It can be expected the bubble will be in a steady deformed state when the 
+%condition of $Re$ number is smaller than the critical $Re$ number ($Re_{\rm c}$),  
+%whereas the bubble is largely elongated and contracts to a doglegged 
+%shape when the $Re$ number is close to $Re_{\rm c}$.\\
+} Moreover, the main object of this study is to find $Re_{\rm c}$; we have
+plans for examining bubble periodic deformation with expansion and contraction
+in future work.  In ongoing and upcoming work, we will examine the effect of
+$\lambda$ and $\eta$ on drop breakup for some combinations of $\lambda$ and
+$\eta$ as follows: 
+\\
+\begin{tabbing}
+ \hspace{55mm} \= \hspace{10mm} \kill
+ \hspace{5mm} 1. $\lambda$ = 1.0, $\eta$ =1.0 (done) \> 2. $\lambda \simeq 0.0$, $\eta \simeq 0.0$ (this study) \\ 
+ \hspace{5mm} 3. $\lambda$ = 1.0, $\eta \simeq 0.0$ \> 4. $\lambda$ = 1.0, $\eta$ =0.1 \\
+ \hspace{5mm} 5. $\lambda$ = 0.1, $\eta$ =1.0 \> 6. $\lambda$ = 0.1, $\eta$ =0.1  \\
+ \hspace{5mm} 7. $\lambda$ = 1.0, $\eta$ =100 \> 8. $\lambda$ = 1.0, $\eta$ =1000 \\
+\end{tabbing}
+After we complete the study of the effect of $\lambda$ and $\eta$, we will work
+on periodic bubble deformation with expansion and contraction.  Due to
+prohibitely long computation times, additional computing resources and improved
+numerical algorithms are necessary to simulate multiple periodic cycles in
+bubble expansion and contraction.\\
+
+\par\noindent
+\item
+\textsf
+{ Page 13: Fig. 11, which distinguishes the two areas of bubble breakup against
+just bubble deformation, presents only 4 points and a curve connecting them,
+although this is an important physical result. Several more points must be
+included in it to reach a definitive conclusion.}
+\vspace{3 mm}
+
+Response: \\
+We appreciate the reviewer's opinion, but it is important to keep in mind that
+at the start of our study there were no guiding initial results that indicated
+even potential values for critical Reynolds numbers for a bubble. The critical
+Reynolds numbers found and presented were obtained after extensive and
+expensive computations.  After lengthy computations, we were able to determine
+the bubble $Re_{\rm c}$ number for 4 $Ca$ numbers.  Nevertheless, we believe
+that a bubble breakup critical curve drawn based on 4 points will be useful for
+low $Ca$ numbers.  Following the suggestion from the reviewer 1, we have added
+a drop breakup critical curve ($\lambda$ = $\eta$ =1.0) to Fig. 12 (former Fig. 11).  
+The difference in $Re_{\rm c}$ number between the bubble and the drop is clearer in
+the new Fig. 12.  But, the reviewer's opinion is appropriate. 
+In future work, we will determine the $Re_{\rm c}$ for a variety of high $Ca$ numbers 
+to construct a detailed critical curve for a wider range of $Ca$ numbers.\\
+
+
+\par\noindent
+\item
+\textsf
+{\color{red}  End of conclusions section: ........................
+These phrases state the obvious, the densities and viscosities are different between drops and bubbles and, therefore, they cause different dynamics. 
+Instead, it is imperative that the authors give the different physics that the property differences generate. 
+To this end, they should examine thoroughly and in every detail the velocity and stress fields in each arrangement. 
+This may require additional figures and text, but it must be done. Without this examination and its conclusions, this study is more appropriate for a 
+Journal on numerical methods in fluid flows than a physical review Journal. This is the second most important issue with this presentation}
+\vspace{3 mm}
+
+Response: \\
+{\color{red}
+We agree with reviewer's comment. In response, we have added two new images of the
+shear stress profile for a bubble for two $Re$ conditions in Fig. 8.
+A discussion of the new results, in terms of the shear stresses acting on the
+bubble at the two different conditions, is given in Section~I\hspace{-1.2pt}V.C. 
+}
+\\
+
+
+\end{enumerate}
+
+Less important issues
+\begin{enumerate}
+
+\item
+\textsf
+{Page 2: The symbols for the domain length, width and height are L(x), W(y) and H(z), the variables in parenthesis indicate the direction related 
+to the lengths L, W, and H. However, these are geometric parameters, and could be confused with functions, in the way they are given by the 
+authors here and elsewhere in the text.\\
+}
+\vspace{5 mm}
+
+Response: \\
+We agree with reviewer's comment. We deleted $(x), (y), (z)$ and will simply
+express the domain length, width and height as $L, W, H$.\\
+
+\par\noindent
+\item
+\textsf
+{Page 6: “... depicted in Figure 4(a), uses Ca = 0:3 and Re = 1:1.” It should be Figure 4(b).\\
+}
+\vspace{5 mm}
+
+Response: \\
+We've fixed the error.\\
+
+\par\noindent
+\item
+\textsf
+{Page 8: “... process is the almost same...” should be “... process is almost the same...”.\\
+}
+\vspace{5 mm}
+
+Response: \\
+We've fixed the typo.\\
+
+\par\noindent
+\item
+\textsf
+{The authors could cite another relevant paper where a similar analysis was undertaken [10]. 
+The main difference is that the present computations are fully 3D, while in this suggested study shear 
+flow until breakup is examined of a 2D bubble. Nevertheless, there are some similarities 
+that should be recognized. The present work is more accurate and extensive.\\
+}
+\vspace{5 mm}
+
+Response: \\
+The paper by Wei et al. is now cited in the Introduction.\\
+
+\par\noindent
+\item
+\textsf
+{The authors should use D instead of De as the symbol for the parameter introduced by Taylor to 
+determine the extent for bubble deformation, because De stands for the Deborah number.\\
+}
+\vspace{5 mm}
+
+Response: \\
+We have changed the symbol from $De$ to $D$ as suggested.\\
+
+\end{enumerate}
+
+\closing{On behalf of the authors,}
+Mitsuhiro Ohta
+
+\end{letter}
+\end{document}
