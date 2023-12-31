@@ -211,7 +211,7 @@ numbers are determined for several cases.
 %       WanMacReni02, OlaSinSak09, ZhaBag11, BayMor11, and Ren08-1. 
 %       (Edwin, April 29, 2022)
 %
-The study of the deformation and breakup of a drop in immiscible viscous
+The study of the deformation {\em and breakup} of a drop in immiscible viscous
 liquids undergoing simple linear shear flow has been investigated extensively
 due to its fundamental importance in connection with emulsion and materials
 processing, mixing and reaction devices. The pioneering experimental work of
@@ -232,23 +232,32 @@ HerRan17,AmaBalCasOli19, ZhaShuGuaYan21} and a variety of numerical techniques
 have been developed to tackle this problem, including boundary-integral
 approaches \cite{CriBlaLoe01, JanAnd07}, lattice Boltzmann methods \cite{Ina06,
 KomShaEskDer14}, front tracking schemes \cite{UnvTry92}, and {\color{red}
-interface-capturing} level set methods \cite{SusSmeOsh94}.  {\color{red} In
-contrast, only a few computational studies on bubble deformation and breakup in
-shear flow can be found \cite{WeiQiaXu12,WanShiZha15}.  In these previous
-studies, the dynamics of bubble deformation in shear flow has mainly been
-examined.} {\color{blue} Concerning bubble breakup, Wei et
+interface-capturing} level set methods \cite{SusSmeOsh94}.  {\color{red} 
+In contrast, few computational studies on bubble 
+deformation {\em and breakup} can be found.  
+We remark that there has been a 
+number of articles on the study of lift of {\em slightly}
+deformable bubbles\cite{ErvinANDTryggvason1997,legendre1998lift}.
+We reiterate though, that for bubble deformation {\em and breakup} in
+shear flows, only a few articles exist: \cite{WeiQiaXu12,WanShiZha15}.  
+In these previous
+studies, the dynamics (e.g. rotation angle) of bubble deformation 
+in shear flow was mainly examined.} 
+{\color{blue} Concerning bubble breakup, Wei et
 al.~\cite{WeiQiaXu12} presented only one numerical result for a bubble breakup
 process under the condition of $Ca$ (Capillary number) = 35.}
 % {\color{blue} What distinguishes our work from that in
 % \cite{WeiQiaXu12,WanShiZha15}?}
-This type of bubble dynamics in shear flow is of critical importance for a
+Bubble dynamics in shear flow, {\em including breakup},
+is of critical importance for a
 variety of scientific and engineering processes. We refer the reader to the
 following experimental studies relating to bubble deformation in foaming
 processes, microfluidic devices, and micro bubbles in the blood circulation
 system,\cite{ChuFinBouAtaHamPug19,MulTobDreFisWin08,BenRodFauPinFerPerGarMirLim18,DreSai15}.
 In particular, it is the study of bubble deformation as it pertains to high
 performance plastics applications which motivates this work.  In this article,
-we present computational studies of shear-driven deformation and breakup of a
+we present computational studies of shear-driven deformation 
+{\em and breakup} of a
 bubble in insoluble viscous liquids.  Studying bubble break-up via computation
 rather than experiments simplifies the process of setting a combination of
 precise simple shear flow conditions, low $Ca$ conditions, low density ratio,
@@ -354,7 +363,8 @@ $U$ is the velocity scale and $\sigma$ denotes the surface tension.  For the
 problem of shear-induced drop deformation and breakup, the velocity is set to
 $U = \mathit{\Gamma} R$, where the shear-rate is $\mathit{\Gamma} = 2V/H$.  As
 mentioned in the introduction, most previous drop studies set $\eta =
-1$\cite{?}.  Thus, for comparison with previous drop deformation and breakup
+1$ (e.g. \cite{LiRenRen00}).  
+Thus, for comparison with previous drop deformation and breakup
 problems, we set $\lambda = \eta = 1$ (and also neglect the effect of gravity
 so that $g=0$). On the other hand, in our computations for bubble deformation,
 we set the density and viscosity of air to be $\rho_{\rm b}$ = 1.2 kg/m$^{3}$

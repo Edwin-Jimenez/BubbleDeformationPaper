@@ -31,7 +31,7 @@ not the original version.  Also, changes are hi-lighted in red.
 %% REVIEWER 1 and REVIEWER 2 COMMENTS HAVE TO BE SEPARATE.
 Changes made in response to comments of Reviewer 2: 
 \begin{enumerate}
-
+%%1
 \item
 \textsf
 {Page 3: The CLSVOF method is not an interface tracking one (in such methods
@@ -50,6 +50,7 @@ wording to ``interface capturing method''.
 Please see the 1st line from the top in ``I\hspace{-1.2pt}I\hspace{-1.2pt}I. A. Numerical method and governing equations''.
 \\
 
+%%2
 \par\noindent
 \item
 \textsf
@@ -77,6 +78,7 @@ density and the viscosity of the surrounding liquid.
 Please see Eq.(2).
 \\
 
+%%3
 \par\noindent
 \item
 \textsf
@@ -90,10 +92,16 @@ discussed.}
 \vspace{3 mm}
 
 Response: \\
-We have added the direction of gravity in Fig. 1. Regarding the setting of
-gravity in this study, we will describe it in our response for Question \#9. 
+We have added the direction of gravity in Fig. 1 ($z$ direction);
+albeit, we prescribe zero gravity in our simulations.  The rationale
+for setting gravity equal to zero is given in more detail in our response
+to item 9.  Essentially the purpose of this study is to do a controlled
+study of the effects of the density and viscosity ratios.  We can isolate
+the dependencies on these two ratios by prescribing zero gravity.  We now
+reference [3] and [4].
 \\
 
+%%4
 \par\noindent
 \item
 \textsf
@@ -111,6 +119,7 @@ acts only on the gas-liquid interface.''
 Please see the 5th line from the top of Page 4.
 \\
 
+%%5
 \par\noindent
 \item
 \textsf
@@ -126,6 +135,7 @@ We agree with reviewer's comment. We have added details of the CLSVOF method at
 the beginning of Section ``A. Numerical method and governing equations.''
 \\
 
+%%6
 \par\noindent
 \item
 \textsf
@@ -156,6 +166,7 @@ validity of our bubble deformation computations.
 }
 \\
 
+%%7
 \par\noindent
 \item
 \textsf
@@ -241,6 +252,7 @@ on our paper as a reference to obtain more details about the numerical method us
 this study.}
 \\
 
+%%8
 \par\noindent
 \item
 \textsf
@@ -265,6 +277,7 @@ indicate that our computations are consistent with past studies.
 }
 \\
 
+%%9
 \par\noindent
 \item
 \textsf
@@ -293,8 +306,10 @@ $\sigma$ (surface tension) = 0.025 N/m, $R$ (bubble radius) = 5.0 mm.\\
 From ${\it \Gamma}$ = $2V/H$ = $2V/6R$, \  $V$ = 3${\it \Gamma} R$ = $\frac{3\sigma Ca}{\mu_{\rm m}} $ = 1.1 m/s.
 Also, we obtain $Fr$ (Froude number) = $\frac{{\it \Gamma}R}{\sqrt {gR}}$ = 1.7. \\
 In this flow system, the effect of gravity may not be completely negligible. However, in our computations, 
-we set $g = 0$ because we wanted to clearly manifest only the effect of density and viscosity ratios. 
-From another perspective, it can be said that we investigated phenomena in space.
+we set $g = 0$ because we wanted to clearly isolate only the effects of 
+the density and viscosity ratios. 
+From another perspective, it can be said that we investigated 
+phenomena in space.
 At the end of the Problem Description section, we added a detailed explanation about physical properties and conditions.
 
 Also, regarding the channel $Re$ number, we obtain $Re_{\rm channel} =
