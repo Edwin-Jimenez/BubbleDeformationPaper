@@ -399,10 +399,13 @@ satisfy $\lambda = 1.2 \times 10^{-3}$ and $\eta < 1.0 \times 10^{-3}$.}
   \centering
   \includegraphics[width=\textwidth]{SchematicAndGrid}
   \caption{(a) Computational domain schematic for a bubble or drop in shear 
-           flow and (b) (\textit{upper panel}) a two-level adaptive mesh 
-           refinement (AMR) grid schematic with an actual computational 
-           example (\textit{lower panel}) of bubble deformation in simple linear 
-           shear flow.}
+           flow.  Gravity is set to zero in our computations in order to isolate
+           the effects of density and viscosity ratios.  
+           (b) (\textit{upper panel}) a two-level adaptive mesh 
+           refinement (AMR) grid schematic corresponding to one of our
+           simulations;
+           (\textit{lower panel}) snapshot of bubble deformation 
+           in simple linear shear flow.}
   \label{fig:SchemAndGrid}
 \end{figure}
 %\end{comment}
@@ -542,6 +545,13 @@ projection method as described by \cite{SUSSMAN2007469}.  An outline of
 our method is as follows (see \cite{SUSSMAN2007469}, section 4, for more 
 details): }
 \begin{description}
+\item[Timestep $\Delta t$] The timestep is governed by the CFL condition and
+  surface tension (section 5.7 of \cite{SUSSMAN2007469}):
+ \begin{eqnarray*}
+ \Delta t < \min_{i,j,k} \left( \frac{\Delta x}{2|U^{n}|},
+   \frac{1}{2}\sqrt{\frac{\rho^{L}}{8\pi\sigma}}\Delta x^{3/2}\right)
+ \end{eqnarray*}
+  
 \item[Step 1. CLSVOF interface advection]
  \begin{eqnarray*}
  \phi^{n+1}=\phi^{n}-\Delta t[\bmu\cdot\nabla\phi]^{n} \\

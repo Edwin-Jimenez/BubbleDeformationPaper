@@ -44,7 +44,7 @@ completely different from CLSVOF.}
 \vspace{3 mm}
 
 Response: \\
-We agree with the reviewer's opinion. We have changed the ``interface tracking''
+We agree with the reviewer. We have changed the ``interface tracking''
 wording to ``interface capturing method''.
 \\
 Please see the 1st line from the top in ``I\hspace{-1.2pt}I\hspace{-1.2pt}I. A. Numerical method and governing equations''.
@@ -70,9 +70,10 @@ liquid.}
 \vspace{3 mm}
 
 Response: \\
-Thank you very much for your suggestion.  We have modified the definitions of
-$Re$ and $Ca$ because we had typos in the definitions of $Re$ and $Ca$.  The
-computations presented were performed using $Re$ and $Ca$ defined by the
+Thank you very much for catching this.  We have modified the definitions of
+$Re$ and $Ca$ accordingly; it was an accident that we had previously 
+defined these quantities in terms of the dispersed material.
+The computations presented were performed using $Re$ and $Ca$ defined by the
 density and the viscosity of the surrounding liquid.
 \\
 Please see Eq.(2).
@@ -95,10 +96,13 @@ Response: \\
 We have added the direction of gravity in Fig. 1 ($z$ direction);
 albeit, we prescribe zero gravity in our simulations.  The rationale
 for setting gravity equal to zero is given in more detail in our response
-to item 9.  Essentially the purpose of this study is to do a controlled
-study of the effects of the density and viscosity ratios.  We can isolate
-the dependencies on these two ratios by prescribing zero gravity.  We now
-reference [3] and [4].
+to item 9.  The purpose of our study is to do controlled
+numerical experiments on the effects of the density and 
+viscosity ratios.  We can isolate
+the dependencies on these two ratios by prescribing zero gravity.  Although
+[3] and [4] do not address the transition to break-up, they address a very
+much related aspect to bubble motion in shear flow, so now we cite them in
+the introduction.
 \\
 
 %%4
@@ -150,7 +154,7 @@ addressing issue \#7 below even more important.}
 
 Response: \\
 Though there are differences between previous studies and our study, 
-we think a major cause of differences is attributable to the grid size 
+we think a major cause of the discrepancies is attributable to the grid size 
 (Renardy: $\Delta x =R/8$, our study: Renardy: $\Delta x =R/16$) as we 
 mentioned in the paper.
 {\color{red}
