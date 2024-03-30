@@ -648,7 +648,7 @@ for a drop as a function
 \hline
 Reynolds number                      & 0.1     & 0.5     & 0.6     & 0.75      \\
 {\color{red} $D$}(Li et al. (\cite{LiRenRen00}))  & 0.3968  & 0.45    & 0.4768  & Breakup   \\
-{\color{red} $D$}(Our study)                      & 0.3960  & 0.4570  & 0.4758  & Breakup   \\
+{\color{red} $D$}(Our study) & 0.3960  & 0.4570  & 0.4758  & Breakup   \\
 \hline
 \hline
 \end{tabular}
@@ -658,19 +658,29 @@ Reynolds number                      & 0.1     & 0.5     & 0.6     & 0.75      \
 %Testing author name~\citeauthor{MulTobDreFisWin08} 
 
 %% Ohta
-{\color{blue} Next, we examine the validation of our computational method
-intended for the bubble deformation in simple linear shear flow reported by
+{\color{blue} Next, we examine the validation of our computational method in which
+we compare with the ``bubble deformation in simple linear shear flow'' 
+results reported by
 Muller-Fischer et al.~\cite{MulTobDreFisWin08}.  Muller-Fischer et
 al.~\cite{MulTobDreFisWin08} experimentally inquired into the bubble
-deformation under the condition of $Re \approx 0$. In this study, using the
-computational domain with $\lwh{12}{6}{6}$ and the finer grid size with $\Delta
-x^{\ell=1} = \Delta y^{\ell=1} = \Delta z^{\ell=1} = R/16$, computations were
-performed for the condition of $Ca = 0.96$ and  1.63 with $Re \approx 0$ ($Re =
-5.0 \times 10^{-4}$),  $\lambda = 1.2 \times 10^{-3}$ and  $\eta \leq 1.2 \times 10^{-6}$
-according to experimental conditions by Muller-Fischer et al.
-\cite{MulTobDreFisWin08}.  Comparison of our numerical results and previous
+deformation under the condition of $Re \approx 0$. In our study, using the
+computational domain with $\lwh{12}{6}{6}$ and the finer grid sizes with 
+(i)
+$\Delta x^{\ell=1} = \Delta y^{\ell=1} = \Delta z^{\ell=1} = R/16$, and
+(ii)
+$\Delta x^{\ell=1} = \Delta y^{\ell=1} = \Delta z^{\ell=1} = R/24$, 
+computations were
+performed for the conditions of $Ca = 0.96$ and $Ca = 1.63$ 
+with $Re \approx 0$ ($Re =
+5.0 \times 10^{-4}$),  
+$\lambda = 1.2 \times 10^{-3}$ and  $\eta \leq 1.2 \times 10^{-6}$.
+The parameters that we have prescribed are consistent with the 
+experimental conditions by Muller-Fischer et al.
+\cite{MulTobDreFisWin08}.  
+Comparisons of our numerical results and previous
 experimental results (\cite{MulTobDreFisWin08}) are tabulated in
-Table~\ref{tab:DeComparisonRe=0}.  Additionally, in
+Table~\ref{tab:DeComparisonRe=0}.  
+Additionally, in
 Table~\ref{tab:DeComparisonRe=0}, we also list experimental results with the
 condition of $Re \approx 0$ and $\lambda \approx \eta \approx 0$ by Rust and
 Manga (\cite{RusMan02}). These experimental values by Rust and Manga
@@ -689,7 +699,8 @@ flow.}
 \begin{table}[tbh]
 {\color{blue}
 \caption{Comparison of  {\color{red} $D$} for a bubble as a function 
-         of $Ca$ ($Re \approx 0$, $\lambda \approx \eta \approx 0$). In all cases, the domain 
+         of $Ca$ ($Re \approx 0$, $\lambda \approx \eta \approx 0$). 
+	 In all cases, the domain 
          size is $\lwh{12}{6}{6}$.
          CLSVOF computations used a two-level AMR computational domain 
          with a level-0 discretization $\Delta x^{\ell=0} = \Delta y^{\ell=0} 
@@ -702,10 +713,11 @@ flow.}
 \begin{tabular}{ c  c  c  c  c }
 \hline
 \hline
-Capillary number                                                                 & 0.96   &  1.63       \\
+Capillary number & 0.96  & 1.63  \\
 {$D$}(Muller-Fischer et al. (\cite{MulTobDreFisWin08}))   & 0.37   &   0.58     \\
 {$D$}(Rust and Manga (\cite{RusMan02}))    & $0.71\pm 0.05$   &   $0.81\pm 0.02$     \\
-{$D$}(Our study)                                              & 0.63   &   0.76     \\
+{$D$}(Our study $\Delta x^{\ell=1}=R/16$)  & 0.63   &   0.76     \\
+{$D$}(Our study $\Delta x^{\ell=1}=R/24$)  & 0.63   &   0.75     \\
 \hline
 \hline
 \end{tabular}
@@ -833,23 +845,29 @@ while a value of $Re=1.1$ leads to drop breakup.
 %\begin{comment} 
 \begin{figure}%[h!]
   \centering
-  \includegraphics[width=\textwidth]{DeEvolution}
-  \caption{Time evolution of the deformation parameter {\color{red} $D$} versus 
-   a dimensionless
+%  \includegraphics[width=\textwidth]{DeEvolution}
+  \includegraphics[width=\textwidth]{Fig3-Comparison-of-De-New}
+  \caption{Time evolution of the deformation 
+   parameter {\color{red} $D$} versus 
+   dimensionless
    time $T = \mathit{\Gamma} t$ for a bubble, obtained 
-   with two grid systems at different resolutions. Both systems use a 
-   two-level AMR grid with a uniform 
-   finest-level grid size $\Delta x^{\ell=1} = \Delta y^{\ell=1} = 
-   \Delta z ^{\ell=1}$. The evolution of {\color{red} $D$} using the first system, where
+   with three grid systems at different resolutions. All three resolutions 
+   use a two-level AMR grid with an effective fine resolution  
+   grid size $\Delta x^{\ell=1} = \Delta y^{\ell=1} = 
+   \Delta z ^{\ell=1}$. 
+   The evolution of {\color{red} $D$} using the first system, where
+   $\Delta x^{\ell=1} = R/8$, is shown in blue and it predicts that 
+   bubble breakup occurs at a Reynolds number $Re=33$.
+   The evolution of {\color{red} $D$} using the second system, where
    $\Delta x^{\ell=1} = R/16$, is shown in black and it predicts that 
-   bubble breakup occurs at a Reynolds number $Re=35$. 
-   Results with the second system, shown in red, use $\Delta x^{\ell=1} 
+   bubble breakup occurs at a Reynolds number $Re=35$.
+   Results with the third system, shown in red, use $\Delta x^{\ell=1} 
    = R/24$, and they predict that breakup occurs at $Re=34$.  The capillary
    number corresponding to these results is $Ca=1.0$.
    ($\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$)}
   \label{fig:DeEvolution}
 \end{figure}
-%\end{comment} 
+%\end{comment}
 %
 
 The numerical results presented in this and the previous section used a
@@ -857,16 +875,27 @@ finest-level grid size set to $\Delta x^{\ell=1}(= \Delta y^{\ell=1}= \Delta
 z^{\ell=1})=R/16$. To verify the adequacy of this grid resolution, we present
 grid refinement results for a bubble breakup simulation with $Ca=1.0$, which
 corresponds to the most deformable and stretchable bubble case considered in
-our numerical studies. We use two different grid systems, one with $\Delta
-x^{\ell=1}=R/16$ and another with $\Delta x^{\ell=1}=R/24$, to determine
+our numerical studies. We use three different grid systems, 
+(i) $\Delta x^{\ell=1}=R/8$,
+(ii) $\Delta x^{\ell=1}=R/16$,
+and 
+(iii) $\Delta x^{\ell=1}=R/24$, in order to determine
 $Re_{\rm c}$.  Figure~\ref{fig:DeEvolution} shows the time evolution of the
-deformation parameter {\color{red} $D$} over time for the two grid systems; the $x$-axis is
-a dimensionless time defined by $T=\mathit{\Gamma} t$ and the $y$-axis is {\color{red} $D$}.
+deformation parameter {\color{red} $D$} over time for the three grid systems; 
+the $x$-axis is
+a dimensionless time defined by $T=\mathit{\Gamma} t$ 
+and the $y$-axis is {\color{red} $D$}.
 The results show that bubble breakup occurs at $Re_{\rm c}$ = 35 for the grid system
 with $\Delta x^{\ell=1}=R/16$, while the finer computational grid with $\Delta
-x^{\ell=1}=R/24$ predicts a critical value of $Re_{\rm c}$ = 34.  Note that although
-the time evolution of {\color{red} $D$} for the two grid systems is consistent for both
-resolutions (the predicted critical Reynolds numbers differ by $\sim 3\%$), the
+x^{\ell=1}=R/24$ predicts a critical value of $Re_{\rm c}$ = 34.  
+For the $\Delta x^{\ell=1}=R/8$ results, it is clear that the $R/8$ resolution is too
+coarse in order to capture the proper break-up time, albeit the critical
+Reynolds' number, $Re_{\rm c}$ = 33, was still close to the finer grid resolution
+cases.
+Note that although
+the time evolution of {\color{red} $D$} for the two finer resolution
+systems ($R/16$ and $R/24$) is consistent between the two,
+(the predicted critical Reynolds numbers differ by $\sim 3\%$), the
 computational time using the grid system with $\Delta x^{\ell=1}=R/24$ was more
 than 6 times longer than the one based on the coarser system with $\Delta
 x^{\ell=1}=R/16$.  We remark that in our search for $Re_{\rm c}$, we considered a
