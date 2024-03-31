@@ -291,7 +291,7 @@ a function of $Ca$.
 The critical Reynolds number, $Re_{\rm c}$, for drop breakup was 
 reported previously by \cite{LiRenRen00}.
 {\color{red} In previous studies on the motion of bubble deformation
-in a simple shear flow \cite{RusMan02, MulTobDreFisWin08}, only findings for bubble deformation under very low 
+in a simple shear flow \cite{RusMan02, MulTobDreFisWin08}, only findings for bubble defomation under very low 
 $Re$ number conditions ({\color{blue} $Re \ll 1$}) have been reported.}
 %{\color{blue} What were the $Re$ conditions considered by \cite{RusMan02, MulTobDreFisWin08} and what are the $Re$ conditions considered in our paper?}
 In this work we determine, for the first time, the critical Reynolds number ({\color{blue} $Re \gg 1$}) 
@@ -356,8 +356,7 @@ describe the problem of drop deformation/breakup in shear flow
 \begin{eqnarray}\label{dimensonless}
   Re = \frac{\rho_{\rm {\color{red}m}}UR}{\mu_{\rm {\color{red}m}}}, \quad
   Ca = \frac{\mu_{\rm {\color{red}m}}U}{\sigma}, \quad
-  \eta = \frac{\mu_{\rm b}}{\mu_{\rm m}} 
-	\hspace{20pt} m=\mbox{matrix fluid}
+  \eta = \frac{\mu_{\rm b}}{\mu_{\rm m}}
 \end{eqnarray}
 %
 $U$ is the velocity scale and $\sigma$ denotes the surface tension.  For the
@@ -733,33 +732,21 @@ Capillary number & 0.96  & 1.63  \\
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\textwidth]{DropBreakComparison}
-  \caption{Comparison with results reported 
-	in~\cite{RenCri01-2} 
-	(shown in boxes) 
-        for drop breakup in shear flow.  
-	In~\cite{RenCri01-2},
-	the computational domain
-        dimensions were 
-	$W=4R$, $H=8R$, and $L$ was varied depending 
-        on the $Re$ and $Ca$ conditions.  The
-	grid size 
-	in~\cite{RenCri01-2} 
-	was set to 
-        $\Delta x=\Delta y=\Delta z=R/8$.  
-	Reprinted with permission from 
-        reference~\cite{RenCri01-2}. 
-	Copyright 2001, AIP Publishing. 
-	Results
-        obtained with our CLSVOF algorithm, corresponding to each case in
-        reference~\cite{RenCri01-2}, are shown outside boxes.  The
-        CLSVOF method used a two-level AMR computational domain 
-        with a level-0 discretization 
-	$\Delta x^{\ell=0} = \Delta y^{\ell=0} = \Delta z^{\ell=0} = R/8$ 
-	and a level-1 discretization
-        $\Delta x^{\ell=1} = \Delta y^{\ell=1} = \Delta z^{\ell=1} = R/16$. 
-        The onset of drop breakup is demonstrated for (a) $Re=10$,
-        $Ca=0.16$, (b) $Re=12$, $Ca=0.1753$, and (c) $Re=15$, $Ca=0.196$.
-        For all three $Re$ and $Ca$ conditions, $\lambda = \eta = 1$.}
+  \caption{Comparison with results reported in~\cite{RenCri01-2} (shown in boxes) 
+           for drop breakup in shear flow.  (The computational domain
+           dimensions $W=4R$ and $H=8R$ were fixed, while $L$ was changed depending 
+           on $Re$ and $Ca$ conditions, and the grid size was set to 
+           $\Delta x=\Delta y=\Delta z=R/8$.  Reprinted with permission from 
+           reference~\cite{RenCri01-2}. Copyright 2001, AIP Publishing). Results
+           obtained with our CLSVOF algorithm, corresponding to each case in
+           reference~\cite{RenCri01-2}, are shown outside boxes.  The
+           CLSVOF method used a two-level AMR computational domain 
+           with a level-0 discretization $\Delta x^{\ell=0} = \Delta y^{\ell=0} 
+           = \Delta z^{\ell=0} = R/8$ and a level-1 discretization
+           $\Delta x^{\ell=1} = \Delta y^{\ell=1} = \Delta z^{\ell=1} = R/16$. 
+           The onset of drop breakup is demonstrated for (a) $Re=10$,
+           $Ca=0.16$, (b) $Re=12$, $Ca=0.1753$, and (c) $Re=15$, $Ca=0.196$.
+           For all three $Re$ and $Ca$ conditions, $\lambda = \eta = 1$.}
   \label{fig:DropBreakComp}
 \end{figure}
 %\end{comment} 
@@ -1300,14 +1287,12 @@ Critical Reynolds number $Re_{\rm c}$  & 93   & 67   & 43   & 35   \\
   \includegraphics[width=\textwidth]{CaRecFit}
   \caption{A plot of the critical Reynolds number versus Capillary number
 	for the data listed in Table~\ref{tab:CaRecComparison}.  
-	$\lambda = 1.2 \times 10^{-3}$, 
-	$\eta < 1.0 \times 10^{-3}$, $0.3<Ca<1$, and
+	$\lambda = 1.2 \times 10^{-3}$, $\eta < 1.0 \times 10^{-3}$, $0.3<Ca<1$, and
         the initial/boundary conditions are given by (\ref{IC_BC}).
 	Given a new data point, $(Ca,Re)$, one
 	can reliably predict whether the 
 	given $(Ca,Re)$ pair will result in shear
-	induced bubble break-up or not.  Note, for the ``Drop delineation
-	curve,'' $\lambda=\eta=1$.
+	induced bubble break-up or not.  
 	   }
   \label{fig:CaRecFit}
 \end{figure}
