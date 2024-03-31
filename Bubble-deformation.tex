@@ -798,7 +798,10 @@ we refer the reader to \cite{ohta2011robust} in which we apply our CLSVOF
 method for bubble formation problems.}
 
 \subsection{Consideration of domain and grid sizes}\label{sec:DomGrdSize}
-%  -----------------------------------------------------------------------------
+%  ------------------------------------------------------------------------
+
+\subsubsection{Selecting the appropriate domain size}
+
 The computational domain size used in numerical studies can affect the behavior
 of drop deformation and breakup.  Referring to
 Figure~\ref{fig:SchemAndGrid}(a), with an appropriately large domain length $L$
@@ -884,6 +887,47 @@ while a value of $Re=1.1$ leads to drop breakup.
 \end{figure}
 %\end{comment}
 %
+
+\subsubsection{Selecting the appropriate grid size}
+
+{ \color{red}
+The grid size and adaptive meshing strategy that we adopt is chosen
+in order to answer the research question as to the conditions which determine
+whether a bubble in shear flow
+will break-up or not.  In such a case, we must accurately capture the 
+balance of forces with respect to the (non-local) force exerted from the 
+wall driven 
+flow acting against the interfacial
+surface tension force.  By nature of the research question, 
+the accuracy of the transition
+point for break-up depends intimately on the 
+largest Taylor Deformation parameter $D$
+that is supported by the grid (see e.g. Figures \ref{fig:ShearStress} and
+\ref{fig:BubBrkCa0p8Re43}).  
+As we report here, we have found that as
+long as the grid size is fine enough to support a Taylor Deformation parameter
+$D<0.95$, then the transition region 
+(see Figures \ref{fig:DeEvolution} and \ref{fig:CaRecFit}) will be captured
+with a tolerance of three percent.  The simulation time becomes impractical
+if we were to try to further improve the tolerance.  A smaller tolerance
+would necessitate a longer supported Deformation
+parameter $D$ which would in turn necessitate a higher aspect ratio
+computational domain, increased droplet surface area at break-up,
+increased number of time steps, and higher resolution for representing the
+drop/bubble at its thinnest point.
+
+We make the distinction between our present research, and the research found
+in the work of Zang, Ni, 
+and Magnaudet\cite{zhang2021three,zhang2022three} on predicting the
+conditions for bubble mergers.  Even in the most extreme cases for
+mergers, the largest Deformation parameter never exceeds
+$0.4$ in \cite{zhang2021three}.  In summary, our gridding requirements 
+necessitate grid points distributed relatively evenly throughout the 
+computational domain when a bubble is stretched to a $0.9$ aspect ratio,
+whereas in \cite{zhang2021three} the gridding strategy necessitates 
+a localized strategy.
+
+}
 
 The numerical results presented in this and the previous section used a
 finest-level grid size set to $\Delta x^{\ell=1}(= \Delta y^{\ell=1}= \Delta
@@ -1085,10 +1129,11 @@ different from the analogous drop breakup process.
 \begin{figure}%[h!]
   \centering
   \includegraphics[width=\textwidth]{ShearStress}
-  \caption{Normalized shear stress $\tau^{\ast}$ around a bubble for two Reynolds 
-           numbers under the condition of $Ca = 0.3$. The left image shows the 
-           shear stress profile at $Re=50$ and the right image at $Re=93$.
-	   }
+  \caption{Normalized shear stress $\tau^{\ast}$ around a bubble for 
+	two Reynolds 
+        numbers under the condition of $Ca = 0.3$. The left image shows the 
+        shear stress profile at $Re=50$ and the right image at $Re=93$.
+   }
   \label{fig:ShearStress}
 \end{figure}
 %\end{comment} 
