@@ -202,65 +202,68 @@ stated; is it explicit and which algorithm is used?
 \vspace{3 mm}
 
 Response: \\
-First, we would like to emphasize to the reviewer that very long
-computational times are required for drop/bubble deformation and breakup in
-shear flow. For bubble simulations, in particular, even longer computational
-times are needed because the time step is much smaller than that for the drop.
-In our study, time steps smaller than values determined theoretically from
-various time-step constraints were used: the time step was $O(10^{-4}$) s for
-the drop and $O(10^{-5}$) s for the bubble.  In addition, it is especially difficult to
-solve stably two-phase flows with $\lambda$ (density ratio) $\simeq 0$ and
-$\eta$ (viscosity ratio) $\simeq 0$. In some cases, computational times
-over a few months long were required.  To overcome the problem of very long
-computational times, various computational countermeasures were employed in
-past studies. For example, in Renardy's study (Phys. Fluids, 2000) a domain
-size with $W$ (width ($y$-directional length)) = 2$D$ ($D$: diameter of
-drop/bubble) was employed to reduce the number of computational grid
-points.  As shown in Table I\hspace{-1.2pt}I\hspace{-1.2pt}I in this study, using a width of $W =
-2D$ accentuates drop deformation. Regarding the grid size, relatively coarse
-discretizations have been used in recent studies: $\Delta x =R/48$ (Komrakova et al.,
-CES, 2015), $\Delta x =2R/15, R/15, R/25, R/30$ (Hernandez and Rangel, Comput.
-Fluids, 2017), $\Delta x =R/15$ (Amania et al., CES, 2019), $\Delta x =R/30$
-(Zhang et al., CES, 2021).
+\par\noindent
+In response to the question ``In the present
+work, only two levels of refinement have been used, why?'', we added the 
+following text to our revision, (under the heading ``selecting the 
+appropriate grid size'')
+\par\noindent
 
-\medskip
-Komrakova et al. (CES, 2015) and Zhang et al. (CES, 2021) used a LBM method for
-two-phase flows, Hernandez and Rangel (Comput. Fluid., 2017) used a VOF method
-and Amania et al. (CES, 2019) applied a level set method to computations.
-Although Komrakova et al. (CES, 2015) set a higher grid resolution ($\Delta x
-=R/48$, which corresponds to $R$=48 lattice units in the LBM method), they
-performed computations over a quarter of the full domain, which is inappropriate
-for high $Re$ conditions.  In the study by Hernandez and Rangel (Comput.
-Fluids, 2017), it was shown that the grid resolution should be $\Delta x \leq
-R/15$ for approximately a 5\% error. Zhang et al. (CES, 2021) used a higher grid
-resolution ($R$=60 lattice units), but the height of the computational domain was
-$4R$ for 3D-computations.  Additionally, the LBM method (Komrakova et al.,
-CES(2015), Zhang et al., CES(2021)) allows the use of higher grid resolutions
-due to shorter computational times that result from not solving the continuity
-equation simultaneously; the decreased computational times come at the
-expense of diminished accuracy.
+{ \color{red}
+The grid size and adaptive meshing strategy that we adopt is chosen
+in order to answer the research question as to the conditions which determine
+whether a bubble in shear flow
+will break-up or not.  In such a case, we must accurately capture the 
+balance of forces with respect to the (non-local) force exerted from the 
+wall driven 
+flow acting against the interfacial
+surface tension force.  By nature of the research question, 
+the accuracy of the transition
+point for break-up depends on the 
+largest Taylor Deformation parameter $D$
+that is supported by the grid (see e.g. Figures 8 and 11).  
+As we report here, we have found that as
+long as the grid size is fine enough to support a Taylor Deformation parameter
+$D<0.95$, then the transition region 
+(see Figures 3 and 12) will be captured
+with a tolerance of three percent.  The simulation time becomes impractical
+if we were to try to further improve the tolerance.  A smaller tolerance
+would necessitate a longer supported Deformation
+parameter $D$ which would in turn necessitate a higher aspect ratio
+computational domain, increased droplet surface area at break-up,
+increased number of time steps, and higher resolution for representing the
+drop/bubble at its thinnest point.
 
-Our simulations were performed under stringent computational settings, in terms
-of domain sizes and grid resolutions, selected to guarantee a minimum accuracy
-in our numerical results.  The critical $Re$ numbers found from the bubble
-simulations presented in this study will provide a minimum standard for future
-studies.  Anticipating future increased computational resources and the
-development of new numerical algorithms, we have added the following comment:
-Additional grid refinements may be desirable to perform further accuracy
-evaluations for bubble deformation and breakup.  (see the last line at the
-section “C. Consideration of domain and grid sizes”, Page 9)
+We make the distinction between our present research, and the research found
+in the work of Zang, Ni, 
+and Magnaudet[47,48] on predicting the
+conditions for bubble mergers.  Even in the most extreme cases for
+mergers, the largest Deformation parameter never exceeds
+$0.4$ in [47].  In summary, our gridding requirements 
+necessitate grid points distributed relatively evenly throughout the 
+computational domain when a bubble is stretched to a $0.9$ Deformation,
+whereas in \cite{zhang2021three} the gridding strategy necessitates 
+a more localized strategy.
 
-Regarding the refinement level of AMR, the use of 3-4 consecutive refinement levels is not
-always preferred.  A small refinement level is rather suitable in terms of
-stable computations and we found that our mesh setting for this purpose was
-reasonable.
+}
 
-{\color{red}
-We briefly described the type of time discretization, the temporal discretization, 
-and the algorithm of our numerical method. Also, we have added information 
-on our paper as a reference to obtain more details about the numerical method used in 
-this study.}
-\\
+\par\noindent
+In response to the enquiry ``The mesh convergence
+study seems quite incomplete.  A more complete study with figures to verify it
+should be included in an appendix concerning the mesh and time step
+independence of the results.'', we have modified Figure 3 to report results
+for three different grid resolutions.  Figure 3 illustrates that we
+capture the proper break-up time as the grid is refined, and at the point
+where the critical Reynolds' number is prescribed.  In Figure 3,
+we point out that the time step was $O(10^{-5}$)s for the 
+elongating bubble! ($\Delta x=R/16$) Further refinements reduce the
+time step according to the surface tension time step constraint
+(see section III(A)).  We now report in the revision the temporal
+discretization of our method along with the timestep constraint.
+Since surface tension is discretized explicitly in time, the
+surface tension time step constraint is much more restrictive than
+the classical CFL time step constraint of $\Delta x/U$.
+(again see section IIIA).
 
 %%8
 \par\noindent

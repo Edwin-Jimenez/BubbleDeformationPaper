@@ -900,7 +900,7 @@ wall driven
 flow acting against the interfacial
 surface tension force.  By nature of the research question, 
 the accuracy of the transition
-point for break-up depends intimately on the 
+point for break-up depends on the 
 largest Taylor Deformation parameter $D$
 that is supported by the grid (see e.g. Figures \ref{fig:ShearStress} and
 \ref{fig:BubBrkCa0p8Re43}).  
@@ -923,16 +923,15 @@ conditions for bubble mergers.  Even in the most extreme cases for
 mergers, the largest Deformation parameter never exceeds
 $0.4$ in \cite{zhang2021three}.  In summary, our gridding requirements 
 necessitate grid points distributed relatively evenly throughout the 
-computational domain when a bubble is stretched to a $0.9$ aspect ratio,
+computational domain when a bubble is stretched to a $D=0.9$ Deformation,
 whereas in \cite{zhang2021three} the gridding strategy necessitates 
-a localized strategy.
-
+a more localized strategy.
 }
 
 The numerical results presented in this and the previous section used a
 finest-level grid size set to $\Delta x^{\ell=1}(= \Delta y^{\ell=1}= \Delta
 z^{\ell=1})=R/16$. To verify the adequacy of this grid resolution, we present
-grid refinement results for a bubble breakup simulation with $Ca=1.0$, which
+rid refinement results for a bubble breakup simulation with $Ca=1.0$, which
 corresponds to the most deformable and stretchable bubble case considered in
 our numerical studies. We use three different grid systems, 
 (i) $\Delta x^{\ell=1}=R/8$,
@@ -965,8 +964,6 @@ section, the results indicate that our numerical approach, even with a
 finest-level resolution set to $\Delta x^{\ell=1}=R/16$, is capable of
 accurately reproducing bubble deformation and breakup without sacrificing any
 essential dynamical features.
-{\color{red} Additional grid refinements may be desirable to perform further 
-accuracy evaluations for bubble deformation and breakup.}
 
 %  -----------------------------------------------------------------------------
 \section{Results and Discussion}
