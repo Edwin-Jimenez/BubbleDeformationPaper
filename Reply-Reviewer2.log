@@ -1,35 +1,36 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  1 APR 2024 01:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.1)  1 APR 2024 18:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Reply-Reviewer2.tex
+**Reply-Reviewer2
 (./Reply-Reviewer2.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06>
-(/usr/local/texlive/2020/texmf-dist/tex/latex/base/letter.cls
-Document Class: letter 2014/09/29 v1.2z Standard LaTeX document class
-(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/letter.cls
+Document Class: letter 2021/12/07 v1.3c Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\longindentation=\dimen134
-\indentedwidth=\dimen135
-\labelcount=\count167
+\longindentation=\dimen140
+\indentedwidth=\dimen141
+\labelcount=\count188
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 147.
+Package color Info: Driver file: pdftex.def on input line 149.
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count168
-\l__pdf_internal_box=\box45
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count189
+\l__pdf_internal_box=\box51
 )
 (./Reply-Reviewer2.aux)
 \openout1 = `Reply-Reviewer2.aux'.
@@ -49,19 +50,19 @@ LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 
-(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count169
-\scratchdimen=\dimen136
-\scratchbox=\box46
-\nofMPsegments=\count170
-\nofMParguments=\count171
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count172
-\MPscratchDim=\dimen137
-\MPnumerator=\count173
-\makeMPintoPDFobject=\count174
-\everyMPtoPDFconversion=\toks16
+\scratchcounter=\count190
+\scratchdimen=\dimen142
+\scratchbox=\box52
+\nofMPsegments=\count191
+\nofMParguments=\count192
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count193
+\MPscratchDim=\dimen143
+\MPnumerator=\count194
+\makeMPintoPDFobject=\count195
+\everyMPtoPDFconversion=\toks18
 )
 Underfull \hbox (badness 10000) in paragraph at lines 47--53
 
@@ -78,7 +79,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--82
 
 [1
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 96--108
 
  []
@@ -103,99 +104,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
-[3]
-
-LaTeX Warning: Citation `zhang2021three' on page 4 undefined on input line 245.
-
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 279--292
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 282--295
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--315
+Underfull \hbox (badness 10000) in paragraph at lines 312--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--340
+Underfull \hbox (badness 10000) in paragraph at lines 337--349
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 352--372
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 379--384
+Underfull \hbox (badness 10000) in paragraph at lines 404--424
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 394--408
+Underfull \hbox (badness 10000) in paragraph at lines 438--449
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--429
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 444--447
+Underfull \hbox (badness 10000) in paragraph at lines 463--466
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 455--457
+Underfull \hbox (badness 10000) in paragraph at lines 474--476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--467
+Underfull \hbox (badness 10000) in paragraph at lines 484--486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--480
+Underfull \hbox (badness 10000) in paragraph at lines 497--499
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--491
+Underfull \hbox (badness 10000) in paragraph at lines 508--510
 
  []
 
-[8] [9] (./Reply-Reviewer2.aux)
-
-LaTeX Warning: There were undefined references.
-
+[8] (./Reply-Reviewer2.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
  ) 
 Here is how much of TeX's memory you used:
- 821 strings out of 480608
- 12608 string characters out of 5903631
- 250142 words of memory out of 5000000
- 16776 multiletter control sequences out of 15000+600000
- 533995 words of font info for 29 fonts, out of 8000000 for 9000
+ 935 strings out of 474116
+ 15686 string characters out of 5743683
+ 1936187 words of memory out of 5000000
+ 23354 multiletter control sequences out of 15000+600000
+ 559418 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 25i,7n,22p,177b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
-l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on Reply-Reviewer2.pdf (9 pages, 140025 bytes).
+ 42i,7n,50p,185b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/loca
+l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/t
+exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/te
+xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
+Output written on Reply-Reviewer2.pdf (8 pages, 140750 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

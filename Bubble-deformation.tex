@@ -898,19 +898,23 @@ will break-up or not.  In such a case, we must accurately capture the
 balance of forces with respect to the (non-local) force exerted from the 
 wall driven 
 flow acting against the interfacial
-surface tension force.  By nature of the research question, 
-the accuracy of the transition
-point for break-up depends on the 
+surface tension force.  
+The accuracy of the ``Critical Reynolds Number''
+depends on the 
 largest Taylor Deformation parameter $D$
-that is supported by the grid (see e.g. Figures \ref{fig:ShearStress} and
+that is supported by the grid 
+(see e.g. Figures \ref{fig:ShearStress} and
 \ref{fig:BubBrkCa0p8Re43}).  
 As we report here, we have found that as
 long as the grid size is fine enough to support a Taylor Deformation parameter
 $D<0.95$, then the transition region 
+(i.e. ``Critical Reynolds number'')
 (see Figures \ref{fig:DeEvolution} and \ref{fig:CaRecFit}) will be captured
 with a tolerance of three percent.  The simulation time becomes impractical
-if we were to try to further improve the tolerance.  A smaller tolerance
-would necessitate a longer supported Deformation
+if we were to try to further improve the ``critical Reynolds number''
+accuracy.  
+A smaller tolerance
+would necessitate a larger supported Deformation
 parameter $D$ which would in turn necessitate a higher aspect ratio
 computational domain, increased droplet surface area at break-up,
 increased number of time steps, and higher resolution for representing the
@@ -1138,38 +1142,85 @@ different from the analogous drop breakup process.
 In the previous section, the appearance of bubble deformation and breakup was
 discussed. It is expected that a large deformation and breakup of the bubble
 are closely related to the state of shear stress acting on the bubble.
-Figure~\ref{fig:ShearStress} shows the shear stress profile around a bubble,
-for two Reynolds numbers under the condition of $Ca = 0.3$.  The shear stress
+Figure~\ref{fig:ShearStress} shows the shear stress profile around a bubble
+for two Reynolds numbers under the condition of $Ca = 0.3$: Reynolds
+number equal to 50 and 93.  
+The shear stress
 profile on the left corresponds to the case of $Re = 50$ and the right side
-shows the shear stress profile for the case of $Re = 93$.  The normalized shear
-stress $\tau^{\ast} = \tau / \tau_{0}$ is defined as a ratio of the local shear
-stress $\tau = \mu_{\rm m}$$\sqrt{2\bmD:\bmD}$ and the apparent shear stress
-$\tau_{0} = \mu_{\rm m}$$\mathit{\Gamma}$.  In this study, for a given $Ca$
-condition, the same value of $\tau_{0}$ is used regardless of $Re$. For the
-case of $Re = 50$, the bubble reaches a deformed stable state.  As observed in
-previous sections, when the value of $Re$ is slightly below the critical $Re$
-condition, the bubble does not settle into a deformed stable state but instead
-alternates in an elongation and contraction process.  In comparison, the right
-image in Fig.~\ref{fig:ShearStress} shows a higher shear stress profile near
-the bubble endpoints for the case of $Re = 93$ as it undergoes an elongation
-state in the process toward breakup.  The value of the maximum shear stress for
-the case of $Re = 50$ is $\tau ^{\ast} \approx 6$ and the maximum shear stress
-for the case of $Re = 93$ at the moment shown in Fig.~\ref{fig:ShearStress} has
-the value of $\tau ^{\ast} \approx 8$.  The shear stress profile of in
-Fig.~\ref{fig:ShearStress} (color contour) is drawn in the range from $\tau
-^{\ast} = 1$ to $\tau ^{\ast} = 8$, but, for emphasis, shear stress regions
-with $\tau ^{\ast} \geqq 6$ are illustrated in red.  As can be seen in the
-figure, the strongest shear stresses are concentrated on the ends of the bubble
-for both $Re$ conditions.  This indicates that the strong shear stresses acting
+shows the shear stress profile for the case of $Re = 93$.  
+The normalized shear
+stress, $\tau^{\ast} = \tau / \tau_{0}$, is defined as a 
+ratio of the local shear
+stress $\tau = \mu_{\rm m}$$\sqrt{2\bmD:\bmD}$ 
+and the apparent shear stress
+$\tau_{0} = \mu_{\rm m}$$\mathit{\Gamma}$.  
+In this study, for a given $Ca$ condition, the same 
+value of $\tau_{0}$ is used regardless of $Re$. 
+\par\noindent
+For the
+case of $Re = 50$, the bubble reaches a deformed stable state.  
+\par\noindent
+As observed in
+previous sections, when the value of $Re$ is slightly below the 
+critical $Re$ condition, the bubble does not settle into a deformed 
+stable state but instead alternates in an elongation and contraction process.  
+In comparison to the $Re=50$ case on the left, the right
+image in Fig.~\ref{fig:ShearStress} ($Re=93$)
+shows a higher shear stress profile near
+the bubble endpoints as it undergoes an elongation
+state in the process toward breakup.  
+The value of the maximum shear stress for
+the case of $Re = 50$ is $\tau ^{\ast} \approx 6$ 
+and the maximum shear stress
+for the case of $Re = 93$ at the moment 
+shown in Fig.~\ref{fig:ShearStress} has
+the value of $\tau ^{\ast} \approx 8$.  
+The shear stress profile in
+Fig.~\ref{fig:ShearStress} (color contour) is drawn in the range from 
+$\tau^{\ast} = 1$ to $\tau ^{\ast} = 8$, but, for emphasis, 
+shear stress regions
+with $\tau ^{\ast} \geqq 6$ are illustrated in red.  
+As can be seen in the
+figure, the strongest shear stresses are concentrated on the 
+ends of the bubble for both $Re$ conditions.  
+This indicates that the strong shear stresses acting
 on the ends of the bubble are responsible for much of the bubble stretching.
 It is important to note that the magnitude of the shear stress acting on the
 ends of the bubble for the case of $Re = 93$ is much larger than that for the
-case of $Re = 50$.  On the other hand, the shear stress inside the bubble was
+case of $Re = 50$.  
+
+We also observe that the shear stress {\em inside} the bubble was
 very small relative to that of the matrix fluid due to very small density and
 viscosity of the bubble.  Since the force of strong shear stresses acting on
 the ends of the bubble is difficult to transfer across the interface, as a
 consequence, a sufficiently large $Re$ condition is required for large bubble
-deformations.  }
+deformations.  
+\par\noindent
+In summary, what we discover is that for the Reynolds
+number sufficiently below the critical value, a relatively quick
+unsteady elongation period gives way to a steady state (with no
+break up).  On
+the otherhand for Reynolds number {\em close} to the critical Reynolds
+number, there is a prolonged, unsteady, elongation period, in which
+periodic motion is observed and the deformation parameter $D$ is close 
+to one.  The ``vacillating''
+behavior cannot last forever, ultimately (perhaps stochastically!),
+the bubble will either settle down or break.  We assert that regardless
+of the outcome, this vacillating behaviour will always occur
+in close proximity to the critical Reynolds' number.  In otherwords,
+regardless of the outcome, we claim, using the grid resolution of
+$R/16$, that one is assured of being within 
+3 percent of the critical Reynolds number (see Figure \ref{fig:DeEvolution}).  
+In fact,
+we hypothesize that there will {\em always} be ``vacillating'' behavior
+if one is sufficiently close to the critical Reynolds number.  i.e.
+given an almost infinite supply of computational resources, as one hones
+in closer and closer to the critical Reynolds number, a ``tug of war''
+will be observed between the surface tension force trying to pull the
+bubble together versus the wall driven shear stress trying to pull the
+bubble apart.  
+
+}
 
 
 \subsection{Velocity field outside and inside the breaking bubble}
