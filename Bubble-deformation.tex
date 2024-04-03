@@ -58,6 +58,7 @@
 
 \usepackage[dvipdfmx]{graphicx}% Include figure files
 %\usepackage{graphicx}% Include figure files
+\usepackage{caption}
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 \usepackage{comment}
@@ -243,10 +244,10 @@ shear flows, only a few articles exist: \cite{WeiQiaXu12,WanShiZha15}.
 In these previous
 studies, the dynamics (e.g. rotation angle) of bubble deformation 
 in shear flow was mainly examined.} 
-{\color{blue} Concerning bubble breakup, Wei et
+{\color{red} Concerning bubble breakup, Wei et
 al.~\cite{WeiQiaXu12} presented only one numerical result for a bubble breakup
 process under the condition of $Ca$ (Capillary number) = 35.}
-% {\color{blue} What distinguishes our work from that in
+% {\color{red} What distinguishes our work from that in
 % \cite{WeiQiaXu12,WanShiZha15}?}
 Bubble dynamics in shear flow, {\em including breakup},
 is of critical importance for a
@@ -292,9 +293,10 @@ The critical Reynolds number, $Re_{\rm c}$, for drop breakup was
 reported previously by \cite{LiRenRen00}.
 {\color{red} In previous studies on the motion of bubble deformation
 in a simple shear flow \cite{RusMan02, MulTobDreFisWin08}, only findings for bubble deformation under very low 
-$Re$ number conditions ({\color{blue} $Re \ll 1$}) have been reported.}
-%{\color{blue} What were the $Re$ conditions considered by \cite{RusMan02, MulTobDreFisWin08} and what are the $Re$ conditions considered in our paper?}
-In this work we determine, for the first time, the critical Reynolds number ({\color{blue} $Re \gg 1$}) 
+$Re$ number conditions ({\color{red} $Re \ll 1$}) have been reported.}
+%{\color{red} What were the $Re$ conditions considered by \cite{RusMan02, MulTobDreFisWin08} and what are the $Re$ conditions considered in our paper?}
+In this work we determine, for the first time, the critical Reynolds 
+number ({\color{red} $Re \gg 1$}) 
 that leads to \emph{bubble} breakup.  Additionally, our computational studies reveal characteristics that
 distinguish the deformation and breakup processes of a drop versus those of a bubble.
 
@@ -372,7 +374,7 @@ we set the density and viscosity of air to be $\rho_{\rm b}$ = 1.2 kg/m$^{3}$
 and $\mu_{\rm b} = 1.8 \times 10^{-5}$ Pa$\cdot$s respectively.  We emphasize
 that for consistency with previous studies (\cite{LiRenRen00, RusMan02,
 MulTobDreFisWin08, KomShaEskDer14, AmaBalCasOli19}), 
-%{\color{blue} cite some of these previous studies which examine deformation
+%{\color{red} cite some of these previous studies which examine deformation
 %and breakup of a bubble or drop as a function of the $Re$ and $Ca$ numbers.}
 we computationally examine the deformation and breakup of a bubble in simple
 linear shear flow as a function of the $Re$ and $Ca$ numbers.  {\color{red}
@@ -659,7 +661,7 @@ Reynolds number                      & 0.1     & 0.5     & 0.6     & 0.75      \
 %Testing author name~\citeauthor{MulTobDreFisWin08} 
 
 %% Ohta
-{\color{blue} Next, we examine the validation of our 
+{\color{red} Next, we examine the validation of our 
 computational method in which
 we compare with the ``bubble deformation in simple linear shear flow'' 
 results reported by
@@ -700,7 +702,8 @@ flow.}
 
 %%
 \begin{table}[tbh]
-{\color{blue}
+\captionsetup{labelfont={color=red},font={color=red}}
+
 \caption{Comparison of  {\color{red} $D$} for a bubble as a function 
          of $Ca$ ($Re \approx 0$, $\lambda \approx \eta \approx 0$). 
 	 In all cases, the domain 
@@ -709,7 +712,7 @@ flow.}
          with a level-0 discretization $\Delta x^{\ell=0} = \Delta y^{\ell=0} 
          = \Delta z^{\ell=0} = R/8$ and a level-1 discretization
          $\Delta x^{\ell=1} = \Delta y^{\ell=1} = \Delta z^{\ell=1} = R/16$.}
- }
+
 \label{tab:DeComparisonRe=0}
 %\footnotesize
 \center
@@ -950,9 +953,11 @@ and the $y$-axis is {\color{red} $D$}.
 The results show that bubble breakup occurs at $Re_{\rm c}$ = 35 for the grid system
 with $\Delta x^{\ell=1}=R/16$, while the finer computational grid with $\Delta
 x^{\ell=1}=R/24$ predicts a critical value of $Re_{\rm c}$ = 34.  
-For the $\Delta x^{\ell=1}=R/8$ results, it is clear that the $R/8$ resolution is too
+For the $\Delta x^{\ell=1}=R/8$ results, it is clear 
+that the $R/8$ resolution is too
 coarse in order to capture the proper break-up time, albeit the critical
-Reynolds' number, $Re_{\rm c}$ = 33, was still close to the finer grid resolution
+Reynolds' number, $Re_{\rm c}$ = 33, was still close to the 
+finer grid resolution
 cases.
 Note that although
 the time evolution of {\color{red} $D$} for the two finer resolution
@@ -1122,7 +1127,7 @@ different from the analogous drop breakup process.
 
 
 %% Ohta
-{\color{blue} 
+{\color{red} 
 \subsection{Shear stress acting on the bubble}
 %  -----------------------------------------------------------------------------
 %
@@ -1361,7 +1366,7 @@ Fig.~\ref{fig:CaRecFit}.  The inclusion of breakup and no-breakup critical
 curves, for both the drop and the bubble, will facilitate future identification
 of $Re_{\rm c}$ numbers---and thus a more complete general critical curve---for
 a wide range of high $Ca$ numbers.  }
-%{\color{blue} it seems like the above passage is still a work in progress?}
+%{\color{red} it seems like the above passage is still a work in progress?}
 % Yes. I have been suspending computations for bubbles because I have been focussing on non-Newtonian cases, but I have a plan for restarting again.
 
 \begin{table}[tbh]
