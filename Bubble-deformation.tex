@@ -6,7 +6,7 @@
 %  Authors: Mitsuhiro Ohta, Tetsuya Ueta, Yozo Toei, Edwin Jimenez, and
 %           Mark Sussman
 %  
-%  Modified: 17 December 2023
+%  Modified: 3 April 2023
 %  -----------------------------------------------------------------------------
 %  -----------------------------------------------------------------------------
 
@@ -56,13 +56,17 @@
 %floatfix,
 ]{revtex4-2}
 
+%\usepackage[document]{ragged2e}
+
+
 \usepackage[dvipdfmx]{graphicx}% Include figure files
 %\usepackage{graphicx}% Include figure files
-\usepackage{caption}
+%\usepackage{caption}
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 \usepackage{comment}
 \usepackage{color}
+%\usepackage{ragged2e}
 %\usepackage{hyperref}% add hypertext capabilities
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
@@ -399,7 +403,6 @@ satisfy $\lambda = 1.2 \times 10^{-3}$ and $\eta < 1.0 \times 10^{-3}$.}
 % 
 %\begin{comment} 
 \begin{figure}%[h!]
-  \centering
   \includegraphics[width=\textwidth]{SchematicAndGrid}
   \caption{(a) Computational domain schematic for a bubble or drop in shear 
            flow.  Gravity is set to zero in our computations in order to isolate
@@ -702,8 +705,7 @@ flow.}
 
 %%
 \begin{table}[tbh]
-\captionsetup{labelfont={color=red},font={color=red}}
-
+%\captionsetup{labelfont={color=red},font={color=red}} % Not needed anymore
 \caption{Comparison of  {\color{red} $D$} for a bubble as a function 
          of $Ca$ ($Re \approx 0$, $\lambda \approx \eta \approx 0$). 
 	 In all cases, the domain 
