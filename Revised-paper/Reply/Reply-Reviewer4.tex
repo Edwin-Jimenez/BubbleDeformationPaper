@@ -1,0 +1,124 @@
+%  -----------------------------------------------------------------------------
+%  Modified:October 2024
+%  -----------------------------------------------------------------------------
+\documentclass{letter} 
+
+ \date{\today}
+ 
+\usepackage{color}
+
+\begin{document}
+\begin{letter}{
+Chemical Engineering Science\\
+Professor Wei Ge, Editor\\}
+
+\opening{Dear Prof. Ge,}
+
+Please find enclosed the revised version of our manuscript (CES-D-24-01867):
+``Numerical Simulation of Bubble Deformation and Breakup under 
+Simple Linear Shear Flows''.
+We thank the reviewers for their comments and thoughts regarding improvement 
+of our paper. We believe that we have addressed all of the reviewers’ 
+concerns; the changes are itemized in detail below.
+
+
+\par\noindent
+NOTE: all references to equations and figures below are with
+reference to the numbering scheme of the revised version of the paper,
+not the original version.  Also, changes are hi-lighted in red.
+\par\noindent
+
+Changes made in response to comments of Reviewer 4: 
+\begin{enumerate}
+%%1
+\item
+\textsf
+{The investigated ranges of density ratio ($\lambda$) and viscosity ratio ($\eta$) could be expanded to encompass lower values, which 
+would be applicable to various gas-liquid systems, including molten metal processes and slurry bubble columns.}
+\vspace{3 mm}
+
+Response: \\
+Thank you for your kind comments. 
+In the revised paper, we have completely modified the ``Introduction" and stated the target and applicable processes of this study.\\
+\\
+Please see the ``Introduction".
+\\
+
+%%2
+\par\noindent
+\item
+\textsf
+{Additional details regarding the computational tools/code and algorithms employed would enhance the reproducibility of the 
+results presented in this study.}
+\vspace{3 mm}
+
+Response: \\
+Thank you very much for your suggestions.  We have additionally referred to our papers (following three papers) 
+performed based on the computational code with the same algorithm.
+
+\begin{enumerate}
+\item [1.] M. Ohta, T. Furukawa, Y. Yoshida, M. Sussman,\\
+A Three-Dimensional Numerical Study on the Dynamics and Deformation of a Bubble Rising in a Hybrid Carreau and FENE-CR Modeled Polymeric Liquid, 
+Journal of Non-Newtonian Fluid Mechanics, Vol.265, pp.66-78 (2019).\\
+\item [2.] M. Ohta, Y. Akama, Y. Yoshida, \\
+M. Sussman, Influence of the Viscosity Ratio on Drop Dynamics and Breakup for a Drop Rising in an Immiscible Low-Viscous Liquid,\\
+Journal of Fluid Mechanics, Vol.752, pp.383-409 (2014).\\
+\item [3.]  M. Ohta, M. Sussman, \\
+The Buoyancy-Driven Motion of a Single Skirted Bubble or Drop Rising through a Viscous Liquid, \\
+Physics of Fluids, Vol.24, 112101 (18pp) (2012).\\
+\end{enumerate}
+Please see lines 223 to 227.
+\\
+
+%%3
+\par\noindent
+\item
+\textsf
+{The authors should elucidate the rationale behind constraining the viscosity ratio to values below $10^{-3}$.}
+\vspace{3 mm}
+
+Response: \\
+In the paper, we already described physical properties (density, viscosity, surface tension) set in the computations:\\
+\\
+Bubble: $\rho_{\rm b}$ = 1.2 kg/m$^{3}$ and $\mu_{\rm b} = 1.8 \times 10^{-5} $ Pa$\cdot$s\\
+Liquid:  $\rho_{\rm m}$ = 1000 kg/m$^{3}$ and $\mu_{\rm m}$ = a changeable value corresponding to $Ca$ [Pa$\cdot$s]\\
+Surface tension : $\sigma =2.5 \times 10^{-2}$ N/m. \\
+Then, $\mu_{\rm m}$ had $2.0 \times 10^{-2} \sim 6.0 \times 10^{-2}$ Pa$\cdot$s and
+$V$ had about 1.1 $\sim$ 1.3 m/s for the range of $Ca$ and $Re$ in our computaions.\\
+When $\mu_{\rm m}$ = $2.0 \times 10^{-2} \sim 6.0 \times 10^{-2}$ Pa$\cdot$s, we have $\eta < 1.0 \times 10^{-3}$.\\
+We have added the range of $\mu_{\rm m}$ and $V$ used in this study.\\
+\\
+Please see lines 119 to 120.
+\\
+
+%%4
+\par\noindent
+\item
+\textsf
+{While gravitational effects were not considered in this investigation, a brief discussion of the potential influence 
+of the Froude number (Fr) on bubble breakup dynamics would provide valuable context.}
+\vspace{3 mm}
+
+Response: \\
+We agree with the reviewer's comment.  \\
+In our computations, we set $g = 0$ because we wanted to isolate only the effects of the density and viscosity ratios and 
+wanted to compare previous studies dealing with the deformation and breakup of a drop with $\lambda =1$ and $\eta = 1$.
+When the gravity is considered, we obtain $Fr$ (Froude number) $\left(= \frac{{\it \Gamma}R}{\sqrt {gR}} \right)$ = 1.7 ($Re$ = 93 and $Ca$ = 0.3) 
+and 1.9 ($Re = 43$ and $Ca$ = 0.8). \\
+Although the values of $Fr$ are not so large, the effect of gravity (bubble rise motion) may not be completely negligible in terms of $Fr$.
+However, bubbles for both conditions reach the breakup at $t$ = about 0.5 s. 
+Accordingly, it is expected that the effect of gravity (bubble rise motion) can be negligible to the behavior of bubble deformation and breakup 
+around critical $Re$ number conditions.
+In the revised paper, we have described these explanations.\\
+\\
+Please see line 95 (the definiton of $Fr$) and lines 123 to 130.
+\\
+
+
+\end{enumerate}
+
+\closing{On behalf of the authors,}
+Mitsuhiro Ohta
+
+\end{letter}
+\end{document}

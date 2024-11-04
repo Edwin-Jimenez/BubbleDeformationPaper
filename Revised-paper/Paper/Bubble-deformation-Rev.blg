@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Bubble-deformation-Rev.aux
+The style file: elsarticle-harv.bst
+Database file #1: Bubble-deformation.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 51 entries,
+            2990 wiz_defined-function locations,
+            1062 strings with 18019 characters,
+and the built_in function-call counts, 35820 in all, are:
+= -- 2976
+> -- 1278
+< -- 22
++ -- 532
+- -- 441
+* -- 4100
+:= -- 5182
+add.period$ -- 195
+call.type$ -- 51
+change.case$ -- 404
+chr.to.int$ -- 49
+cite$ -- 51
+duplicate$ -- 2576
+empty$ -- 2578
+format.name$ -- 602
+if$ -- 6717
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 504
+newline$ -- 312
+num.names$ -- 204
+pop$ -- 726
+preamble$ -- 1
+purify$ -- 351
+quote$ -- 0
+skip$ -- 709
+stack$ -- 0
+substring$ -- 1752
+swap$ -- 1956
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 459
+warning$ -- 0
+while$ -- 232
+width$ -- 0
+write$ -- 856

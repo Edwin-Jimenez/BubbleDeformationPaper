@@ -1,0 +1,245 @@
+%  -----------------------------------------------------------------------------
+%  Modified:October 2024
+%  -----------------------------------------------------------------------------
+\documentclass{letter} 
+
+ \date{\today}
+ 
+\usepackage{color}
+
+\begin{document}
+\begin{letter}{
+Chemical Engineering Science\\
+Professor Wei Ge, Editor\\}
+
+\opening{Dear Prof. Ge,}
+
+Please find enclosed the revised version of our manuscript (CES-D-24-01867):
+``Numerical Simulation of Bubble Deformation and Breakup under 
+Simple Linear Shear Flows''.
+We thank the reviewers for their comments and thoughts regarding improvement 
+of our paper. We believe that we have addressed all of the reviewers’ 
+concerns; the changes are itemized in detail below.
+
+\par\noindent
+NOTE: all references to equations and figures below are with
+reference to the numbering scheme of the revised version of the paper,
+not the original version.  Also, changes are hi-lighted in red.
+\par\noindent
+
+Changes made in response to comments of Reviewer 2: \begin{enumerate}
+%%1
+\item
+\textsf
+{Why are there several words in italics in the Introduction section and some other parts?}
+\vspace{3 mm}
+
+Response: \\
+The italic format was used to emphasize words, But the italic format was removed in the revised 
+paper because words in italic format are confusing expressions.\\
+
+%%2
+\item
+\textsf
+{Page 2 Line 14: There should be an "and" before "Renardy"}
+\vspace{3 mm}
+
+Response: \\
+We appreciate the reviewer's suggestion. The description of the applicable part disappeared 
+in the revised paper because we have completely modified the ``Introduction".\\
+\\
+Please see the ``Introduction".
+\\
+
+%%3
+\par\noindent
+\item
+\textsf
+{The authors mentioned several DNS methods in the Introduction section while choosing the CLSVOF method in this work. What are the reasons?}
+\vspace{3 mm}
+
+Response: \\
+As explained in the ``Numerical Analysis", the CLSVOF method couples both the level set and VOF methods and can 
+take advantage of both methodologies. 
+Consequently,  the CLSVOF method is superior to other interface-capturing/interface-tracking methods. 
+This is the reason we selected the CLSVOF method. We only referred to several interface-capturing/interface-tracking 
+method methods in introducing previous studies.\\
+\\
+
+%%4
+\par\noindent
+\item
+\textsf
+{Why can the effect of gravity be disregarded in this work?\\}
+\vspace{3 mm}
+
+Response: \\
+In our computations, we set $g = 0$ because we wanted to isolate only the effects of the density and viscosity ratios and 
+wanted to compare previous studies dealing with the deformation and breakup of a drop with $\lambda =1$ and $\eta = 1$. 
+Also, in the revised paper, a brief discussion of the potential influence of gravity (Froude number) on bubble breakup dynamics 
+has been added according to another reviewer's suggestion.\\
+\\
+Please see lines 123 to 130.
+\\
+
+%%5
+\par\noindent
+\item
+\textsf
+{Page 9: The results of D are compared with those in other literature. 
+What are the underlying causes of these differences? It is also noticed that different literatures are used for different verification steps.
+Why not use the same literature for verification?}
+\vspace{3 mm}
+
+Response: \\
+Table 1 shows the comparison of the deformation parameter $D$ (Li et al., Physics of Fluids, Vol.12, 269–282, 2000) for a drop as a function of 
+$Re$ ($Ca$ = 0.3, $\lambda =1$ and $\eta = 1$).
+The $D$ computationally obtained by Li et al. (2000) is regarded as a benchmark problem in this field. First, we compared the $D$ by Li et al. (2000) 
+with our computational results. Also, In Fig. 2,  we compared the appearance of drop breakup (Renardy and Cristini, 
+Physics of Fluids, Vol.13, 2161–2164, 2001) with our computational results.
+On the other hand, regarding quantitative physical quantities on bubble deformation and breakup, only experimental results for $D$ exist under 
+the condition of $Re \simeq 0$.
+Thus, As shown in Table 2, we performed the comparison of the deformation parameter $D$ for a bubble as a function of  $Ca$ 
+($Re \simeq 0$, $\lambda  \simeq 0$ and $\eta  \simeq 0$). In the experiments, obtaining precise experimental data will be difficult because 
+the dynamic motion of a bubble in a highly viscous liquid in an experimental device needs to be accurately set.
+We don't know the cause of the difference between both experimental results, but our numerical results were close to those of Rust and 
+Manga (Journal of Colloid and 
+Interface Science, Vol. 249, 476– 480 2002). For your reference, computations for bubble deformation with the condition of $Re \simeq 0$ 
+were hard tasks and a very long computational time (one year) was needed. \\
+\\
+
+%%6
+\par\noindent
+\item
+\textsf
+{Page 14: What are the units of the variable T?.}
+\vspace{3 mm}
+
+Response: \\
+$T$ is the dimensionless time defined by $T$ =$\mathit{\Gamma} t$. \\
+\\
+Please confirm line 354.
+\\
+
+%%7
+\par\noindent
+\item
+\textsf
+{Figure 4: Drop deformation and breakup are compared under conditions with $Re$ = 1.0 and 1.1. When $Re$ = 1.0, the simulation ends at $T$ = 35.0, and it is stated that drops will not break up. When $R$ = 1.1, the drop also does not break up at $T$ = 35.0. It breaks up at $T$ = 56.7. What about also showing the status of drop under $Re$ = 1.0 at $T$ = 56.7? It might be a more reasonable comparison.}
+\vspace{3 mm}
+
+Response: \\
+We agree with the reviewer's suggestion. We added results at $T$ = 40.1, 50.0, and 56.7 to the drop status for $Re$ = 1.0 in Fig. 4.
+As can be seen from new Fig. 4, a drop remains a stable deformed state after $T$ = 35.0. In the revised paper, such a comment was added.\\
+\\
+Please confirm lines 380 to 381.
+\\
+
+%%8
+\par\noindent
+\item
+\textsf
+{Figures 5 - 9: I am curious about the way that the selection of the Ts. Why are they not unified in these five figures?.}
+\vspace{3 mm}
+
+Response: \\
+Regarding Figs. 5 and 6, we compared bubble dynamics for $Re$ = 92 (Fig. 5) with that for $Re$ = 93 (Fig. 5) at almost the same $T$.
+But, we found a mistake in Fig. 5: we replaced the figure with $T$ = 17.4 with the figure with $T$ = 12.2.
+In the same way, we replaced the figure with $T$ = 24.3 with the figure with $T$ = 17.0 in Fig. 10. \\
+
+Fig. 7 shows the detailed bubble breakup process. Giving the highest priority to show the detailed bubble breakup process, we selected 
+results with $T$ independently of $T$ set in Figs. 5 and 6.\\
+
+Fig. 8 shows the shear stress profile around a bubble for two Reynolds numbers ($Re$ = 50 and 93). In Fig. 8, the shear stress for the 
+$Re$ = 50 condition was drawn around the bubble after the bubble attained a stable deformed state.
+The shear stress for the case of $Re$ = 93 was depicted when the bubble sufficiently elongated ($T$ = 14.9).
+We wanted to compare the maximum shear stress value at both $Re$ conditions. \\
+In the revised paper, these explanations for Fig. 8 were added.\\
+
+As for Fig. 9, we drew velocity fields around bubbles corresponding to Fig. 7.\\
+\\
+
+%%9
+\par\noindent
+\item
+\textsf
+{Page 16 Line 395: Why does the bubble not develop the bulb-like shape like the drop?.}
+\vspace{3 mm}
+
+Response: \\
+In the breakup of the drop with $\lambda =1$ and $\eta = 1$ (Fig. 4), the drop starts to break at the center of the drop without 
+the elongation in the first place because the drop easily breaks under the low $Re$ number. 
+Consequently, the drop breakup is seemingly developed with a bulb-like shape because the liquid bridge between two mother 
+drops is formed in the breakup process.
+On the other hand, in the case of the bubble, very large shear forces are required to deform the bubble because $\lambda \simeq 0$ 
+and $\eta \simeq 0$.
+Thus, the bubble undergoing large shear forces is largely stretched along the direction of the shear flow, and the very long 
+elongated bubble is finally formed. 
+Accordingly, the bubble breaks up without the bulb-like shape. In the revised paper, we added these considerations.\\
+\\
+Please see lines 408 to 413.
+\\
+
+%%10
+\par\noindent
+\item
+\textsf
+{Page 17 Line 424: What are the possible reasons that the bubble breakup process is different from the drop breakup process?}
+\vspace{3 mm}
+
+Response: \\
+As mentioned above (Answer 9), the effect of $\lambda$ and $\eta$ on the breakup process is large, and especially $\eta$ is 
+a dominant factor for the breakup process. 
+The shear stress is defined by $\tau = \mu$$\dot{\gamma}$ ($\dot{\gamma}$: the shear-rate (the velocity gradient)).
+As is obvious from this equation, since the viscosity of a gas is much less than that of a liquid($\eta \simeq 0$), so a very large velocity 
+gradient needs to be achieved to realize $\tau$ that makes the bubble largely deformed.
+As a result, the bubble undergoing large shear forces (velocity gradients) is largely stretched along the direction of the shear flow, and
+the appearance of the bubble breakup becomes quite different from that of a drop 
+Therefore, to be exact, the bubble breakup process is different from the drop breakup with $\lambda = 1$ and $\eta =1$.  
+We added "with $\lambda = 1$ and $\eta =1$" to the revised paper.
+Ongoingly, we have been examining the effect of $\lambda$ and $\eta$ on drop breakup, and it is confirmed that large shear forces 
+are required to deform the drop when $\lambda = 1$ and $\eta \simeq 0$ and the drop breaks up by way of forming the long 
+elongated shape. 
+Also, we have referred to the effect of the viscosity ratio on the deformation and breakup of the drop in the revised paper.\\
+\\
+Please see lines 440 to 442.
+\\
+
+%%11
+\par\noindent
+\item
+\textsf
+{Section 4.4: What about the velocity field of the breaking drop? In the previous text and figures, it does not seem similar to that of the breaking bubble.}
+\vspace{3 mm}
+
+Response: \\
+Detailed velocity fields of the deforming and/or breaking drop have already been presented in some literature.
+So, we have not shown the velocity fields of the deforming and/or breaking drop here.
+The behavior of a breakup influences the velocity fields for the drop and the bubble, so the velocity fields between the drop 
+and the bubble is not similar.
+In the revised paper, we added these explanations.  \\
+\\
+Please see lines 497 to 501.
+\\
+
+
+%%12
+\par\noindent
+\item
+\textsf
+{Is there any correlation that can be summarized between Rec and Ca?}
+\vspace{3 mm}
+
+Response: \\
+We need to additionally investigate $Re_{\rm c}$ for a wider $Ca$ number condition to consider correlation between $Re_{\rm c}$ and $Ca$,
+but we predict that a correlation with $Re_{\rm c}$ as a function of $Ca$ for predicting the bubble breakup can be formulated.\\
+\\
+
+
+\end{enumerate}
+
+\closing{On behalf of the authors,}
+Mitsuhiro Ohta
+
+\end{letter}
+\end{document}
