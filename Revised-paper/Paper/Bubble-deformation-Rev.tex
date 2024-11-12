@@ -216,19 +216,7 @@
 \begin{abstract}
 \textcolor{red}
 {
-Numerical simulations are presented for the deformation and breakup of a bubble in liquids undergoing simple linear shear flow.  
-Numerical results are obtained using a hydrodynamic scheme with formal second-order accuracy based on a coupled level 
-set/volume-of-fluid (CLSVOF) method.  To verify our numerical algorithm and provide a basis for comparison, we also 
-present simulation results that compare with previous, more popular, drop deformation and rupture simulations.  
-The numerical results reveal that the shear-induced bubble deformation and breakup process differs significantly from that 
-of the analogous drop system under similar flow conditions.  The first distinguishing factor for bubble breakup is that the 
-magnitude of shear flow necessary for causing rupture is much larger than that in the drop system case. 
-In other words, a larger Reynolds number is needed to induce bubble breakup.  The second distinct feature of the bubble system 
-versus the drop system is that the bubble does not maintain a stable deformed shape as the system parameters approach the 
-critical ``breakup'' Reynolds number.  It is asserted that the differences in morphology for a bubble undergoing breakup versus a 
-drop in the same process can be attributed to the density and viscosity ratio of the corresponding two-phase flow systems.
-The critical conditions for bubble breakup with respect to the Reynolds and capillary numbers are determined for several cases.  
-}
+Numerical simulations are presented for the deformation and breakup of a bubble in liquids undergoing simple linear shear flow.  Numerical results are obtained using a projection method for incompressible two-phase flow in which the method represents interfaces using the sharp interface coupled level set and volume of fluid (CLSVOF) method.   To verify our numerical algorithm and provide a basis for comparison, we also present simulation results that compare with previous, more popular, drop deformation and rupture simulations.  The numerical results reveal that the shear-induced bubble deformation and breakup process differs significantly from that of the analogous drop system under similar flow conditions.  The first distinguishing factor for bubble breakup is that the magnitude of shear flow necessary for causing rupture is much larger than that in the drop system case.  In other words, a larger Reynolds number is needed to induce bubble breakup.  The second distinct feature of the bubble system versus the drop system is that the bubble does not maintain a stable deformed shape as the system parameters approach the critical ``breakup'' Reynolds number.  It is asserted that the differences in morphology for a bubble undergoing breakup versus a drop in the same process can be attributed to the density and viscosity ratio of the corresponding two-phase flow systems.  The critical conditions for bubble breakup with respect to the Reynolds and capillary numbers are determined for several cases.  }
 \end{abstract}
 
 
@@ -260,7 +248,7 @@ Bubble deformation\sep bubble breakup\sep shear flow\sep CFD
 {
 Bubble dynamics in shear flow, including breakup, is critically important for various \textcolor{blue} {gas-liquid} scientific and engineering processes. 
 We refer the reader to the following experimental studies relating to bubble deformation in foaming processes, microfluidic devices, 
-and microbubbles in the blood circulation system, \cite{ChuFinBouAtaHamPug19,MulTobDreFisWin08,BenRodFauPinFerPerGarMirLim18,DreSai15}.  
+microbubbles in the blood circulation system, materials processing, pharmaceuticals, minerals engineering, and cosmetics\cite{ChuFinBouAtaHamPug19,MulTobDreFisWin08,BenRodFauPinFerPerGarMirLim18,DreSai15,EFTEKHARI2021837,WANG2023108105,doi:10.1021/acs.langmuir.1c01814}. 
 In particular, it is the study of bubble deformation as it pertains to high-performance plastics applications that motivate this work.
 This article presents computational studies of shear-driven deformation and breakup of a bubble in insoluble viscous liquids.  
 Studying bubble break-up via computation rather than experiments simplifies the process of setting a combination of precise, simple shear 
@@ -286,10 +274,11 @@ first time, the critical Reynolds number ($Re \gg 1$) that leads to bubble break
 reveal characteristics that distinguish a drop's deformation and breakup processes versus those of a bubble.
 %
 We remark that there have been a number of articles on the study of lift of slightly deformable bubbles\cite{ErvinANDTryggvason1997,legendre1998lift}.  
-We reiterate, though, that for bubble deformation and breakup in shear flows, only a few articles exist: \cite{WeiQiaXu12,WanShiZha15}.
+We reiterate, though, that for bubble deformation and breakup in shear flows, only a few articles exist: \cite{WeiQiaXu12,WanShiZha15,AAMM-16-2}.
 These previous studies mainly examined the dynamics (e.g., rotation angle) of bubble deformation in shear flow.
-Concerning bubble breakup, Wei et al.~\cite{WeiQiaXu12} presented only one numerical result for a bubble breakup process under 
-the condition of $Ca$ (capillary number) = 35. \\ \indent
+Concerning bubble breakup, Wei et al.~\cite{WeiQiaXu12} presented one numerical result for a bubble breakup process under the condition of $Ca$ (capillary number) = 35. Sharifi et al\cite{AAMM-16-2} presented two results for bubble breakup corresponding to $Ca=7.5$ and $Ca=11.2$.  We point out that all of the previous
+computational research on bubble deformation (and breakup) under shear driven 
+flow\cite{WeiQiaXu12,WanShiZha15,AAMM-16-2}  use the (explicit) Lattice Boltzmann method.  For accurately computing the tensile strength of a bubble, and accurately computing threshold parameters for break-up (what we do in this article, and what was not done in previous work), it is critical that a numerical method implicitly capture the velocity continuity condition and the normal stress boundary condition.  We contend that a projection method (e.g. this paper and \cite{zhang2021three,zhang2022three,OhtSus12}) is the more appropriate (albeit slower)  method for our study rather than the Lattice Boltzmann method.  Also, in contrast to the Lattice Boltzmann method, our interface ``capturing'' method, the CLSVOF method\cite{SusPuc00,SusSmiHusOhtZhi07},  maintains the gas/liquid interface as sharp and by construction our method preserves mass and volume within a fraction of a percent. The results that we present in this article (see e.g. section \ref{convergence}) regarding measuring the tensile strength of a bubble are unique and validated with respect to comparisons with previous experimental data and grid refinement studies.  Admittadly, each simulation on the finest resolution takes over a half a year to complete on a workstation because of the following unavoidable factors: (i) the large density-ratio projection method requires the solution of a large sparse, ill-conditioned, matrix system at each time step, (ii) the finer the mesh, the more precise the measured threshold, and right at the threshold (Taylor Deformation parameter $D\approx 1$!), oscillatory behaviour is observed delaying the determination of breakup or not.  \\ \indent
 %
 To highlight the mechanisms of bubble deformation and breakup in a shear flow, we juxtapose the bubble results with those of a drop.
 We remark that while the study of critical tensile strength parameters for the bubble is sparse, there have been many studies for the 
@@ -905,7 +894,7 @@ while a value of $Re=1.1$ leads to drop breakup.
 %\end{comment}
 %
 
-\subsubsection{Selecting the appropriate grid size}
+\subsubsection{Selecting the appropriate grid size \label{convergence} }
 
 The grid size and adaptive meshing strategy that we adopt is chosen in order to
 answer the research question as to the conditions which determine whether a
