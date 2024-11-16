@@ -263,7 +263,7 @@ conditions at which a bubble in shear flow first transitions from deformation to
 the sensitivity of the critical bubble deformation and break-up flow states with respect to the grid size.  An advantage of studying shear-driven 
 bubble deformation and breakup computationally rather than experimentally is that we can easily modify fluid physical properties and external properties (e.g. the gravity force, in order to compare with the analogous drop case) in order to isolate
 the sensitivity of deformation and breakup to physical parameters.  In our computations, the time-evolution of the boundary 
-between gas and liquid is tracked with a coupled level set/volume-of-fluid (CLSVOF) interface capturing algorithm \cite{SusPuc00,SusSmiHusOhtZhi07}.  
+between gas and liquid is tracked with a coupled level set/volume-of-fluid (CLSVOF) interface capturing algorithm \cite{SusPuc00,SusSmiHusOhtZhi07}.  The rationale for the CLSVOF method is that the hybrid method represents the (complex) gas-liquid interfaces with minimal volume loss (property of the volume-of-fluid method) and minimal error in the approximation of the surface tension force (property of the level set method).
 We focus on determining critical physical conditions in which the breakup of a bubble occurs in shear flow because it is important to identify 
 the parameter regimes in which a relatively simple system transitions from stable to unstable.  Specifically, we ascertain the critical 
 Reynolds number ($Re_{\rm c}$) corresponding to the bubble breakup onset condition as a function of $Ca$.          
@@ -278,7 +278,7 @@ We reiterate, though, that for bubble deformation and breakup in shear flows, on
 These previous studies mainly examined the dynamics (e.g., rotation angle) of bubble deformation in shear flow.
 Concerning bubble breakup, Wei et al.~\cite{WeiQiaXu12} presented one numerical result for a bubble breakup process under the condition of $Ca$ (capillary number) = 35. Sharifi et al\cite{AAMM-16-2} presented two results for bubble breakup corresponding to $Ca=7.5$ and $Ca=11.2$.  We point out that all of the previous
 computational research on bubble deformation (and breakup) under shear driven 
-flow\cite{WeiQiaXu12,WanShiZha15,AAMM-16-2}  use the (explicit) Lattice Boltzmann method.  For accurately computing the tensile strength of a bubble, and accurately computing threshold parameters for break-up (what we do in this article, and what was not done in previous work), it is critical that a numerical method directly enforces the velocity continuity condition and the gas-liquid interface normal jump conditions.  We contend that a projection method (e.g. this paper and \cite{zhang2021three,zhang2022three,OhtSus12}) is the more appropriate (albeit slower) method for our study rather than the Lattice Boltzmann method.  Also, in contrast to the Lattice Boltzmann method, our interface ``capturing'' method, the CLSVOF method\cite{SusPuc00,SusSmiHusOhtZhi07},  maintains the gas/liquid interface as sharp and by construction our method preserves mass and volume within a fraction of a percent. The results that we present in this article (see e.g. section \ref{convergence}) regarding measuring the tensile strength of a bubble are unique and validated with respect to comparisons with previous experimental data and grid refinement studies.  Admittadly, each simulation on the finest resolution takes over a half a year to complete on a workstation because of the following unavoidable factors: (i) the large density-ratio projection method requires the solution of a large sparse, ill-conditioned, matrix system at each time step, (ii) the finer the mesh, the more precise the measured threshold, and right at the threshold (Taylor Deformation parameter $D\approx 1$!), oscillatory behaviour is observed delaying the determination of breakup or not.  Finally, the larger the deformation parameter $D$, the longer we must make our computational domain (bigger domain aspect ratio!) thereby adversely effecting the condition number even more for carrying our the pressure projection. \\ \indent
+flow\cite{WeiQiaXu12,WanShiZha15,AAMM-16-2}  use the (explicit) Lattice Boltzmann method.  For accurately computing the tensile strength of a bubble, and accurately computing threshold parameters for break-up (what we do in this article, and what was not done in previous work), it is critical that a numerical method directly enforces the velocity continuity condition and the gas-liquid interface normal jump conditions.  We contend that a projection method (e.g. this paper and \cite{zhang2021three,zhang2022three,OhtSus12}) is the more appropriate (albeit slower) method for our study rather than the Lattice Boltzmann method.  Also, in contrast to the Lattice Boltzmann method, our interface ``capturing'' method, the CLSVOF method\cite{SusPuc00,SusSmiHusOhtZhi07},  maintains the gas/liquid interface as sharp, enables accurate approximation of the surface tension force,  and by construction the CLSVOF method preserves mass and volume within a fraction of a percent. The results that we present in this article (see e.g. section \ref{convergence}) regarding measuring the tensile strength of a bubble are unique and validated with respect to comparisons with previous experimental data and grid refinement studies.  Admittadly, each simulation on the finest resolution takes over a half a year to complete on a workstation because of the following unavoidable factors: (i) the large density-ratio projection method requires the solution of a large sparse, ill-conditioned, matrix system at each time step, (ii) the finer the mesh, the more precise the measured threshold, and right at the threshold (Taylor Deformation parameter $D\approx 1$!), oscillatory behaviour is observed delaying the determination of breakup or not.  Finally, the larger the deformation parameter $D$, the longer we must make our computational domain (bigger domain aspect ratio!) thereby adversely effecting the condition number even more for carrying our the pressure projection. \\ \indent
 %
 To highlight the mechanisms of bubble deformation and breakup in a shear flow, we juxtapose the bubble results with those of a drop (for terrestrial experiments, when the density ratio of drop to matrix is very close to one!).
 We remark that while the study of critical tensile strength parameters for the bubble is sparse, there have been many studies for the 
@@ -358,7 +358,7 @@ we ignore the effect of the $Fr$ number
 $\left(= \frac{{\it \Gamma}R}{\sqrt {gR}} \right)$.
 }
 
-When comparing with previous drop studies, we fix $\lambda=1$.  As a result,
+When comparing with previous drop studies, we fix $\lambda=1$ for the drop cases.  As a result,
 (for $\lambda=1$) the following dimensionless physical parameters are used to
 describe the problem of drop deformation/breakup in shear flow
 %
@@ -562,7 +562,10 @@ projection method as described by \citet{SusSmiHusOhtZhi07}.  An outline of
 our method is as follows (see \citet{SusSmiHusOhtZhi07}, section 4, for more 
 details):
 \begin{description}
-\item[Timestep $\Delta t$] The timestep is governed by the CFL condition and
+\item[All Steps. Timestep] 
+ \begin{eqnarray*}
+ \end{eqnarray*}
+  The timestep, $\Delta t$, is governed by the CFL condition and
   surface tension (section 5.7 of \citet{SusSmiHusOhtZhi07}):
  \begin{eqnarray*}
  \Delta t < \min_{i,j,k} \left( \frac{\Delta x}{2|U^{n}|},
@@ -613,7 +616,7 @@ In the AMR technique the grid resolution is increased in regions near the
 interface while a coarser grid is used where the flow is relatively steady.
 The upper panel of Figure~\ref{fig:SchemAndGrid}(b) displays a schematic view
 of the hierarchical grid structure and the lower panel corresponds to an actual
-computational example for bubble deformation in simple linear shear flow.  In
+computational example corresponding to bubble deformation in simple linear shear flow.  In
 general, the mesh hierarchy is composed of different levels of refinement
 ranging from coarsest $\ell=0$ (``level-0") to finest
 $\ell=\ell_{\textrm{max}}$ (``level-$\ell_{\textrm{max}}$").  The refinement

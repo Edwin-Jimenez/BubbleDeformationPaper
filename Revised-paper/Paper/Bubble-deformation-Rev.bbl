@@ -1,0 +1,646 @@
+\begin{thebibliography}{58}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Amani et~al.(2019)Amani, Balc{\'a}zar, Castro and
+  Oliva}]{AmaBalCasOli19}
+\bibinfo{author}{Amani, A.}, \bibinfo{author}{Balc{\'a}zar, N.},
+  \bibinfo{author}{Castro, J.}, \bibinfo{author}{Oliva, A.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Numerical study of droplet deformation in shear flow
+  using a conservative level-set method}.
+\newblock \bibinfo{journal}{Chemical Engineering Science}
+  \bibinfo{volume}{207}, \bibinfo{pages}{153--171}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0009250919305123},
+  \DOIprefix\doi{https://doi.org/10.1016/j.ces.2019.06.014}.
+%Type = Article
+\bibitem[{Bazhlekov et~al.(2006)Bazhlekov, Anderson and Meijer}]{BazAndMei06}
+\bibinfo{author}{Bazhlekov, I.B.}, \bibinfo{author}{Anderson, P.D.},
+  \bibinfo{author}{Meijer, H.E.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Numerical investigation of the effect of insoluble
+  surfactants on drop deformation and breakup in simple shear flow}.
+\newblock \bibinfo{journal}{Journal of Colloid and Interface Science}
+  \bibinfo{volume}{298}, \bibinfo{pages}{369 -- 394}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0021979705012658},
+  \DOIprefix\doi{http://dx.doi.org/10.1016/j.jcis.2005.12.017}.
+%Type = Article
+\bibitem[{Bento et~al.(2018)Bento, Rodrigues, Faustino, Pinho, Fernandes,
+  Pereira, Garcia, Miranda and Lima}]{BenRodFauPinFerPerGarMirLim18}
+\bibinfo{author}{Bento, D.}, \bibinfo{author}{Rodrigues, R.O.},
+  \bibinfo{author}{Faustino, V.}, \bibinfo{author}{Pinho, D.},
+  \bibinfo{author}{Fernandes, C.S.}, \bibinfo{author}{Pereira, A.I.},
+  \bibinfo{author}{Garcia, V.}, \bibinfo{author}{Miranda, J.M.},
+  \bibinfo{author}{Lima, R.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Deformation of red blood cells, air bubbles, and
+  droplets in microfluidic devices: Flow visualizations and measurements}.
+\newblock \bibinfo{journal}{Micromachines} \bibinfo{volume}{9},
+  \bibinfo{pages}{151}.
+\newblock \URLprefix \url{https://www.mdpi.com/2072-666X/9/4/151},
+  \DOIprefix\doi{10.3390/mi9040151}.
+%Type = Article
+\bibitem[{Chu et~al.(2019)Chu, Finch, Bournival, Ata, Hamlett and
+  Pugh}]{ChuFinBouAtaHamPug19}
+\bibinfo{author}{Chu, P.}, \bibinfo{author}{Finch, J.},
+  \bibinfo{author}{Bournival, G.}, \bibinfo{author}{Ata, S.},
+  \bibinfo{author}{Hamlett, C.}, \bibinfo{author}{Pugh, R.J.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{A review of bubble break-up}.
+\newblock \bibinfo{journal}{Advances in Colloid and Interface Science}
+  \bibinfo{volume}{270}, \bibinfo{pages}{108--122}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0001868619300211},
+  \DOIprefix\doi{https://doi.org/10.1016/j.cis.2019.05.010}.
+%Type = Article
+\bibitem[{Cristini et~al.(2001)Cristini, B{\l}awzdziewicz and
+  Loewenberg}]{CriBlaLoe01}
+\bibinfo{author}{Cristini, V.}, \bibinfo{author}{B{\l}awzdziewicz, J.},
+  \bibinfo{author}{Loewenberg, M.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{An adaptive mesh algorithm for evolving surfaces:
+  simulations of drop breakup and coalescence}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{168}, \bibinfo{pages}{445 -- 463}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0021999101967130},
+  \DOIprefix\doi{http://dx.doi.org/10.1006/jcph.2001.6713}.
+%Type = Article
+\bibitem[{Cristini et~al.(2003)Cristini, Guido, Alfani, B{\l}awzdziewicz and
+  Loewenberg}]{CriGuiAlfBlaLoe03}
+\bibinfo{author}{Cristini, V.}, \bibinfo{author}{Guido, S.},
+  \bibinfo{author}{Alfani, A.}, \bibinfo{author}{B{\l}awzdziewicz, J.},
+  \bibinfo{author}{Loewenberg, M.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Drop breakup and fragment size distribution in shear
+  flow}.
+\newblock \bibinfo{journal}{Journal of Rheology} \bibinfo{volume}{47},
+  \bibinfo{pages}{1283--1298}.
+\newblock \URLprefix
+  \url{http://scitation.aip.org/content/sor/journal/jor2/47/5/10.1122/1.1603240},
+  \DOIprefix\doi{http://dx.doi.org/10.1122/1.1603240}.
+%Type = Article
+\bibitem[{Croce et~al.(2010)Croce, Griebel and Schweitzer}]{CroGriSch10}
+\bibinfo{author}{Croce, R.}, \bibinfo{author}{Griebel, M.},
+  \bibinfo{author}{Schweitzer, M.A.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Numerical simulation of bubble and droplet
+  deformation by a level set approach with surface tension in three
+  dimensions}.
+\newblock \bibinfo{journal}{International Journal for Numerical Methods in
+  Fluids} \bibinfo{volume}{62}, \bibinfo{pages}{963--993}.
+\newblock \URLprefix \url{http://dx.doi.org/10.1002/fld.2051},
+  \DOIprefix\doi{10.1002/fld.2051}.
+%Type = Article
+\bibitem[{Drenckhan and Saint-Jalmes(2015)}]{DreSai15}
+\bibinfo{author}{Drenckhan, W.}, \bibinfo{author}{Saint-Jalmes, A.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{The science of foaming}.
+\newblock \bibinfo{journal}{Advances in Colloid and Interface Science}
+  \bibinfo{volume}{222}, \bibinfo{pages}{228--259}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0001868615000603},
+  \DOIprefix\doi{https://doi.org/10.1016/j.cis.2015.04.001}.
+  \bibinfo{note}{reinhard Miller, Honorary Issue}.
+%Type = Article
+\bibitem[{Eftekhari et~al.(2021a)Eftekhari, Schwarzenberger, Heitkam and
+  Eckert}]{EFTEKHARI2021837}
+\bibinfo{author}{Eftekhari, M.}, \bibinfo{author}{Schwarzenberger, K.},
+  \bibinfo{author}{Heitkam, S.}, \bibinfo{author}{Eckert, K.},
+  \bibinfo{year}{2021}a.
+\newblock \bibinfo{title}{Interfacial flow of a surfactant-laden interface
+  under asymmetric shear flow}.
+\newblock \bibinfo{journal}{Journal of Colloid and Interface Science}
+  \bibinfo{volume}{599}, \bibinfo{pages}{837--848}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0021979721006457},
+  \DOIprefix\doi{https://doi.org/10.1016/j.jcis.2021.04.126}.
+%Type = Article
+\bibitem[{Eftekhari et~al.(2021b)Eftekhari, Schwarzenberger, Heitkam, Javadi,
+  Bashkatov, Ata and Eckert}]{doi:10.1021/acs.langmuir.1c01814}
+\bibinfo{author}{Eftekhari, M.}, \bibinfo{author}{Schwarzenberger, K.},
+  \bibinfo{author}{Heitkam, S.}, \bibinfo{author}{Javadi, A.},
+  \bibinfo{author}{Bashkatov, A.}, \bibinfo{author}{Ata, S.},
+  \bibinfo{author}{Eckert, K.}, \bibinfo{year}{2021}b.
+\newblock \bibinfo{title}{Interfacial behavior of particle-laden bubbles under
+  asymmetric shear flow}.
+\newblock \bibinfo{journal}{Langmuir} \bibinfo{volume}{37},
+  \bibinfo{pages}{13244--13254}.
+\newblock \URLprefix \url{https://doi.org/10.1021/acs.langmuir.1c01814},
+  \DOIprefix\doi{10.1021/acs.langmuir.1c01814},
+  \href{http://arxiv.org/abs/https://doi.org/10.1021/acs.langmuir.1c01814}{{\tt
+  arXiv:https://doi.org/10.1021/acs.langmuir.1c01814}}. \bibinfo{note}{pMID:
+  34726918}.
+%Type = Article
+\bibitem[{Ervin and Tryggvason(1997)}]{ErvinANDTryggvason1997}
+\bibinfo{author}{Ervin, E.}, \bibinfo{author}{Tryggvason, G.},
+  \bibinfo{year}{1997}.
+\newblock \bibinfo{title}{The rise of bubbles in a vertical shear flow}.
+\newblock \bibinfo{journal}{Journal of Fluids Engineering}
+  \bibinfo{volume}{119(2)}, \bibinfo{pages}{443--449}.
+%Type = Article
+\bibitem[{Hernandez and Rangel(2017)}]{HerRan17}
+\bibinfo{author}{Hernandez, F.H.}, \bibinfo{author}{Rangel, R.H.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Breakup of drops in simple shear flows with
+  high-confinement geometry}.
+\newblock \bibinfo{journal}{Computers \& Fluids} \bibinfo{volume}{146},
+  \bibinfo{pages}{23 -- 41}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0045793017300038},
+  \DOIprefix\doi{https://doi.org/10.1016/j.compfluid.2017.01.001}.
+%Type = Article
+\bibitem[{Hirt and Nichols(1981)}]{HirNic81}
+\bibinfo{author}{Hirt, C.}, \bibinfo{author}{Nichols, B.},
+  \bibinfo{year}{1981}.
+\newblock \bibinfo{title}{Volume of fluid (vof) method for the dynamics of free
+  boundaries}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{39}, \bibinfo{pages}{201 -- 225}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/0021999181901455},
+  \DOIprefix\doi{http://dx.doi.org/10.1016/0021-9991(81)90145-5}.
+%Type = Article
+\bibitem[{Inamuro(2006)}]{Ina06}
+\bibinfo{author}{Inamuro, T.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Lattice boltzmann methods for viscous fluid flows and
+  for two-phase fluid flows}.
+\newblock \bibinfo{journal}{Fluid Dynamics Research} \bibinfo{volume}{38},
+  \bibinfo{pages}{641}.
+\newblock \URLprefix \url{http://stacks.iop.org/1873-7005/38/i=9/a=A04}.
+%Type = Article
+\bibitem[{Inamuro et~al.(2003)Inamuro, Tomita and Ogino}]{InaTomOgi03}
+\bibinfo{author}{Inamuro, T.}, \bibinfo{author}{Tomita, R.},
+  \bibinfo{author}{Ogino, F.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Lattice boltzmann simulations of drop deformation and
+  breakup in simple shear flows}.
+\newblock \bibinfo{journal}{International Journal of Modern Physics B}
+  \bibinfo{volume}{17}, \bibinfo{pages}{21--26}.
+\newblock \URLprefix
+  \url{http://www.worldscientific.com/doi/abs/10.1142/S0217979203017035},
+  \DOIprefix\doi{10.1142/S0217979203017035}.
+%Type = Article
+\bibitem[{Ioannou et~al.(2016)Ioannou, Liu and Zhang}]{IoaLiuZha16}
+\bibinfo{author}{Ioannou, N.}, \bibinfo{author}{Liu, H.},
+  \bibinfo{author}{Zhang, Y.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Droplet dynamics in confinement}.
+\newblock \bibinfo{journal}{Journal of Computational Science}
+  \bibinfo{volume}{17}, \bibinfo{pages}{463 -- 474}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S1877750316300308},
+  \DOIprefix\doi{https://doi.org/10.1016/j.jocs.2016.03.009}.
+  \bibinfo{note}{discrete Simulation of Fluid Dynamics 2015}.
+%Type = Article
+\bibitem[{Janssen and Anderson(2008)}]{JanAnd08}
+\bibinfo{author}{Janssen, P.}, \bibinfo{author}{Anderson, P.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{A boundary-integral model for drop deformation
+  between two parallel plates with non-unit viscosity ratio drops}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{227}, \bibinfo{pages}{8807--8819}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S002199910800346X},
+  \DOIprefix\doi{http://dx.doi.org/10.1016/j.jcp.2008.06.027}.
+%Type = Article
+\bibitem[{Janssen and Anderson(2007)}]{JanAnd07}
+\bibinfo{author}{Janssen, P.J.A.}, \bibinfo{author}{Anderson, P.D.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Boundary-integral method for drop deformation between
+  parallel plates}.
+\newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{19}.
+\newblock \URLprefix
+  \url{http://scitation.aip.org/content/aip/journal/pof2/19/4/10.1063/1.2715621},
+  \DOIprefix\doi{http://dx.doi.org/10.1063/1.2715621}.
+%Type = Article
+\bibitem[{Kang et~al.(2000)Kang, Fedkiw and Liu}]{KanFedLiu00}
+\bibinfo{author}{Kang, M.}, \bibinfo{author}{Fedkiw, R.P.},
+  \bibinfo{author}{Liu, X.D.}, \bibinfo{year}{2000}.
+\newblock \bibinfo{title}{A boundary condition capturing method for multiphase
+  incompressible flow}.
+\newblock \bibinfo{journal}{Journal of scientific computing}
+  \bibinfo{volume}{15}, \bibinfo{pages}{323--360}.
+%Type = Article
+\bibitem[{Khismatullin et~al.(2003)Khismatullin, Renardy and
+  Cristini}]{KhiRenCri03}
+\bibinfo{author}{Khismatullin, D.B.}, \bibinfo{author}{Renardy, Y.},
+  \bibinfo{author}{Cristini, V.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Inertia-induced breakup of highly viscous drops
+  subjected to simple shear}.
+\newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{15},
+  \bibinfo{pages}{1351--1354}.
+\newblock \DOIprefix\doi{http://dx.doi.org/10.1063/1.1564825"}.
+%Type = Article
+\bibitem[{Komrakova et~al.(2014)Komrakova, Shardt, Eskin and
+  Derksen}]{KomShaEskDer14}
+\bibinfo{author}{Komrakova, A.}, \bibinfo{author}{Shardt, O.},
+  \bibinfo{author}{Eskin, D.}, \bibinfo{author}{Derksen, J.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Lattice boltzmann simulations of drop deformation and
+  breakup in shear flow}.
+\newblock \bibinfo{journal}{International Journal of Multiphase Flow}
+  \bibinfo{volume}{59}, \bibinfo{pages}{24 -- 43}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0301932213001547},
+  \DOIprefix\doi{http://dx.doi.org/10.1016/j.ijmultiphaseflow.2013.10.009}.
+%Type = Article
+\bibitem[{Komrakova et~al.(2015)Komrakova, Shardt, Eskin and
+  Derksen}]{KomShaEskDer15}
+\bibinfo{author}{Komrakova, A.}, \bibinfo{author}{Shardt, O.},
+  \bibinfo{author}{Eskin, D.}, \bibinfo{author}{Derksen, J.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Effects of dispersed phase viscosity on drop
+  deformation and breakup in inertial shear flow}.
+\newblock \bibinfo{journal}{Chemical Engineering Science}
+  \bibinfo{volume}{126}, \bibinfo{pages}{150 -- 159}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S000925091400726X},
+  \DOIprefix\doi{http://dx.doi.org/10.1016/j.ces.2014.12.012}.
+%Type = Article
+\bibitem[{Legendre and Magnaudet(1998)}]{legendre1998lift}
+\bibinfo{author}{Legendre, D.}, \bibinfo{author}{Magnaudet, J.},
+  \bibinfo{year}{1998}.
+\newblock \bibinfo{title}{The lift force on a spherical bubble in a viscous
+  linear shear flow}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{368},
+  \bibinfo{pages}{81--126}.
+%Type = Article
+\bibitem[{Li et~al.(2000)Li, Renardy and Renardy}]{LiRenRen00}
+\bibinfo{author}{Li, J.}, \bibinfo{author}{Renardy, Y.},
+  \bibinfo{author}{Renardy, M.}, \bibinfo{year}{2000}.
+\newblock \bibinfo{title}{Numerical simulation of breakup of a viscous drop in
+  simple shear flow through a volume-of-fluid method}.
+\newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{12},
+  \bibinfo{pages}{269--282}.
+\newblock \URLprefix
+  \url{http://scitation.aip.org/content/aip/journal/pof2/12/2/10.1063/1.870305},
+  \DOIprefix\doi{http://dx.doi.org/10.1063/1.870305}.
+%Type = Article
+\bibitem[{M{\"u}ller-Fischer et~al.(2008)M{\"u}ller-Fischer, Tobler, Dressler,
+  Fischer and Windhab}]{MulTobDreFisWin08}
+\bibinfo{author}{M{\"u}ller-Fischer, N.}, \bibinfo{author}{Tobler, P.},
+  \bibinfo{author}{Dressler, M.}, \bibinfo{author}{Fischer, P.},
+  \bibinfo{author}{Windhab, E.J.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Single bubble deformation and breakup in simple shear
+  flow}.
+\newblock \bibinfo{journal}{Experiments in fluids} \bibinfo{volume}{45},
+  \bibinfo{pages}{917--926}.
+%Type = Article
+\bibitem[{Ohta et~al.(2014)Ohta, Akama, Yoshida and Sussman}]{OhtAkaYosSus14}
+\bibinfo{author}{Ohta, M.}, \bibinfo{author}{Akama, Y.},
+  \bibinfo{author}{Yoshida, Y.}, \bibinfo{author}{Sussman, M.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Influence of the viscosity ratio on drop dynamics and
+  breakup for a drop rising in an immiscible low-viscosity liquid}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{752},
+  \bibinfo{pages}{383--409}.
+\newblock \DOIprefix\doi{10.1017/jfm.2014.339}.
+%Type = Article
+\bibitem[{Ohta et~al.(2019)Ohta, Furukawa, Yoshida and
+  Sussman}]{OhtFurYosSus19}
+\bibinfo{author}{Ohta, M.}, \bibinfo{author}{Furukawa, T.},
+  \bibinfo{author}{Yoshida, Y.}, \bibinfo{author}{Sussman, M.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{A three-dimensional numerical study on the dynamics
+  and deformation of a bubble rising in a hybrid carreau and fene-cr modeled
+  polymeric liquid}.
+\newblock \bibinfo{journal}{Journal of Non-Newtonian Fluid Mechanics}
+  \bibinfo{volume}{265}, \bibinfo{pages}{66--78}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0377025718301952},
+  \DOIprefix\doi{https://doi.org/10.1016/j.jnnfm.2018.12.012}.
+%Type = Article
+\bibitem[{Ohta et~al.(2011)Ohta, Kikuchi, Yoshida and Sussman}]{ohta2011robust}
+\bibinfo{author}{Ohta, M.}, \bibinfo{author}{Kikuchi, D.},
+  \bibinfo{author}{Yoshida, Y.}, \bibinfo{author}{Sussman, M.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Robust numerical analysis of the dynamic bubble
+  formation process in a viscous liquid}.
+\newblock \bibinfo{journal}{International Journal of Multiphase Flow}
+  \bibinfo{volume}{37}, \bibinfo{pages}{1059--1071}.
+%Type = Article
+\bibitem[{Ohta and Sussman(2012)}]{OhtSus12}
+\bibinfo{author}{Ohta, M.}, \bibinfo{author}{Sussman, M.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{{The buoyancy-driven motion of a single skirted
+  bubble or drop rising through a viscous liquid}}.
+\newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{24},
+  \bibinfo{pages}{112101}.
+\newblock \URLprefix \url{https://doi.org/10.1063/1.4765669},
+  \DOIprefix\doi{10.1063/1.4765669},
+  \href{http://arxiv.org/abs/https://pubs.aip.org/aip/pof/article-pdf/doi/10.1063/1.4765669/14128560/112101\_1\_online.pdf}{{\tt
+  arXiv:https://pubs.aip.org/aip/pof/article-pdf/doi/10.1063/1.4765669/14128560/112101\_1\_online.pdf}}.
+%Type = Article
+\bibitem[{Rallison(1984)}]{Ral84}
+\bibinfo{author}{Rallison, J.M.}, \bibinfo{year}{1984}.
+\newblock \bibinfo{title}{The deformation of small viscous drops and bubbles in
+  shear flows}.
+\newblock \bibinfo{journal}{Annual Review of Fluid Mechanics}
+  \bibinfo{volume}{16}, \bibinfo{pages}{45--66}.
+\newblock \URLprefix
+  \url{http://dx.doi.org/10.1146/annurev.fl.16.010184.000401},
+  \DOIprefix\doi{10.1146/annurev.fl.16.010184.000401},
+  \href{http://arxiv.org/abs/http://dx.doi.org/10.1146/annurev.fl.16.010184.000401}{{\tt
+  arXiv:http://dx.doi.org/10.1146/annurev.fl.16.010184.000401}}.
+%Type = Article
+\bibitem[{Renardy(2006)}]{Ren06}
+\bibinfo{author}{Renardy, Y.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Numerical simulation of a drop undergoing large
+  amplitude oscillatory shear}.
+\newblock \bibinfo{journal}{Rheologica acta} \bibinfo{volume}{45},
+  \bibinfo{pages}{223--227}.
+%Type = Article
+\bibitem[{Renardy(2007)}]{Ren07}
+\bibinfo{author}{Renardy, Y.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{The effects of confinement and inertia on the
+  production of droplets}.
+\newblock \bibinfo{journal}{Rheologica Acta} \bibinfo{volume}{46},
+  \bibinfo{pages}{521--529}.
+\newblock \URLprefix \url{http://dx.doi.org/10.1007/s00397-006-0150-y},
+  \DOIprefix\doi{10.1007/s00397-006-0150-y}.
+%Type = Article
+\bibitem[{Renardy(2008)}]{Ren08-2}
+\bibinfo{author}{Renardy, Y.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Effect of startup conditions on drop breakup under
+  shear with inertia}.
+\newblock \bibinfo{journal}{International Journal of Multiphase Flow}
+  \bibinfo{volume}{34}, \bibinfo{pages}{1185 -- 1189}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S030193220800089X},
+  \DOIprefix\doi{http://dx.doi.org/10.1016/j.ijmultiphaseflow.2008.04.004}.
+%Type = Article
+\bibitem[{Renardy and Cristini(2001a)}]{RenCri01-1}
+\bibinfo{author}{Renardy, Y.}, \bibinfo{author}{Cristini, V.},
+  \bibinfo{year}{2001}a.
+\newblock \bibinfo{title}{Effect of inertia on drop breakup under shear}.
+\newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{13},
+  \bibinfo{pages}{7--13}.
+\newblock \URLprefix
+  \url{http://scitation.aip.org/content/aip/journal/pof2/13/1/10.1063/1.1331321},
+  \DOIprefix\doi{http://dx.doi.org/10.1063/1.1331321}.
+%Type = Article
+\bibitem[{Renardy et~al.(2002)Renardy, Cristini and Li}]{RenCriLi02}
+\bibinfo{author}{Renardy, Y.}, \bibinfo{author}{Cristini, V.},
+  \bibinfo{author}{Li, J.}, \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Drop fragment distributions under shear with
+  inertia}.
+\newblock \bibinfo{journal}{International Journal of Multiphase Flow}
+  \bibinfo{volume}{28}, \bibinfo{pages}{1125 -- 1147}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0301932202000228},
+  \DOIprefix\doi{http://dx.doi.org/10.1016/S0301-9322(02)00022-8}.
+%Type = Article
+\bibitem[{Renardy and Cristini(2001b)}]{RenCri01-2}
+\bibinfo{author}{Renardy, Y.Y.}, \bibinfo{author}{Cristini, V.},
+  \bibinfo{year}{2001}b.
+\newblock \bibinfo{title}{Scalings for fragments produced from drop breakup in
+  shear flow with inertia}.
+\newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{13},
+  \bibinfo{pages}{2161--2164}.
+\newblock \URLprefix \url{https://doi.org/10.1063/1.1384469},
+  \DOIprefix\doi{10.1063/1.1384469},
+  \href{http://arxiv.org/abs/https://doi.org/10.1063/1.1384469}{{\tt
+  arXiv:https://doi.org/10.1063/1.1384469}}.
+%Type = Article
+\bibitem[{Rust and Manga(2002)}]{RusMan02}
+\bibinfo{author}{Rust, A.}, \bibinfo{author}{Manga, M.}, \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Bubble shapes and orientations in low re simple shear
+  flow}.
+\newblock \bibinfo{journal}{Journal of Colloid and Interface Science}
+  \bibinfo{volume}{249}, \bibinfo{pages}{476--480}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0021979702982925},
+  \DOIprefix\doi{https://doi.org/10.1006/jcis.2002.8292}.
+%Type = Article
+\bibitem[{Sharifi et~al.(2024)Sharifi, Varmazyar and Mohammadi}]{AAMM-16-2}
+\bibinfo{author}{Sharifi, R.}, \bibinfo{author}{Varmazyar, M.},
+  \bibinfo{author}{Mohammadi, A.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Investigating droplet and bubble deformation under
+  shear flow using the multi-pseudo-potential scheme of lattice boltzmann
+  method}.
+\newblock \bibinfo{journal}{Advances in Applied Mathematics and Mechanics}
+  \bibinfo{volume}{16}, \bibinfo{pages}{519--548}.
+\newblock \URLprefix
+  \url{https://global-sci.com/article/72820/investigating-droplet-and-bubble-deformation-under-shear-flow-using-the-multi-pseudo-potential-scheme-of-lattice-boltzmann-method},
+  \DOIprefix\doi{https://doi.org/10.4208/aamm.OA-2021-0326}.
+%Type = Article
+\bibitem[{Stone(1994)}]{Sto94}
+\bibinfo{author}{Stone, H.A.}, \bibinfo{year}{1994}.
+\newblock \bibinfo{title}{Dynamics of drop deformation and breakup in viscous
+  fluids}.
+\newblock \bibinfo{journal}{Annual Review of Fluid Mechanics}
+  \bibinfo{volume}{26}, \bibinfo{pages}{65--102}.
+\newblock \URLprefix
+  \url{http://dx.doi.org/10.1146/annurev.fl.26.010194.000433},
+  \DOIprefix\doi{10.1146/annurev.fl.26.010194.000433},
+  \href{http://arxiv.org/abs/http://dx.doi.org/10.1146/annurev.fl.26.010194.000433}{{\tt
+  arXiv:http://dx.doi.org/10.1146/annurev.fl.26.010194.000433}}.
+%Type = Article
+\bibitem[{Sussman(2003)}]{Sus03}
+\bibinfo{author}{Sussman, M.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{A second order coupled level set and volume-of-fluid
+  method for computing growth and collapse of vapor bubbles}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{187}, \bibinfo{pages}{110--136}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0021999103000871},
+  \DOIprefix\doi{https://doi.org/10.1016/S0021-9991(03)00087-1}.
+%Type = Article
+\bibitem[{Sussman et~al.(1999)Sussman, Almgren, Bell, Colella, Howell and
+  Welcome}]{SusAlmBelColHowWel99}
+\bibinfo{author}{Sussman, M.}, \bibinfo{author}{Almgren, A.S.},
+  \bibinfo{author}{Bell, J.B.}, \bibinfo{author}{Colella, P.},
+  \bibinfo{author}{Howell, L.H.}, \bibinfo{author}{Welcome, M.L.},
+  \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{An adaptive level set approach for incompressible
+  two-phase flows}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{148}, \bibinfo{pages}{81 -- 124}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S002199919896106X},
+  \DOIprefix\doi{https://doi.org/10.1006/jcph.1998.6106}.
+%Type = Article
+\bibitem[{Sussman and Puckett(2000)}]{SusPuc00}
+\bibinfo{author}{Sussman, M.}, \bibinfo{author}{Puckett, E.G.},
+  \bibinfo{year}{2000}.
+\newblock \bibinfo{title}{A coupled level set and volume-of-fluid method for
+  computing 3d and axisymmetric incompressible two-phase flows}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{162}, \bibinfo{pages}{301--337}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0021999100965379},
+  \DOIprefix\doi{http://dx.doi.org/10.1006/jcph.2000.6537}.
+%Type = Article
+\bibitem[{Sussman et~al.(1994)Sussman, Smereka and Osher}]{SusSmeOsh94}
+\bibinfo{author}{Sussman, M.}, \bibinfo{author}{Smereka, P.},
+  \bibinfo{author}{Osher, S.}, \bibinfo{year}{1994}.
+\newblock \bibinfo{title}{A level set approach for computing solutions to
+  incompressible two-phase flow}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{114}, \bibinfo{pages}{146 -- 159}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0021999184711557},
+  \DOIprefix\doi{http://dx.doi.org/10.1006/jcph.1994.1155}.
+%Type = Article
+\bibitem[{Sussman et~al.(2007)Sussman, Smith, Hussaini, Ohta and
+  Zhi-Wei}]{SusSmiHusOhtZhi07}
+\bibinfo{author}{Sussman, M.}, \bibinfo{author}{Smith, K.},
+  \bibinfo{author}{Hussaini, M.}, \bibinfo{author}{Ohta, M.},
+  \bibinfo{author}{Zhi-Wei, R.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{A sharp interface method for incompressible two-phase
+  flows}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{221}, \bibinfo{pages}{469--505}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0021999106002981},
+  \DOIprefix\doi{https://doi.org/10.1016/j.jcp.2006.06.020}.
+%Type = Article
+\bibitem[{Tanguy et~al.(2007)Tanguy, M{\'e}nard and Berlemont}]{TanguyEtAl2007}
+\bibinfo{author}{Tanguy, S.}, \bibinfo{author}{M{\'e}nard, T.},
+  \bibinfo{author}{Berlemont, A.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{A level set method for vaporizing two-phase flows}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{221}, \bibinfo{pages}{837--853}.
+%Type = Inproceedings
+\bibitem[{Tatebe(1993)}]{tatebe1993multigrid}
+\bibinfo{author}{Tatebe, O.}, \bibinfo{year}{1993}.
+\newblock \bibinfo{title}{The multigrid preconditioned conjugate gradient
+  method}, in: \bibinfo{booktitle}{NASA. Langley Research Center, The Sixth
+  Copper Mountain Conference on Multigrid Methods, Part 2}.
+%Type = Article
+\bibitem[{Taylor(1932)}]{Tay32}
+\bibinfo{author}{Taylor, G.I.}, \bibinfo{year}{1932}.
+\newblock \bibinfo{title}{The viscosity of a fluid containing small drops of
+  another fluid}.
+\newblock \bibinfo{journal}{Proceedings of the Royal Society of London A:
+  Mathematical, Physical and Engineering Sciences} \bibinfo{volume}{138},
+  \bibinfo{pages}{41--48}.
+\newblock \DOIprefix\doi{10.1098/rspa.1932.0169}.
+%Type = Article
+\bibitem[{Taylor(1934)}]{Tay34}
+\bibinfo{author}{Taylor, G.I.}, \bibinfo{year}{1934}.
+\newblock \bibinfo{title}{The formation of emulsions in definable fields of
+  flow}.
+\newblock \bibinfo{journal}{Proceedings of the Royal Society of London A:
+  Mathematical, Physical and Engineering Sciences} \bibinfo{volume}{146},
+  \bibinfo{pages}{501--523}.
+\newblock \DOIprefix\doi{10.1098/rspa.1934.0169}.
+%Type = Article
+\bibitem[{Unverdi and Tryggvason(1992)}]{UnvTry92}
+\bibinfo{author}{Unverdi, S.O.}, \bibinfo{author}{Tryggvason, G.},
+  \bibinfo{year}{1992}.
+\newblock \bibinfo{title}{A front-tracking method for viscous, incompressible,
+  multi-fluid flows}.
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  \bibinfo{volume}{100}, \bibinfo{pages}{25 -- 37}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/002199919290307K},
+  \DOIprefix\doi{http://dx.doi.org/10.1016/0021-9991(92)90307-K}.
+%Type = Article
+\bibitem[{Wang et~al.(2023)Wang, Evans and Mitra}]{WANG2023108105}
+\bibinfo{author}{Wang, A.}, \bibinfo{author}{Evans, G.},
+  \bibinfo{author}{Mitra, S.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{A review of bubble surface loading and its effect on
+  bubble dynamics}.
+\newblock \bibinfo{journal}{Minerals Engineering} \bibinfo{volume}{199},
+  \bibinfo{pages}{108105}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S089268752300119X},
+  \DOIprefix\doi{https://doi.org/10.1016/j.mineng.2023.108105}.
+%Type = Article
+\bibitem[{Wang et~al.(2015)Wang, Shi and Zhang}]{WanShiZha15}
+\bibinfo{author}{Wang, Z.}, \bibinfo{author}{Shi, D.}, \bibinfo{author}{Zhang,
+  A.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Three-dimensional lattice boltzmann simulation of
+  bubble behavior in a flap-induced shear flow}.
+\newblock \bibinfo{journal}{Computers \& Fluids} \bibinfo{volume}{123},
+  \bibinfo{pages}{44 -- 53}.
+\newblock \URLprefix
+  \url{http://www.sciencedirect.com/science/article/pii/S0045793015003199},
+  \DOIprefix\doi{https://doi.org/10.1016/j.compfluid.2015.09.007}.
+%Type = Article
+\bibitem[{Wei et~al.(2012)Wei, Qian and Xu}]{WeiQiaXu12}
+\bibinfo{author}{Wei, Y.K.}, \bibinfo{author}{Qian, Y.}, \bibinfo{author}{Xu,
+  H.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Lattice boltzmann simulations of single bubble
+  deformation and breakup in a shear flow}.
+\newblock \bibinfo{journal}{The Journal of Computational Multiphase Flows}
+  \bibinfo{volume}{4}, \bibinfo{pages}{111--117}.
+\newblock \URLprefix \url{https://doi.org/10.1260/1757-482X.4.1.111},
+  \DOIprefix\doi{10.1260/1757-482X.4.1.111},
+  \href{http://arxiv.org/abs/https://doi.org/10.1260/1757-482X.4.1.111}{{\tt
+  arXiv:https://doi.org/10.1260/1757-482X.4.1.111}}.
+%Type = Article
+\bibitem[{Yoshikawa et~al.(2010)Yoshikawa, Zoueshtiagh, Caps, Kurowski and
+  Petitjeans}]{yoshikawa2010bubble}
+\bibinfo{author}{Yoshikawa, H.N.}, \bibinfo{author}{Zoueshtiagh, F.},
+  \bibinfo{author}{Caps, H.}, \bibinfo{author}{Kurowski, P.},
+  \bibinfo{author}{Petitjeans, P.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Bubble splitting in oscillatory flows on ground and
+  in reduced gravity}.
+\newblock \bibinfo{journal}{The European Physical Journal E}
+  \bibinfo{volume}{31}, \bibinfo{pages}{191--199}.
+%Type = Article
+\bibitem[{Zhang et~al.(2006)Zhang, Miksis and Bankoff}]{ZhaMikBan06}
+\bibinfo{author}{Zhang, J.}, \bibinfo{author}{Miksis, M.J.},
+  \bibinfo{author}{Bankoff, S.G.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Nonlinear dynamics of a two-dimensional viscous drop
+  under shear flow}.
+\newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{18}.
+\newblock \URLprefix
+  \url{http://scitation.aip.org/content/aip/journal/pof2/18/7/10.1063/1.2222336},
+  \DOIprefix\doi{http://dx.doi.org/10.1063/1.2222336}.
+%Type = Article
+\bibitem[{Zhang et~al.(2021a)Zhang, Ni and Magnaudet}]{zhang2021three}
+\bibinfo{author}{Zhang, J.}, \bibinfo{author}{Ni, M.J.},
+  \bibinfo{author}{Magnaudet, J.}, \bibinfo{year}{2021}a.
+\newblock \bibinfo{title}{Three-dimensional dynamics of a pair of deformable
+  bubbles rising initially in line. part 1. moderately inertial regimes}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{920},
+  \bibinfo{pages}{A16}.
+%Type = Article
+\bibitem[{Zhang et~al.(2022)Zhang, Ni and Magnaudet}]{zhang2022three}
+\bibinfo{author}{Zhang, J.}, \bibinfo{author}{Ni, M.J.},
+  \bibinfo{author}{Magnaudet, J.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Three-dimensional dynamics of a pair of deformable
+  bubbles rising initially in line. part 2. highly inertial regimes}.
+\newblock \bibinfo{journal}{Journal of Fluid Mechanics} \bibinfo{volume}{943},
+  \bibinfo{pages}{A10}.
+%Type = Article
+\bibitem[{Zhang et~al.(2021b)Zhang, Shu, Guan and Yang}]{ZhaShuGuaYan21}
+\bibinfo{author}{Zhang, J.}, \bibinfo{author}{Shu, S.}, \bibinfo{author}{Guan,
+  X.}, \bibinfo{author}{Yang, N.}, \bibinfo{year}{2021}b.
+\newblock \bibinfo{title}{Regime mapping of multiple breakup of droplets in
+  shear flow by phase-field lattice boltzmann simulation}.
+\newblock \bibinfo{journal}{Chemical Engineering Science}
+  \bibinfo{volume}{240}, \bibinfo{pages}{116673}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0009250921002384},
+  \DOIprefix\doi{https://doi.org/10.1016/j.ces.2021.116673}.
+%Type = Article
+\bibitem[{Zhang et~al.(2019)Zhang, Almgren, Beckner, Bell, Blaschke, Chan, Day,
+  Friesen, Gott, Graves, Katz, Myers, Nguyen, Nonaka, Rosso, Williams and
+  Zingale}]{AMReX_JOSS}
+\bibinfo{author}{Zhang, W.}, \bibinfo{author}{Almgren, A.},
+  \bibinfo{author}{Beckner, V.}, \bibinfo{author}{Bell, J.},
+  \bibinfo{author}{Blaschke, J.}, \bibinfo{author}{Chan, C.},
+  \bibinfo{author}{Day, M.}, \bibinfo{author}{Friesen, B.},
+  \bibinfo{author}{Gott, K.}, \bibinfo{author}{Graves, D.},
+  \bibinfo{author}{Katz, M.}, \bibinfo{author}{Myers, A.},
+  \bibinfo{author}{Nguyen, T.}, \bibinfo{author}{Nonaka, A.},
+  \bibinfo{author}{Rosso, M.}, \bibinfo{author}{Williams, S.},
+  \bibinfo{author}{Zingale, M.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{{AMReX}: a framework for block-structured adaptive
+  mesh refinement}.
+\newblock \bibinfo{journal}{Journal of Open Source Software}
+  \bibinfo{volume}{4}, \bibinfo{pages}{1370}.
+\newblock \URLprefix \url{https://doi.org/10.21105/joss.01370},
+  \DOIprefix\doi{10.21105/joss.01370}.
+
+\end{thebibliography}

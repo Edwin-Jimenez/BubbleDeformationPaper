@@ -59,11 +59,10 @@ Please see the ``Introduction".
 \vspace{3 mm}
 
 Response: \\
-As explained in the ``Numerical Analysis", the CLSVOF method couples both the level set and VOF methods and can 
-take advantage of both methodologies. 
-Consequently,  the CLSVOF method is superior to other interface-capturing/interface-tracking methods. 
-This is the reason we selected the CLSVOF method. We only referred to several interface-capturing/interface-tracking 
-method methods in introducing previous studies.\\
+The level set method, by itself, is not designed to directly conserve the
+volume of materials.  The error is especially large at regions of high curvature.  The lack of volume conservation can significantly alter the numerical predictions.  On the other hand, the volume of fluid method, by itself, is not designed to accurately and robustly approximate the interface curvature.  The surface tension force will be incorrectly calculated if the curvature is not accurately approximated.  We have found that the CLSVOF method on the otherhand, in which we couple the two methods, is the optimal method.  We have added further discussion to the paper.
+
+\\
 \\
 
 %%4
@@ -75,11 +74,11 @@ method methods in introducing previous studies.\\
 
 Response: \\
 In our computations, we set $g = 0$ because we wanted to isolate only the effects of the density and viscosity ratios and 
-wanted to compare previous studies dealing with the deformation and breakup of a drop with $\lambda =1$ and $\eta = 1$. 
+wanted to compare with previous studies dealing with the deformation and breakup of a drop with $\lambda =1$ and $\eta = 1$. 
 Also, in the revised paper, a brief discussion of the potential influence of gravity (Froude number) on bubble breakup dynamics 
 has been added according to another reviewer's suggestion.\\
 \\
-Please see lines 123 to 130.
+Please see lines 133 to 139.
 \\
 
 %%5

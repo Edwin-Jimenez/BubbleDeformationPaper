@@ -51,15 +51,15 @@ the threshold Reynolds number required for bubble break-up.  Based on
 our grid refinement study, we claim that our results are within three
 percent of the ``exact threshold'' assuming that we had access to an
 infinite amount of computing power.  So, now the reviewer is asking for
-more resolution in which we assert the reviewer request is totally 
+more resolution in which we assert the reviewer request is 
 unreasonable given the present state of technology.
 
 As mentioned in our initial submission, and further emphasized in the revision,
 if we refine the grid one more time, the simulation time will be 
 lengthened by at least a factor 16! Why? (i) factor of 4 refinement 
 due to 4 times as many grid points in the ``interface zone''; (ii) factor of $2^{3/2}$
-refinement due to the surface tension stability time step constraint; (iii) factor of 2 refinement {\em OR MORE} because as one converges to the critical Reynolds number, the bubble oscillates, thus prolonging the ability to determine break-up versus no break-up.  Furthermore the bubble is longer at this critical juncture, thereby necessitating a longer and higher aspect ratio computational domain.  Further important notes: (a) we cannot just do adaptivity at the regions of high curvature because the resulting speed-up by using less grid points is offset by the further ill-conditioning of the matrix system in not having the interface wholly contained on the finest level.  (b) The referee in their critism did not mention alternate published work; and for good reason! Our work is the first of its kind! In the revised introduction, we make it clear that previous work on bubble deformation (just two papers) are based on the Lattice Boltzmann method which is unacceptable for measuring the tensile strength properties of a bubble.   (c) in our revised introduction, we make it clear why the bubble deformation problem is so much more difficult than the drop deformation problem.  (and why ours is the FIRST to report on
-tensile stress thresholding)  We have added further references to the introduction which understate the importance of our research on the ``tensile strength'' properties of a bubble, and at the same time we have made it clear why both controlled experiments and numerical simulations are so difficult.  In the Capillary and Reynolds number regime that we are interested in, experiments must be performed in microgravity, on the otherhand, computations are so much more difficult for the bubble case than the drop case because the density ratio is about 
+refinement due to the surface tension stability time step constraint; (iii) factor of 2 refinement {\em OR MORE} because as one converges to the critical Reynolds number, the bubble oscillates, thus prolonging the ability to determine break-up versus no break-up.  Furthermore the bubble is longer at this critical juncture, thereby necessitating a longer and higher aspect ratio computational domain.  Further important notes: (a) we cannot just do adaptivity at the regions of high curvature because the resulting speed-up by using less grid points is offset by the further ill-conditioning of the matrix system in not having the interface wholly contained on the finest level.  As well, a sufficiently fine mesh is all around the gas-liquid interface in order to properly simulate the force exerted from the wall to the bubble. (b) The referee in his/her critism of our work did not mention alternate published work; and for good reason! Our work is the first of its kind! In the revised introduction, we make it clear that previous work on bubble deformation (just two papers) are based on the Lattice Boltzmann method which is an unacceptable method for measuring the tensile strength properties of a bubble.   (c) in our revised introduction, we make it clear why the bubble deformation problem is so much more difficult than the drop deformation problem and why our work is the FIRST to report on
+tensile stress thresholding.  We have added further references to the introduction which understate the importance of our research on the ``tensile strength'' properties of a bubble, and at the same time we have made it clear why both controlled experiments and numerical simulations are so difficult.  In the Capillary and Reynolds number regime that we are interested in, experiments (which isolate the effect of density ratio) must be performed in microgravity, on the otherhand, computations are so much more difficult for the bubble case than the drop case because the density ratio is about 
 1000 to one for the bubble case.
 
 Finally, we note that in the present study, the computation took more than one year for an experiment with $Re$ = 0.0 and $Ca$ = 1.63 
@@ -88,11 +88,11 @@ reported for the first time controlled tensile strength properties for a bubble 
 \item The behavior of the bubble breakup process at critical $Re$ conditions with $Ca$ = 0.3  $\sim$ 1.0 has been presented for the first time.
 \item The value of critical $Re$ numbers was found for $Ca$ = 0.3  $\sim$ 1.0 for the first time.
 \item  We showed that most previous computational studies overestimated drop deformation and breakup because most previous studies used a domain size with $W$ (width ($y$directional length)) =4$R$. Drop deformation is promoted when using a domain size with $W=4R$. 
-\item The difference in the deformation and breakup between the bubble and the drop with $\lambda = 1$ and $\eta = 1$ was clearly shown.
+\item The difference in the deformation and breakup between the bubble ($\lambda<<1$) and the drop ($\lambda = 1$ and $\eta = 1$) was clearly shown.
 \item Shear-induced bubble/drop breakup critical curves were obtained. 
 \end{enumerate}
 
-Regarding the effect of $\lambda$ and $\eta$, ongoingly we have examining the effect of $\lambda$ and $\eta$ on drop breakup for following 
+Regarding the effect of $\lambda$ and $\eta$, ongoingly we are examining the effect of $\lambda$ and $\eta$ on drop breakup for following 
 combinations of $\lambda$ and $\eta$:
 
 \begin{tabbing}
@@ -128,7 +128,7 @@ However, bubbles for both conditions reach the breakup at $t$ = about 0.5 s.
 Therefore, the effect of gravity (bubble rise motion) is expected to be negligible when juxtaposed with the measured tensile strength properties of bubble deformation and breakup 
 around the critical $Re$ number conditions. Contrary to what the reviewer suggests, we believe that our computational results in which we only focus on the force balance between the driving shear flow and the bubble surface tension will provide fundamental knowledge and findings for practical applications.  In the revised paper, we have described these explanations.\\
 \\
-Please see lines 123 to 130.
+Please see lines 133 to 139.
 \\
 
 %%5
@@ -142,14 +142,6 @@ line 232: ""bubble deformation in simple linear shear flow" results" is impossib
 
 Response: \\
 We carefully checked the paper and modified poor English writing, expressions, etc.\\
-\textcolor{red}
-{
-Mark and Edwin: Please modify these sentences at line 191 and line 232. (line198 and 242 in the revised paper.)\\
-}
-\\
-Please confirm lines  198 to 
-\\
-
 
 \end{enumerate}
 
