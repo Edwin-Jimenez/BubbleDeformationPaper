@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  16 NOV 2024 18:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  17 NOV 2024 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -389,22 +389,22 @@ Package epstopdf Info: Source file: <Figure/1-SchematicAndGrid.eps>
 (epstopdf)                    size: 220444 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/1-SchematicAndGrid-
 eps-converted-to.pdf Figure/1-SchematicAndGrid.eps>
-(epstopdf)             \includegraphics on input line 421.
+(epstopdf)             \includegraphics on input line 350.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/1-SchematicAndGrid-eps-converted-to.pdf, id=33, 714.67pt x 295.1025pt>
 File: Figure/1-SchematicAndGrid-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1-SchematicAndGrid-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1-SchematicAndGrid-eps-converted-to.pdf  used o
-n input line 421.
+n input line 350.
 (pdftex.def)             Requested size: 285.86293pt x 118.0389pt.
  [6 <./Figure/1-SchematicAndGrid-eps-converted-to.pdf>] [7]
 [8]
-Overfull \hbox (9.22728pt too wide) in paragraph at lines 592--592
+Overfull \hbox (9.22728pt too wide) in paragraph at lines 454--454
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--592
+Underfull \hbox (badness 10000) in paragraph at lines 454--454
 
  []
 
@@ -418,7 +418,7 @@ Package epstopdf Info: Source file: <Figure/2-DropBreakComparison.eps>
 (epstopdf)                    size: 181906 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/2-DropBreakComparis
 on-eps-converted-to.pdf Figure/2-DropBreakComparison.eps>
-(epstopdf)             \includegraphics on input line 746.
+(epstopdf)             \includegraphics on input line 528.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/2-DropBreakComparison-eps-converted-to.pdf, id=60, 521.95pt x 428.60126
 pt>
@@ -426,7 +426,7 @@ File: Figure/2-DropBreakComparison-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figure/2-DropBreakComparison-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/2-DropBreakComparison-eps-converted-to.pdf  use
-d on input line 746.
+d on input line 528.
 (pdftex.def)             Requested size: 260.97435pt x 214.3001pt.
  [11 <./Figure/2-DropBreakComparison-eps-converted-to.pdf>] [12]
 Package epstopdf Info: Source file: <Figure/3-Comparison-of-De-New.eps>
@@ -438,7 +438,7 @@ d-to.pdf>
 (epstopdf)                    size: 138874 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/3-Comparison-of-De-
 New-eps-converted-to.pdf Figure/3-Comparison-of-De-New.eps>
-(epstopdf)             \includegraphics on input line 878.
+(epstopdf)             \includegraphics on input line 634.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/3-Comparison-of-De-New-eps-converted-to.pdf, id=72, 353.32pt x 230.8625
 pt>
@@ -446,7 +446,7 @@ File: Figure/3-Comparison-of-De-New-eps-converted-to.pdf Graphic file (type pdf
 )
 <use Figure/3-Comparison-of-De-New-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/3-Comparison-of-De-New-eps-converted-to.pdf  us
-ed on input line 878.
+ed on input line 634.
 (pdftex.def)             Requested size: 211.99364pt x 138.51855pt.
 
 [13] [14 <./Figure/3-Comparison-of-De-New-eps-converted-to.pdf>]
@@ -459,14 +459,14 @@ f>
 (epstopdf)                    size: 454704 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/4-DropBreakEvol-eps
 -converted-to.pdf Figure/4-DropBreakEvol.eps>
-(epstopdf)             \includegraphics on input line 980.
+(epstopdf)             \includegraphics on input line 736.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/4-DropBreakEvol-eps-converted-to.pdf, id=85, 675.52374pt x 502.87875pt>
 
 File: Figure/4-DropBreakEvol-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/4-DropBreakEvol-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/4-DropBreakEvol-eps-converted-to.pdf  used on i
-nput line 980.
+nput line 736.
 (pdftex.def)             Requested size: 345.0pt x 256.83308pt.
  [15 <./Figure/4-DropBreakEvol-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/5-BubbleBreakCa0p3Re92.eps>
@@ -478,7 +478,7 @@ d-to.pdf>
 (epstopdf)                    size: 355890 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/5-BubbleBreakCa0p3R
 e92-eps-converted-to.pdf Figure/5-BubbleBreakCa0p3Re92.eps>
-(epstopdf)             \includegraphics on input line 1017.
+(epstopdf)             \includegraphics on input line 773.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/5-BubbleBreakCa0p3Re92-eps-converted-to.pdf, id=94, 675.52374pt x 332.2
 4126pt>
@@ -486,7 +486,7 @@ File: Figure/5-BubbleBreakCa0p3Re92-eps-converted-to.pdf Graphic file (type pdf
 )
 <use Figure/5-BubbleBreakCa0p3Re92-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/5-BubbleBreakCa0p3Re92-eps-converted-to.pdf  us
-ed on input line 1017.
+ed on input line 773.
 (pdftex.def)             Requested size: 345.0pt x 169.68413pt.
 Package epstopdf Info: Source file: <Figure/6-BubbleBreakCa0p3Re93.eps>
 (epstopdf)                    date: 2024-11-11 13:27:49
@@ -497,7 +497,7 @@ d-to.pdf>
 (epstopdf)                    size: 362532 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/6-BubbleBreakCa0p3R
 e93-eps-converted-to.pdf Figure/6-BubbleBreakCa0p3Re93.eps>
-(epstopdf)             \includegraphics on input line 1040.
+(epstopdf)             \includegraphics on input line 796.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/6-BubbleBreakCa0p3Re93-eps-converted-to.pdf, id=95, 675.52374pt x 332.2
 4126pt>
@@ -505,7 +505,7 @@ File: Figure/6-BubbleBreakCa0p3Re93-eps-converted-to.pdf Graphic file (type pdf
 )
 <use Figure/6-BubbleBreakCa0p3Re93-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/6-BubbleBreakCa0p3Re93-eps-converted-to.pdf  us
-ed on input line 1040.
+ed on input line 796.
 (pdftex.def)             Requested size: 345.0pt x 169.68413pt.
  [16 <./Figure/5-BubbleBreakCa0p3Re92-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/7-BubBreakCa0p3Re93Detail.eps>
@@ -517,7 +517,7 @@ rted-to.pdf>
 (epstopdf)                    size: 174287 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/7-BubBreakCa0p3Re93
 Detail-eps-converted-to.pdf Figure/7-BubBreakCa0p3Re93Detail.eps>
-(epstopdf)             \includegraphics on input line 1097.
+(epstopdf)             \includegraphics on input line 853.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf, id=104, 675.52374pt x 2
 50.9375pt>
@@ -525,7 +525,7 @@ File: Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf Graphic file (type
 pdf)
 <use Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf 
- used on input line 1097.
+ used on input line 853.
 (pdftex.def)             Requested size: 345.0pt x 128.16022pt.
  [17 <./Figure/6-BubbleBreakCa0p3Re93-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/8-ShearStress.eps>
@@ -537,13 +537,13 @@ Package epstopdf Info: Source file: <Figure/8-ShearStress.eps>
 (epstopdf)                    size: 512514 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/8-ShearStress-eps-c
 onverted-to.pdf Figure/8-ShearStress.eps>
-(epstopdf)             \includegraphics on input line 1146.
+(epstopdf)             \includegraphics on input line 902.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/8-ShearStress-eps-converted-to.pdf, id=113, 741.77126pt x 218.8175pt>
 File: Figure/8-ShearStress-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/8-ShearStress-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/8-ShearStress-eps-converted-to.pdf  used on inp
-ut line 1146.
+ut line 902.
 (pdftex.def)             Requested size: 296.70325pt x 87.52544pt.
 [18 <./Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf> <./Figure/8-Shear
 Stress-eps-converted-to.pdf>] [19]
@@ -556,7 +556,7 @@ d-to.pdf>
 (epstopdf)                    size: 4064777 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/9-BubbleFieldCa0p3R
 e93-eps-converted-to.pdf Figure/9-BubbleFieldCa0p3Re93.eps>
-(epstopdf)             \includegraphics on input line 1234.
+(epstopdf)             \includegraphics on input line 990.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf, id=131, 615.29875pt x 479.
 7925pt>
@@ -564,7 +564,7 @@ File: Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf Graphic file (type pdf
 )
 <use Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf  us
-ed on input line 1234.
+ed on input line 990.
 (pdftex.def)             Requested size: 345.0pt x 269.02605pt.
  [20 <./Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/10-BubbleDeformCa0p8Re42.eps>
@@ -576,7 +576,7 @@ ted-to.pdf>
 (epstopdf)                    size: 365087 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/10-BubbleDeformCa0p
 8Re42-eps-converted-to.pdf Figure/10-BubbleDeformCa0p8Re42.eps>
-(epstopdf)             \includegraphics on input line 1292.
+(epstopdf)             \includegraphics on input line 1048.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf, id=140, 675.52374pt x 33
 2.24126pt>
@@ -584,7 +584,7 @@ File: Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf Graphic file (type p
 df)
 <use Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf  
-used on input line 1292.
+used on input line 1048.
 (pdftex.def)             Requested size: 345.0pt x 169.68413pt.
 Package epstopdf Info: Source file: <Figure/11-BubbleBreakCa0p8Re43.eps>
 (epstopdf)                    date: 2024-11-11 13:27:49
@@ -595,7 +595,7 @@ ed-to.pdf>
 (epstopdf)                    size: 375026 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/11-BubbleBreakCa0p8
 Re43-eps-converted-to.pdf Figure/11-BubbleBreakCa0p8Re43.eps>
-(epstopdf)             \includegraphics on input line 1307.
+(epstopdf)             \includegraphics on input line 1063.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf, id=141, 675.52374pt x 332
 .24126pt>
@@ -603,11 +603,11 @@ File: Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf Graphic file (type pd
 f)
 <use Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf  u
-sed on input line 1307.
+sed on input line 1063.
 (pdftex.def)             Requested size: 345.0pt x 169.68413pt.
  [21 <./Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf>]
 [22 <./Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf>]
-Overfull \hbox (2.01pt too wide) in paragraph at lines 1356--1376
+Overfull \hbox (2.01pt too wide) in paragraph at lines 1112--1132
 []\OT1/cmr/m/n/10 Table 4[] lists, for rep-re-sen-ta-tive $\OML/cmm/m/it/10 Ca$
  \OT1/cmr/m/n/10 val-ues, the cor-re-spond-ing crit-i-cal Reynolds
  []
@@ -620,13 +620,13 @@ Package epstopdf Info: Source file: <Figure/12-CaRecFit.eps>
 (epstopdf)                    size: 57284 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/12-CaRecFit-eps-con
 verted-to.pdf Figure/12-CaRecFit.eps>
-(epstopdf)             \includegraphics on input line 1403.
+(epstopdf)             \includegraphics on input line 1159.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/12-CaRecFit-eps-converted-to.pdf, id=158, 341.275pt x 216.81pt>
 File: Figure/12-CaRecFit-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/12-CaRecFit-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/12-CaRecFit-eps-converted-to.pdf  used on input
- line 1403.
+ line 1159.
 (pdftex.def)             Requested size: 204.76657pt x 130.08699pt.
 [23 <./Figure/12-CaRecFit-eps-converted-to.pdf>] (./Bubble-deformation-Rev.bbl
 Underfull \hbox (badness 4048) in paragraph at lines 17--28
@@ -1099,11 +1099,11 @@ L3 programming layer <2024-02-20>
 Here is how much of TeX's memory you used:
  6596 strings out of 474116
  111107 string characters out of 5743681
- 1950187 words of memory out of 5000000
+ 1944187 words of memory out of 5000000
  28850 multiletter control sequences out of 15000+600000
  570621 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,12n,79p,2000b,423s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,12n,79p,2798b,423s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -1126,7 +1126,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf
 ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2024/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Bubble-deformation-Rev.pdf (31 pages, 7607705 bytes).
+Output written on Bubble-deformation-Rev.pdf (31 pages, 7608012 bytes).
 PDF statistics:
  285 PDF objects out of 1000 (max. 8388607)
  171 compressed objects within 2 object streams
