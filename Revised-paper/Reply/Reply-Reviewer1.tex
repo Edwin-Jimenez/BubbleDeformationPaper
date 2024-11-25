@@ -45,31 +45,10 @@ In the revision, we made many improvements to the grammar and structure so that 
 \vspace{3 mm}
 
 Response: \\
-In the section entitled ``Selecting the appropriate grid size,'' we 
-report results of a grid refinement study for our simulation results on
-the threshold Reynolds number required for bubble break-up.  Based on
-our grid refinement study, we claim that our results are within three
-percent of the ``exact threshold'' assuming that we had access to an
-infinite amount of computing power.  So, now the reviewer is asking for
-more resolution in which we assert the reviewer request is 
-unreasonable given the present state of technology.
+		There are two main problems identified from the referee: (a) the grid refinement study does not demonstrate enough convergence and (b) even if we could refine the grid an infinite number of times, our break-up model is insufficient and whatever findings that we have would be completely different than if we were able to model the break-up process with a molecular scale model.  We disagree with the referee; we have added more references to our article in which the uncertainty in our article is smaller than that in the latest existing work. Also we note that existing articles on bubble and drop breakup due to shear do not take into account sub-scale models either and these articles demonstrate reasonable agreement with experiments (as does our submission).  Note: if we were considering the merging of droplets in which bouncing versus merging can occur, then sub-scale drainage can be important to model.  This issue is not relevent for our article though.  We have added this discussion to the introduction.
 
-As mentioned in our initial submission, and further emphasized in the revision,
-if we refine the grid one more time, the simulation time will be 
-lengthened by at least a factor 16 due to the following reasons:
-(i) factor of 4 additional grid pointst 
-due to 4 times as many grid points in the ``interface zone''; (ii) factor of $2^{3/2}$
-more time steps due to the surface tension stability time step constraint; (iii) factor of 2 or more time steps because as one converges to the critical Reynolds number, the bubble oscillates, thus prolonging the ability to determine break-up versus no break-up.  Furthermore the bubble is longer at this critical juncture, thereby necessitating a longer and higher aspect ratio computational domain.  Further important notes: (a) we cannot just do adaptivity at the regions of high curvature because the resulting speed-up by using less grid points is offset by the further ill-conditioning of the matrix system in not having the interface wholly contained on the finest level.  As well, a sufficiently fine mesh is all around the gas-liquid interface in order to properly simulate the force exerted from the wall to the bubble. (b) The referee in his/her critism of our work did not mention alternate published work; and for good reason! Our work is the first of its kind! In the revised introduction, we make it clear that previous work on bubble deformation (just two papers) are based on the Lattice Boltzmann method which is an unacceptable method for measuring the tensile strength properties of a bubble.   (c) in our revised introduction, we make it clear why the bubble deformation problem is so much more difficult than the drop deformation problem and why our work is the FIRST to report on
-tensile stress thresholding.  We have added further references to the introduction which understate the importance of our research on the ``tensile strength'' properties of a bubble, and at the same time we have made it clear why both controlled experiments and numerical simulations are so difficult.  In the Capillary and Reynolds number regime that we are interested in, experiments (which isolate the effect of density ratio) must be performed in microgravity, on the otherhand, computations are so much more difficult for the bubble case than the drop case because the density ratio is about 
-1000 to one for the bubble case.
-
-Finally, we note that in the present study, the computation took more than one year for an experiment with $Re$ = 0.0 and $Ca$ = 1.63 
-(M\"{u}ller-Fischer et al. (2008)).
-A smaller tolerance would necessitate a larger supported Deformation parameter $D$, which would, in turn, necessitate a 
-higher aspect ratio computational domain, increased droplet surface area at break-up, increased number of time steps, and 
-higher resolution for representing the drop/bubble at its thinnest point. 
-All this translates to the simulation taking over 16 years on a refined mesh.
-\\
+Finally, we note that our simulations already take about one year.  The bubble deformation case, is a much more challenging problem than the drop case due to the large density ratio.  Anymore refinement would extend the time of simulation to 8 years using current technology.  It is agreed though that speeding up the algorithm in order to run more efficiently would certainly reduce the uncertainty of our results even more.  This is future work.
+%Muller-Fischer comparison
 
 %%3
 \par\noindent
