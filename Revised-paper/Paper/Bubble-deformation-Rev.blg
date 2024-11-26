@@ -1,49 +1,49 @@
-This is BibTeX, Version 0.99d (TeX Live 2024)
+This is BibTeX, Version 0.99d (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Bubble-deformation-Rev.aux
 The style file: elsarticle-harv.bst
 Database file #1: Bubble-deformation.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty pages in tatebe1993multigrid
-You've used 58 entries,
+You've used 70 entries,
             2990 wiz_defined-function locations,
-            1117 strings with 20334 characters,
-and the built_in function-call counts, 41810 in all, are:
-= -- 3412
-> -- 1612
-< -- 23
-+ -- 664
-- -- 561
-* -- 4857
-:= -- 6063
-add.period$ -- 220
-call.type$ -- 58
-change.case$ -- 480
-chr.to.int$ -- 55
-cite$ -- 59
-duplicate$ -- 2971
-empty$ -- 2949
-format.name$ -- 741
-if$ -- 7805
+            1207 strings with 23703 characters,
+and the built_in function-call counts, 50670 in all, are:
+= -- 4095
+> -- 2004
+< -- 25
++ -- 824
+- -- 699
+* -- 5903
+:= -- 7357
+add.period$ -- 262
+call.type$ -- 70
+change.case$ -- 586
+chr.to.int$ -- 67
+cite$ -- 71
+duplicate$ -- 3600
+empty$ -- 3557
+format.name$ -- 915
+if$ -- 9440
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 593
-newline$ -- 351
-num.names$ -- 232
-pop$ -- 851
+missing$ -- 722
+newline$ -- 417
+num.names$ -- 280
+pop$ -- 1048
 preamble$ -- 1
-purify$ -- 419
+purify$ -- 513
 quote$ -- 0
-skip$ -- 806
+skip$ -- 969
 stack$ -- 0
-substring$ -- 1969
-swap$ -- 2300
+substring$ -- 2346
+swap$ -- 2794
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 522
+type$ -- 630
 warning$ -- 1
-while$ -- 261
+while$ -- 312
 width$ -- 0
-write$ -- 969
+write$ -- 1157
 (There was 1 warning)

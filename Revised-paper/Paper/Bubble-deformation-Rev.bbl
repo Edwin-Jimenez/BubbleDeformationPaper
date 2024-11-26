@@ -1,4 +1,4 @@
-\begin{thebibliography}{58}
+\begin{thebibliography}{70}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -25,6 +25,17 @@
   \url{http://www.sciencedirect.com/science/article/pii/S0009250919305123},
   \DOIprefix\doi{https://doi.org/10.1016/j.ces.2019.06.014}.
 %Type = Article
+\bibitem[{Arienti et~al.(2013)Arienti, Li, Soteriou, Eckett, Sussman and
+  Jensen}]{arienti2013coupled}
+\bibinfo{author}{Arienti, M.}, \bibinfo{author}{Li, X.},
+  \bibinfo{author}{Soteriou, M.}, \bibinfo{author}{Eckett, C.},
+  \bibinfo{author}{Sussman, M.}, \bibinfo{author}{Jensen, R.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Coupled level-set/volume-of-fluid method for
+  simulation of injector atomization}.
+\newblock \bibinfo{journal}{Journal of propulsion and power}
+  \bibinfo{volume}{29}, \bibinfo{pages}{147--157}.
+%Type = Article
 \bibitem[{Bazhlekov et~al.(2006)Bazhlekov, Anderson and Meijer}]{BazAndMei06}
 \bibinfo{author}{Bazhlekov, I.B.}, \bibinfo{author}{Anderson, P.D.},
   \bibinfo{author}{Meijer, H.E.}, \bibinfo{year}{2006}.
@@ -49,6 +60,20 @@
   \bibinfo{pages}{151}.
 \newblock \URLprefix \url{https://www.mdpi.com/2072-666X/9/4/151},
   \DOIprefix\doi{10.3390/mi9040151}.
+%Type = Article
+\bibitem[{Canedo et~al.(1993)Canedo, Favelukis, Tadmor and Talmon}]{CanedoETAL}
+\bibinfo{author}{Canedo, E.L.}, \bibinfo{author}{Favelukis, M.},
+  \bibinfo{author}{Tadmor, Z.}, \bibinfo{author}{Talmon, Y.},
+  \bibinfo{year}{1993}.
+\newblock \bibinfo{title}{An experimental study of bubble deformation in
+  viscous liquids in simple shear flow}.
+\newblock \bibinfo{journal}{AIChE Journal} \bibinfo{volume}{39},
+  \bibinfo{pages}{553--559}.
+\newblock \URLprefix
+  \url{https://aiche.onlinelibrary.wiley.com/doi/abs/10.1002/aic.690390403},
+  \DOIprefix\doi{https://doi.org/10.1002/aic.690390403},
+  \href{http://arxiv.org/abs/https://aiche.onlinelibrary.wiley.com/doi/pdf/10.1002/aic.690390403}{{\tt
+  arXiv:https://aiche.onlinelibrary.wiley.com/doi/pdf/10.1002/aic.690390403}}.
 %Type = Article
 \bibitem[{Chu et~al.(2019)Chu, Finch, Bournival, Ata, Hamlett and
   Pugh}]{ChuFinBouAtaHamPug19}
@@ -145,6 +170,43 @@
 \newblock \bibinfo{title}{The rise of bubbles in a vertical shear flow}.
 \newblock \bibinfo{journal}{Journal of Fluids Engineering}
   \bibinfo{volume}{119(2)}, \bibinfo{pages}{443--449}.
+%Type = Article
+\bibitem[{Fang et~al.(2024)Fang, Shuai, Huang, Wang and
+  Yang}]{PolyethyleneDevo}
+\bibinfo{author}{Fang, Z.}, \bibinfo{author}{Shuai, Y.},
+  \bibinfo{author}{Huang, Z.}, \bibinfo{author}{Wang, J.},
+  \bibinfo{author}{Yang, Y.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Intensification of polyethylene devolatilization in
+  twin-screw extruder with additives}.
+\newblock \bibinfo{journal}{Polymer Engineering \& Science}
+  \bibinfo{volume}{64}, \bibinfo{pages}{2961--2974}.
+\newblock \URLprefix
+  \url{https://4spepublications.onlinelibrary.wiley.com/doi/abs/10.1002/pen.26738},
+  \DOIprefix\doi{https://doi.org/10.1002/pen.26738},
+  \href{http://arxiv.org/abs/https://4spepublications.onlinelibrary.wiley.com/doi/pdf/10.1002/pen.26738}{{\tt
+  arXiv:https://4spepublications.onlinelibrary.wiley.com/doi/pdf/10.1002/pen.26738}}.
+%Type = Article
+\bibitem[{Frense et~al.(2024)Frense, Rüdiger and Fröhlich}]{FRENSE2024120579}
+\bibinfo{author}{Frense, E.}, \bibinfo{author}{Rüdiger, F.},
+  \bibinfo{author}{Fröhlich, J.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Modeling of dynamic bubble deformation and breakup in
+  t-junction channel flow}.
+\newblock \bibinfo{journal}{Chemical Engineering Science}
+  \bibinfo{volume}{300}, \bibinfo{pages}{120579}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0009250924008790},
+  \DOIprefix\doi{https://doi.org/10.1016/j.ces.2024.120579}.
+%Type = Article
+\bibitem[{Gao et~al.(2022)Gao, Shi, Pan and Quan}]{GAO2022103212}
+\bibinfo{author}{Gao, S.}, \bibinfo{author}{Shi, Y.}, \bibinfo{author}{Pan,
+  G.}, \bibinfo{author}{Quan, X.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Research on the effect of asymmetric bubbles on the
+  load characteristics of projectiles during an underwater salvo}.
+\newblock \bibinfo{journal}{Applied Ocean Research} \bibinfo{volume}{124},
+  \bibinfo{pages}{103212}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0141118722001535},
+  \DOIprefix\doi{https://doi.org/10.1016/j.apor.2022.103212}.
 %Type = Article
 \bibitem[{Hernandez and Rangel(2017)}]{HerRan17}
 \bibinfo{author}{Hernandez, F.H.}, \bibinfo{author}{Rangel, R.H.},
@@ -282,6 +344,12 @@
   \url{http://scitation.aip.org/content/aip/journal/pof2/12/2/10.1063/1.870305},
   \DOIprefix\doi{http://dx.doi.org/10.1063/1.870305}.
 %Type = Article
+\bibitem[{Lohse(2018)}]{lohse2018bubble}
+\bibinfo{author}{Lohse, D.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Bubble puzzles: from fundamentals to applications}.
+\newblock \bibinfo{journal}{Physical review fluids} \bibinfo{volume}{3},
+  \bibinfo{pages}{110504}.
+%Type = Article
 \bibitem[{M{\"u}ller-Fischer et~al.(2008)M{\"u}ller-Fischer, Tobler, Dressler,
   Fischer and Windhab}]{MulTobDreFisWin08}
 \bibinfo{author}{M{\"u}ller-Fischer, N.}, \bibinfo{author}{Tobler, P.},
@@ -316,6 +384,16 @@
   \url{https://www.sciencedirect.com/science/article/pii/S0377025718301952},
   \DOIprefix\doi{https://doi.org/10.1016/j.jnnfm.2018.12.012}.
 %Type = Article
+\bibitem[{Ohta et~al.(2005)Ohta, Imura, Yoshida and
+  Sussman}]{ohta2005computational}
+\bibinfo{author}{Ohta, M.}, \bibinfo{author}{Imura, T.},
+  \bibinfo{author}{Yoshida, Y.}, \bibinfo{author}{Sussman, M.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{A computational study of the effect of initial bubble
+  conditions on the motion of a gas bubble rising in viscous liquids}.
+\newblock \bibinfo{journal}{International journal of multiphase flow}
+  \bibinfo{volume}{31}, \bibinfo{pages}{223--237}.
+%Type = Article
 \bibitem[{Ohta et~al.(2011)Ohta, Kikuchi, Yoshida and Sussman}]{ohta2011robust}
 \bibinfo{author}{Ohta, M.}, \bibinfo{author}{Kikuchi, D.},
   \bibinfo{author}{Yoshida, Y.}, \bibinfo{author}{Sussman, M.},
@@ -336,6 +414,15 @@
   \DOIprefix\doi{10.1063/1.4765669},
   \href{http://arxiv.org/abs/https://pubs.aip.org/aip/pof/article-pdf/doi/10.1063/1.4765669/14128560/112101\_1\_online.pdf}{{\tt
   arXiv:https://pubs.aip.org/aip/pof/article-pdf/doi/10.1063/1.4765669/14128560/112101\_1\_online.pdf}}.
+%Type = Article
+\bibitem[{Ohta et~al.(2010)Ohta, Yamaguchi, Yoshida and
+  Sussman}]{ohta2010sensitivity}
+\bibinfo{author}{Ohta, M.}, \bibinfo{author}{Yamaguchi, S.},
+  \bibinfo{author}{Yoshida, Y.}, \bibinfo{author}{Sussman, M.},
+  \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{The sensitivity of drop motion due to the density and
+  viscosity ratio}.
+\newblock \bibinfo{journal}{Physics of Fluids} \bibinfo{volume}{22}.
 %Type = Article
 \bibitem[{Rallison(1984)}]{Ral84}
 \bibinfo{author}{Rallison, J.M.}, \bibinfo{year}{1984}.
@@ -418,6 +505,30 @@
   \url{https://www.sciencedirect.com/science/article/pii/S0021979702982925},
   \DOIprefix\doi{https://doi.org/10.1006/jcis.2002.8292}.
 %Type = Article
+\bibitem[{Sanogo et~al.(2023)Sanogo, Souidi, Marcati and
+  Vial}]{SANOGO2023112478}
+\bibinfo{author}{Sanogo, B.}, \bibinfo{author}{Souidi, K.},
+  \bibinfo{author}{Marcati, A.}, \bibinfo{author}{Vial, C.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Food aeration: Effect of the surface-active agent
+  type on bubble deformation and break-up in a viscous newtonian fluid: From
+  single bubble to process-scale}.
+\newblock \bibinfo{journal}{Food Research International} \bibinfo{volume}{165},
+  \bibinfo{pages}{112478}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0963996923000236},
+  \DOIprefix\doi{https://doi.org/10.1016/j.foodres.2023.112478}.
+%Type = Article
+\bibitem[{Schl{\"u}ter et~al.(2021)Schl{\"u}ter, Herres-Pawlis, Nieken,
+  Tuttlies and Bothe}]{schluter2021small}
+\bibinfo{author}{Schl{\"u}ter, M.}, \bibinfo{author}{Herres-Pawlis, S.},
+  \bibinfo{author}{Nieken, U.}, \bibinfo{author}{Tuttlies, U.},
+  \bibinfo{author}{Bothe, D.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Small-scale phenomena in reactive bubbly flows:
+  Experiments, numerical modeling, and applications}.
+\newblock \bibinfo{journal}{Annual review of chemical and biomolecular
+  engineering} \bibinfo{volume}{12}, \bibinfo{pages}{625--643}.
+%Type = Article
 \bibitem[{Sharifi et~al.(2024)Sharifi, Varmazyar and Mohammadi}]{AAMM-16-2}
 \bibinfo{author}{Sharifi, R.}, \bibinfo{author}{Varmazyar, M.},
   \bibinfo{author}{Mohammadi, A.}, \bibinfo{year}{2024}.
@@ -429,6 +540,16 @@
 \newblock \URLprefix
   \url{https://global-sci.com/article/72820/investigating-droplet-and-bubble-deformation-under-shear-flow-using-the-multi-pseudo-potential-scheme-of-lattice-boltzmann-method},
   \DOIprefix\doi{https://doi.org/10.4208/aamm.OA-2021-0326}.
+%Type = Article
+\bibitem[{Stewart et~al.(2008)Stewart, Lay, Sussman and
+  Ohta}]{stewart2008improved}
+\bibinfo{author}{Stewart, P.}, \bibinfo{author}{Lay, N.},
+  \bibinfo{author}{Sussman, M.}, \bibinfo{author}{Ohta, M.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{An improved sharp interface method for viscoelastic
+  and viscous two-phase flows}.
+\newblock \bibinfo{journal}{Journal of Scientific Computing}
+  \bibinfo{volume}{35}, \bibinfo{pages}{43--61}.
 %Type = Article
 \bibitem[{Stone(1994)}]{Sto94}
 \bibinfo{author}{Stone, H.A.}, \bibinfo{year}{1994}.
@@ -576,6 +697,16 @@
   \DOIprefix\doi{10.1260/1757-482X.4.1.111},
   \href{http://arxiv.org/abs/https://doi.org/10.1260/1757-482X.4.1.111}{{\tt
   arXiv:https://doi.org/10.1260/1757-482X.4.1.111}}.
+%Type = Article
+\bibitem[{Wong and Park(2012)}]{WONG2012417}
+\bibinfo{author}{Wong, A.}, \bibinfo{author}{Park, C.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{A visualization system for observing plastic foaming
+  processes under shear stress}.
+\newblock \bibinfo{journal}{Polymer Testing} \bibinfo{volume}{31},
+  \bibinfo{pages}{417--424}.
+\newblock \URLprefix
+  \url{https://www.sciencedirect.com/science/article/pii/S0142941811002169},
+  \DOIprefix\doi{https://doi.org/10.1016/j.polymertesting.2011.12.012}.
 %Type = Article
 \bibitem[{Yoshikawa et~al.(2010)Yoshikawa, Zoueshtiagh, Caps, Kurowski and
   Petitjeans}]{yoshikawa2010bubble}
