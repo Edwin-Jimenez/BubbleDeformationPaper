@@ -35,7 +35,7 @@ Changes made in response to comments of Reviewer 1: \begin{enumerate}
 \vspace{3 mm}
 
 Response: \\
-In the revision, we made many improvements to the grammar and structure so that the reader can follow in a much more efficient manner. \\
+We have gone through the whole paper fixing the grammar and structure.  We believe the message is very clear now. \\
 \\
 
 %%2
@@ -45,9 +45,13 @@ In the revision, we made many improvements to the grammar and structure so that 
 \vspace{3 mm}
 
 Response: \\
-In addition to the previous verification and validation tests (Tables I and II, Figure 3), we now list a number of references (top of section 3.2) involving bubbles and drops with severe deformation in which our method is validated by way of grid refinement studies and comparison with experiments.  
+We totally disagree with the referee here.  The resolution used for our results is enough.  The results shown in Figure 3 are very convincing in that if we refined the grid more, the results would hardly change.  In addition, we have the results in Tables I and II which compare our results to other researchers' simulations and experiments for bubble/drop deformation in shear flows. Finally, at the top of section 3.2, we now list a number of references involving bubbles and drops with severe deformation in which our method was validated by way of grid refinement studies and comparison with experiments.  
 
-In light of all the previous tests that we have already done, with satisfactory results, it is grossly unfair to require us to do a further grid refinement which would force us to wait another four years for the results; please see Remark 1 in section 3.1.  It is also very unfair to ask us to test a subgrid scale model which is very unnecessary for our problem; please see Remark 2 in section 3.1.  As explained throughout our article, our results fulfill a unique niche in bubble dynamics (low Capillary number, high Reynolds number),  that is on the one hand important in many applications (see first paragraph in the introduction, we have added many new references) and yet impossible to do controlled experiments unless one is in a microgravity environment.  If our paper is rejected because of this, it is most certain that someone else will publish similar findings later on, which is terribly unfair to us.  As we now mention in the conclusion, we expect many follow-on articles should our article be accepted;  For example bubble deformation with non-Newtonian matrix fluids, experimenting with a non-spherical initial condition (your recommendation), bubble deformation in complex geometry, etc.
+There is a big gaping hole in the research in which our results fit in: this is the low Capillary number, Moderate to High Reynolds number regime.  In this void, it is impossible to do experiments unless one is in a microgravity environment.  At the same time, numerical algorithms must be designed in order to robustly and accurately predict the tensile strength of a bubble in the low capillary, moderate to high Reynolds number regime, in which ours is the first.  We believe that the results as currently presented, fill the void and that they should be reported now rather than waiting another year.
+
+Perhaps in future work, in which we have more computing power available to us, we can try an extra refinement, albeit, the results are most likely a foregone conclusion in that they will be in close agreement with the results that we already have.  Also as future work, it is inevitable that researchers will be able to run experiments on the space station which corroborate the results of our simulations that we have now.
+
+We have also added ``Remark 1'' and ``Remark 2'' in section 3.1 which makes it clear why adding another level of refinement would delay the publication of our work by another four years, and why sub-scale models are unnnecessary at pinch off for the bubble deformation under simple shear flow problem.  Again, the results that we have now are publishable and will make an impact, it would be fruitless to wait another 4 years.
 
 %%3
 \par\noindent
@@ -57,36 +61,11 @@ In light of all the previous tests that we have already done, with satisfactory 
 \vspace{3 mm}
 
 Response: \\
-As in our response to the previous comment, we believe it is unfair to ask us to  report more results; each new data point requires an additional 6 months, and additional computers.  As also mentioned in our response to point 2 above, and hilighted in our revised introduction, our work as it stands now is significant and novel.  We take the referee comments on as a challenge for future work.  Please refer to the revised conclusions section in which we report on potential future work.
+We totally disagree with this comment too.  We already report many novel and significant results and sufficiently analyze the data both with strategic plots and quantitative tables.  Adding more would only needlessly delay the paper another year.  
+\par
+We do agree with the referee in that the recommended new simulations would be an excellent inclusion in future papers.  Please see our modified conclusion, last paragraph.
 
-The reviewer says ``Mostly just pictures are shown from which little is to be learned,''  but yet it is clearly mentioned that the shear force necessary to deform a bubble is noticeably larger than that for the drop, all other factors being equal, and from the results (figures and tables) we deduce for the first time the mechanisms for why the bubble requires a larger shearing force; please see section 4.3 second to last paragraph.
 
-Just in case the reviewer overlooked these additional points of significance and novelty:
-\begin{enumerate}
-\item The behavior of the bubble deformation process around critical $Re$ conditions with $Ca$ = 0.3  $\sim$ 1.0 has been presented for the first time.
-\item The behavior of the bubble breakup process at critical $Re$ conditions with $Ca$ = 0.3  $\sim$ 1.0 has been presented for the first time.
-\item The value of critical $Re$ numbers was found for $Ca$ = 0.3  $\sim$ 1.0 for the first time.
-\item  We showed that most previous computational studies overestimated drop deformation and breakup because most previous studies used a domain size with $W$ (width ($y$directional length)) =4$R$. Drop deformation is promoted when using a domain size with $W=4R$. 
-\item The difference in the deformation and breakup between the bubble ($\lambda<<1$) and the drop ($\lambda = 1$ and $\eta = 1$) was clearly shown.
-\item Shear-induced bubble/drop breakup critical curves were obtained. 
-\end{enumerate}
-
-Regarding the effect of $\lambda$ and $\eta$, ongoingly we are examining the effect of $\lambda$ and $\eta$ on drop breakup for following 
-combinations of $\lambda$ and $\eta$:
-\begin{tabbing}
- \hspace{55mm} \= \hspace{10mm} \kill
- \hspace{5mm} 1. $\lambda$ = 1.0, $\eta$ =1.0 (done) \> 2. $\lambda \simeq 0.0$, $\eta \simeq 0.0$ (this study) \\ 
- \hspace{5mm} 3. $\lambda$ = 1.0, $\eta \simeq 0.0$ (done) \> 4. $\lambda$ = 1.0, $\eta$ =0.01 \\
- \hspace{5mm} 5. $\lambda$ = 1.0, $\eta \simeq 0.1$ \> 6. $\lambda$ = 0.1, $\eta \simeq 0.0$ (done) \\
- \hspace{5mm} 7. $\lambda$ = 0.1, $\eta$ =0.01 \> 8. $\lambda = 0.1$, $\eta$ =0.1  \\
- \hspace{5mm} 9. $\lambda$ = 0.1, $\eta$ =1.0 (done) \> 10. $\lambda$ = 1.0, $\eta$ =10  \\
- \hspace{5mm} 11. $\lambda$ = 1.0, $\eta$ =100 \> 12. $\lambda$ = 1.0, $\eta$ =1000 \\
-\end{tabbing}
-
-Since it takes a very long computational time to obtain results for the effect of $\lambda$ and $\eta$ on drop deformation and breakup, 
-all computations for these conditions have not been finished. We will also present the fruits of research on the effect of density and 
-viscosity ratios in the next papers. \\
-\\
 
 %%4
 \par\noindent
@@ -96,17 +75,14 @@ viscosity ratios in the next papers. \\
 \vspace{3 mm}
 
 Response: \\
-In our computations, we set $g = 0$ because we wanted to clearly isolate only the effects of the density and viscosity ratios and 
-wanted to compare with previous studies dealing with the deformation and breakup of a drop with $\lambda =1$ and $\eta = 1$.
-When the gravity is considered, we obtain $Fr$ (Froude number) $\left(= \frac{{\it \Gamma}R}{\sqrt {gR}} \right)$ = 1.7 ($Re$ = 93 and $Ca$ = 0.3) 
-and 1.9 ($Re = 43$ and $Ca$ = 0.8). \\
-Although the values of $Fr$ are not so large, the effect of gravity (bubble rise motion) may not be completely negligible in terms of $Fr$.
-However, bubbles for both conditions reach the breakup at $t$ = about 0.5 s. 
-($V$ (moving wall speed) had about 1.1 $\sim$ 1.3 m/s for the range of $Ca$ and $Re$ in our computaions.)
-Therefore, the effect of gravity (bubble rise motion) is expected to be negligible when juxtaposed with the measured tensile strength properties of bubble deformation and breakup 
-around the critical $Re$ number conditions. Contrary to what the reviewer suggests, we believe that our computational results in which we only focus on the force balance between the driving shear flow and the bubble surface tension will provide fundamental knowledge and findings for practical applications.  In the revised paper, we have described these explanations.\\
-\\
-Please see lines 133 to 139.
+We totally disagree that not including gravity ``obliterates'' the results.
+
+At the least, there are a host of strictly microgravity applications in which our research will be of great help.   We list many new applications, including the microgravity applications, in the revised version: please see the first paragraph in the introduction.  All these applications that we list will significantly benefit from our article.  
+
+We have also added a discussion at the end of section 2 (see the ``Remark'') in which we make some predictions as to how the inclusion of gravity would change the results.
+
+Having said that, we do agree that taking into account the gravity effects and initial condition effects will make good material for future work.  Please see the last paragraph in our modified conclusion.
+
 \\
 
 %%5
@@ -119,7 +95,7 @@ line 232: ""bubble deformation in simple linear shear flow" results" is impossib
 \vspace{3 mm}
 
 Response: \\
-We carefully checked the paper and modified poor English writing, expressions, etc.\\
+We have fixed these items.  Also, we have made many complete ``run-throughs'' of our paper in order to remove all mistakes and awkward sentences.
 
 \end{enumerate}
 
