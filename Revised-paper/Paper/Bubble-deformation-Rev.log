@@ -1,308 +1,276 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  28 NOV 2024 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  29 NOV 2024 01:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Bubble-deformation-Rev
 (./Bubble-deformation-Rev.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
-(/usr/local/texlive/2024/texmf-dist/tex/latex/elsarticle/elsarticle.cls
-Document Class: elsarticle 2020/11/20, 3.3: Elsevier Ltd
-(/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-02-20 L3 programming layer (loader) 
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/elsarticle/elsarticle.cls
+Document Class: elsarticle 2019/02/25, 3.2: Elsevier Ltd
+\@bls=\dimen134
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen135
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count188
-\l__pdf_internal_box=\box51
-))
-(/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-02-18 L3 Experimental document command parser
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count189
-)
-\@bls=\dimen140
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-\c@part=\count190
-\c@section=\count191
-\c@subsection=\count192
-\c@subsubsection=\count193
-\c@paragraph=\count194
-\c@subparagraph=\count195
-\c@figure=\count196
-\c@table=\count197
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen141
-)
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-)
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen142
-\Gin@req@width=\dimen143
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
 )
-\c@tnote=\count198
-\c@fnote=\count199
-\c@cnote=\count266
-\c@ead=\count267
-\c@author=\count268
-\@eadauthor=\toks18
-\c@affn=\count269
-\absbox=\box52
-\elsarticlehighlightsbox=\box53
-\elsarticlegrabsbox=\box54
-\keybox=\box55
-\Columnwidth=\dimen144
-\space@left=\dimen145
-\els@boxa=\box56
-\els@boxb=\box57
-\leftMargin=\dimen146
-\@enLab=\toks19
-\@sep=\skip50
-\@@sep=\skip51
+\c@tnote=\count175
+\c@fnote=\count176
+\c@cnote=\count177
+\c@ead=\count178
+\c@author=\count179
+\@eadauthor=\toks16
+\c@affn=\count180
+\absbox=\box45
+\elsarticlehighlightsbox=\box46
+\elsarticlegrabsbox=\box47
+\keybox=\box48
+\Columnwidth=\dimen138
+\space@left=\dimen139
+\els@boxa=\box49
+\els@boxb=\box50
+\leftMargin=\dimen140
+\@enLab=\toks17
+\@sep=\skip49
+\@@sep=\skip50
 
 (./Bubble-deformation-Rev.spl)
-(/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip52
-\bibsep=\skip53
+\bibhang=\skip51
+\bibsep=\skip52
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count270
+\c@NAT@ctr=\count181
 )
 \splwrite=\write3
 \openout3 = `Bubble-deformation-Rev.spl'.
 
-\appnamewidth=\dimen147
+\appnamewidth=\dimen141
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks20
+\@emptytoks=\toks18
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/latexsym.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks21
-\ex@=\dimen148
+\@emptytoks=\toks19
+\ex@=\dimen142
 )
-\pmbraise@=\dimen149
+\pmbraise@=\dimen143
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip54
-\subfigcapskip=\skip55
-\subfigcaptopadj=\dimen150
-\subfigbottomskip=\skip56
-\subfigcapmargin=\dimen151
-\subfiglabelskip=\skip57
-\c@subfigure=\count271
-\c@lofdepth=\count272
-\c@subtable=\count273
-\c@lotdepth=\count274
+\subfigtopskip=\skip53
+\subfigcapskip=\skip54
+\subfigcaptopadj=\dimen144
+\subfigbottomskip=\skip55
+\subfigcapmargin=\dimen145
+\subfiglabelskip=\skip56
+\c@subfigure=\count182
+\c@lofdepth=\count183
+\c@subtable=\count184
+\c@lotdepth=\count185
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(/usr/local/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip58
-\subfig@bottom=\skip59
+(/usr/local/texlive/2020/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip57
+\subfig@bottom=\skip58
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
+(/usr/local/texlive/2020/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count275
-\calc@Bcount=\count276
-\calc@Adimen=\dimen152
-\calc@Bdimen=\dimen153
-\calc@Askip=\skip60
-\calc@Bskip=\skip61
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count186
+\calc@Bcount=\count187
+\calc@Adimen=\dimen146
+\calc@Bdimen=\dimen147
+\calc@Askip=\skip59
+\calc@Bskip=\skip60
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count277
-\calc@Cskip=\skip62
+\calc@Ccount=\count188
+\calc@Cskip=\skip61
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip63
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip62
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count278
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count279
-\leftroot@=\count280
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count281
-\DOTSCASE@=\count282
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box58
-\strutbox@=\box59
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen154
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count283
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count284
+\inf@bad=\count189
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count190
+\leftroot@=\count191
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count192
+\DOTSCASE@=\count193
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen148
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count194
+\c@MaxMatrixCols=\count195
 \dotsspace@=\muskip16
-\c@parentequation=\count285
-\dspbrk@lvl=\count286
-\tag@help=\toks22
-\row@=\count287
-\column@=\count288
-\maxfields@=\count289
-\andhelp@=\toks23
-\eqnshift@=\dimen155
-\alignsep@=\dimen156
-\tagshift@=\dimen157
-\tagwidth@=\dimen158
-\totwidth@=\dimen159
-\lineht@=\dimen160
-\@envbody=\toks24
-\multlinegap=\skip64
-\multlinetaggap=\skip65
-\mathdisplay@stack=\toks25
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
+\c@parentequation=\count196
+\dspbrk@lvl=\count197
+\tag@help=\toks20
+\row@=\count198
+\column@=\count199
+\maxfields@=\count266
+\andhelp@=\toks21
+\eqnshift@=\dimen149
+\alignsep@=\dimen150
+\tagshift@=\dimen151
+\tagwidth@=\dimen152
+\totwidth@=\dimen153
+\lineht@=\dimen154
+\@envbody=\toks22
+\multlinegap=\skip63
+\multlinetaggap=\skip64
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
 )
-\g_MT_multlinerow_int=\count290
-\l_MT_multwidth_dim=\dimen161
-\origjot=\skip66
-\l_MT_shortvdotswithinadjustabove_dim=\dimen162
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen163
-\l_MT_above_intertext_sep=\dimen164
-\l_MT_below_intertext_sep=\dimen165
-\l_MT_above_shortintertext_sep=\dimen166
-\l_MT_below_shortintertext_sep=\dimen167
-\xmathstrut@box=\box60
-\xmathstrut@dim=\dimen168
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count267
+\l_MT_multwidth_dim=\dimen155
+\origjot=\skip65
+\l_MT_shortvdotswithinadjustabove_dim=\dimen156
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen157
+\l_MT_above_intertext_sep=\dimen158
+\l_MT_below_intertext_sep=\dimen159
+\l_MT_above_shortintertext_sep=\dimen160
+\l_MT_below_shortintertext_sep=\dimen161
+\xmathstrut@box=\box53
+\xmathstrut@dim=\dimen162
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 274.
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
 \symboldletters=\mathgroup8
 \symboldsymbols=\mathgroup9
-Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
-Package bm Info: No bold for \U/msa/m/n, using \pmb.
-Package bm Info: No bold for \U/msb/m/n, using \pmb.
 \symboldlasy=\mathgroup10
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 209.
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/comment/comment.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
 
 Excluding comment 'comment')
-(/usr/local/texlive/2024/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2023/05/20 line numbers on paragraphs v5.3
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-
-(/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count268
+\output=\toks24
+\linenoprevgraf=\count269
+\linenumbersep=\dimen163
+\linenumberwidth=\dimen164
+\c@linenumber=\count270
+\c@pagewiselinenumber=\count271
+\c@LN@truepage=\count272
+\c@internallinenumber=\count273
+\c@internallinenumbers=\count274
+\quotelinenumbersep=\dimen165
+\bframerule=\dimen166
+\bframesep=\dimen167
+\bframebox=\box54
+LaTeX Info: Redefining \\ on input line 3056.
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))
-\linenopenalty=\count291
-\output=\toks26
-\linenoprevgraf=\count292
-\linenumbersep=\dimen169
-\linenumberwidth=\dimen170
-\c@linenumber=\count293
-\c@pagewiselinenumber=\count294
-\c@LN@truepage=\count295
-\c@internallinenumber=\count296
-\c@internallinenumbers=\count297
-\quotelinenumbersep=\dimen171
-\bframerule=\dimen172
-\bframesep=\dimen173
-\bframebox=\box61
-\linenoamsmath@ams@eqpen=\count298
-LaTeX Info: Redefining \\ on input line 3180.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count275
+\l__pdf_internal_box=\box55
 )
 (./Bubble-deformation-Rev.aux)
 \openout1 = `Bubble-deformation-Rev.aux'.
@@ -322,54 +290,56 @@ LaTeX Font Info:    ... okay on input line 138.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
 LaTeX Font Info:    ... okay on input line 138.
 
-(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
-\scratchdimen=\dimen174
-\scratchbox=\box62
-\nofMPsegments=\count300
-\nofMParguments=\count301
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count302
-\MPscratchDim=\dimen175
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
-\everyMPtoPDFconversion=\toks28
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count276
+\scratchdimen=\dimen168
+\scratchbox=\box56
+\nofMPsegments=\count277
+\nofMParguments=\count278
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen169
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
+\everyMPtoPDFconversion=\toks26
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 231
+Excluding 'comment' comment. Excluding 'comment' comment.
+Excluding 'comment' comment. Excluding 'comment' comment.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 239
 .
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 231
+LaTeX Font Info:    Trying to load font information for U+msb on input line 239
 .
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 23
-1.
+9.
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/ulasy.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 231.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 239.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 231.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 239.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 231.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 239.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 231.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 239.
 
 Overfull \hbox (2.22221pt too wide) has occurred while \output is active
 [] 
@@ -378,52 +348,47 @@ Overfull \hbox (2.22221pt too wide) has occurred while \output is active
 [1
 
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3] [4] [5] [6]
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3] [4] [5]
 Package epstopdf Info: Source file: <Figure/1-SchematicAndGrid.eps>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 1813930 bytes
 (epstopdf)             Output file: <Figure/1-SchematicAndGrid-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 220444 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/1-SchematicAndGrid-
 eps-converted-to.pdf Figure/1-SchematicAndGrid.eps>
-(epstopdf)             \includegraphics on input line 359.
+(epstopdf)             \includegraphics on input line 367.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1-SchematicAndGrid-eps-converted-to.pdf, id=36, 714.67pt x 295.1025pt>
+<Figure/1-SchematicAndGrid-eps-converted-to.pdf, id=33, 714.67pt x 295.1025pt>
 File: Figure/1-SchematicAndGrid-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1-SchematicAndGrid-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1-SchematicAndGrid-eps-converted-to.pdf  used o
-n input line 359.
+n input line 367.
 (pdftex.def)             Requested size: 285.86293pt x 118.0389pt.
- [7 <./Figure/1-SchematicAndGrid-eps-converted-to.pdf>]
-Overfull \hbox (0.1858pt too wide) in paragraph at lines 399--400
-[][]\OT1/cmr/m/n/10 We re-mark that our method is a ``sharp in-ter-face method[
-[], [], []]. Thereby
- []
-
+ [6] [7 <./Figure/1-SchematicAndGrid-eps-converted-to.pdf>]
 [8]
-Overfull \hbox (9.22728pt too wide) in paragraph at lines 466--466
+Overfull \hbox (9.22728pt too wide) in paragraph at lines 474--474
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--466
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
 
  []
 
 [9] [10] [11]
 Package epstopdf Info: Source file: <Figure/2-DropBreakComparison.eps>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 1857810 bytes
 (epstopdf)             Output file: <Figure/2-DropBreakComparison-eps-converted
 -to.pdf>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 181906 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/2-DropBreakComparis
 on-eps-converted-to.pdf Figure/2-DropBreakComparison.eps>
-(epstopdf)             \includegraphics on input line 551.
+(epstopdf)             \includegraphics on input line 559.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/2-DropBreakComparison-eps-converted-to.pdf, id=63, 521.95pt x 428.60126
 pt>
@@ -431,23 +396,20 @@ File: Figure/2-DropBreakComparison-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figure/2-DropBreakComparison-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/2-DropBreakComparison-eps-converted-to.pdf  use
-d on input line 551.
+d on input line 559.
 (pdftex.def)             Requested size: 260.97435pt x 214.3001pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[12] [13 <./Figure/2-DropBreakComparison-eps-converted-to.pdf>]
+ [12 <./Figure/2-DropBreakComparison-eps-converted-to.pdf>]
+[13]
 Package epstopdf Info: Source file: <Figure/3-Comparison-of-De-New.eps>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 1037446 bytes
 (epstopdf)             Output file: <Figure/3-Comparison-of-De-New-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 138874 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/3-Comparison-of-De-
 New-eps-converted-to.pdf Figure/3-Comparison-of-De-New.eps>
-(epstopdf)             \includegraphics on input line 603.
+(epstopdf)             \includegraphics on input line 611.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/3-Comparison-of-De-New-eps-converted-to.pdf, id=76, 353.32pt x 230.8625
 pt>
@@ -455,193 +417,189 @@ File: Figure/3-Comparison-of-De-New-eps-converted-to.pdf Graphic file (type pdf
 )
 <use Figure/3-Comparison-of-De-New-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/3-Comparison-of-De-New-eps-converted-to.pdf  us
-ed on input line 603.
+ed on input line 611.
 (pdftex.def)             Requested size: 211.99364pt x 138.51855pt.
  [14] [15 <./Figure/3-Comparison-of-De-New-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/4-DropBreakEvol.eps>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 2981318 bytes
 (epstopdf)             Output file: <Figure/4-DropBreakEvol-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2024-11-26 13:44:30
+(epstopdf)                    date: 2024-11-28 23:02:22
 (epstopdf)                    size: 454619 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/4-DropBreakEvol-eps
 -converted-to.pdf Figure/4-DropBreakEvol.eps>
-(epstopdf)             \includegraphics on input line 652.
+(epstopdf)             \includegraphics on input line 660.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/4-DropBreakEvol-eps-converted-to.pdf, id=88, 675.52374pt x 502.87875pt>
 
 File: Figure/4-DropBreakEvol-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/4-DropBreakEvol-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/4-DropBreakEvol-eps-converted-to.pdf  used on i
-nput line 652.
+nput line 660.
 (pdftex.def)             Requested size: 345.0pt x 256.83308pt.
+ [16 <./Figure/4-DropBreakEvol-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/5-BubbleBreakCa0p3Re92.eps>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 2216058 bytes
 (epstopdf)             Output file: <Figure/5-BubbleBreakCa0p3Re92-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 355890 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/5-BubbleBreakCa0p3R
 e92-eps-converted-to.pdf Figure/5-BubbleBreakCa0p3Re92.eps>
-(epstopdf)             \includegraphics on input line 670.
+(epstopdf)             \includegraphics on input line 678.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/5-BubbleBreakCa0p3Re92-eps-converted-to.pdf, id=89, 675.52374pt x 332.2
+<Figure/5-BubbleBreakCa0p3Re92-eps-converted-to.pdf, id=96, 675.52374pt x 332.2
 4126pt>
 File: Figure/5-BubbleBreakCa0p3Re92-eps-converted-to.pdf Graphic file (type pdf
 )
 <use Figure/5-BubbleBreakCa0p3Re92-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/5-BubbleBreakCa0p3Re92-eps-converted-to.pdf  us
-ed on input line 670.
+ed on input line 678.
 (pdftex.def)             Requested size: 345.0pt x 169.68413pt.
 Package epstopdf Info: Source file: <Figure/6-BubbleBreakCa0p3Re93.eps>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 2240878 bytes
 (epstopdf)             Output file: <Figure/6-BubbleBreakCa0p3Re93-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 362532 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/6-BubbleBreakCa0p3R
 e93-eps-converted-to.pdf Figure/6-BubbleBreakCa0p3Re93.eps>
-(epstopdf)             \includegraphics on input line 693.
+(epstopdf)             \includegraphics on input line 701.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/6-BubbleBreakCa0p3Re93-eps-converted-to.pdf, id=90, 675.52374pt x 332.2
+<Figure/6-BubbleBreakCa0p3Re93-eps-converted-to.pdf, id=97, 675.52374pt x 332.2
 4126pt>
 File: Figure/6-BubbleBreakCa0p3Re93-eps-converted-to.pdf Graphic file (type pdf
 )
 <use Figure/6-BubbleBreakCa0p3Re93-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/6-BubbleBreakCa0p3Re93-eps-converted-to.pdf  us
-ed on input line 693.
+ed on input line 701.
 (pdftex.def)             Requested size: 345.0pt x 169.68413pt.
- [16] [17 <./Figure/4-DropBreakEvol-eps-converted-to.pdf>] [18 <./Figure/5-Bubb
-leBreakCa0p3Re92-eps-converted-to.pdf> <./Figure/6-BubbleBreakCa0p3Re93-eps-con
-verted-to.pdf>]
+ [17 <./Figure/5-BubbleBreakCa0p3Re92-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/7-BubBreakCa0p3Re93Detail.eps>
-(epstopdf)                    date: 2024-11-11 13:27:50
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 1454214 bytes
 (epstopdf)             Output file: <Figure/7-BubBreakCa0p3Re93Detail-eps-conve
 rted-to.pdf>
-(epstopdf)                    date: 2024-11-16 17:53:17
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 174287 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/7-BubBreakCa0p3Re93
 Detail-eps-converted-to.pdf Figure/7-BubBreakCa0p3Re93Detail.eps>
-(epstopdf)             \includegraphics on input line 716.
+(epstopdf)             \includegraphics on input line 724.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf, id=114, 675.52374pt x 2
+<Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf, id=106, 675.52374pt x 2
 50.9375pt>
 File: Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf Graphic file (type 
 pdf)
 <use Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf 
- used on input line 716.
+ used on input line 724.
 (pdftex.def)             Requested size: 345.0pt x 128.16022pt.
- [19]
+ [18 <./Figure/6-BubbleBreakCa0p3Re93-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/8-ShearStress.eps>
-(epstopdf)                    date: 2024-11-11 13:27:50
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 2739602 bytes
 (epstopdf)             Output file: <Figure/8-ShearStress-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2024-11-11 13:27:50
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 512514 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/8-ShearStress-eps-c
 onverted-to.pdf Figure/8-ShearStress.eps>
-(epstopdf)             \includegraphics on input line 742.
+(epstopdf)             \includegraphics on input line 750.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/8-ShearStress-eps-converted-to.pdf, id=119, 741.77126pt x 218.8175pt>
+<Figure/8-ShearStress-eps-converted-to.pdf, id=115, 741.77126pt x 218.8175pt>
 File: Figure/8-ShearStress-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/8-ShearStress-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/8-ShearStress-eps-converted-to.pdf  used on inp
-ut line 742.
+ut line 750.
 (pdftex.def)             Requested size: 296.70325pt x 87.52544pt.
- [20 <./Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf> <./Figure/8-Shea
-rStress-eps-converted-to.pdf>]
+ [19 <./Figure/7-BubBreakCa0p3Re93Detail-eps-converted-to.pdf>] [20 <./Figure/8
+-ShearStress-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/9-BubbleFieldCa0p3Re93.eps>
-(epstopdf)                    date: 2024-11-11 13:27:50
+(epstopdf)                    date: 2024-11-24 22:57:36
 (epstopdf)                    size: 6151994 bytes
 (epstopdf)             Output file: <Figure/9-BubbleFieldCa0p3Re93-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2024-11-11 13:27:50
-(epstopdf)                    size: 4064777 bytes
+(epstopdf)                    date: 2024-11-28 23:35:46
+(epstopdf)                    size: 4064990 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/9-BubbleFieldCa0p3R
 e93-eps-converted-to.pdf Figure/9-BubbleFieldCa0p3Re93.eps>
-(epstopdf)             \includegraphics on input line 770.
+(epstopdf)             \includegraphics on input line 781.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf, id=132, 615.29875pt x 479.
+<Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf, id=133, 615.29875pt x 479.
 7925pt>
 File: Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf Graphic file (type pdf
 )
 <use Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf  us
-ed on input line 770.
+ed on input line 781.
 (pdftex.def)             Requested size: 345.0pt x 269.02605pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[21] [22 <./Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf>]
+ [21 <./Figure/9-BubbleFieldCa0p3Re93-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/10-BubbleDeformCa0p8Re42.eps>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 2246430 bytes
 (epstopdf)             Output file: <Figure/10-BubbleDeformCa0p8Re42-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 365087 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/10-BubbleDeformCa0p
 8Re42-eps-converted-to.pdf Figure/10-BubbleDeformCa0p8Re42.eps>
-(epstopdf)             \includegraphics on input line 793.
+(epstopdf)             \includegraphics on input line 804.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf, id=145, 675.52374pt x 33
+<Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf, id=142, 675.52374pt x 33
 2.24126pt>
 File: Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf Graphic file (type p
 df)
 <use Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf  
-used on input line 793.
+used on input line 804.
 (pdftex.def)             Requested size: 345.0pt x 169.68413pt.
 Package epstopdf Info: Source file: <Figure/11-BubbleBreakCa0p8Re43.eps>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 2273346 bytes
 (epstopdf)             Output file: <Figure/11-BubbleBreakCa0p8Re43-eps-convert
 ed-to.pdf>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 375026 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/11-BubbleBreakCa0p8
 Re43-eps-converted-to.pdf Figure/11-BubbleBreakCa0p8Re43.eps>
-(epstopdf)             \includegraphics on input line 808.
+(epstopdf)             \includegraphics on input line 819.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf, id=146, 675.52374pt x 332
+<Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf, id=143, 675.52374pt x 332
 .24126pt>
 File: Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf Graphic file (type pd
 f)
 <use Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf  u
-sed on input line 808.
+sed on input line 819.
 (pdftex.def)             Requested size: 345.0pt x 169.68413pt.
- [23 <./Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf>]
-Overfull \hbox (2.01pt too wide) in paragraph at lines 826--827
+ [22 <./Figure/10-BubbleDeformCa0p8Re42-eps-converted-to.pdf>]
+Overfull \hbox (2.01pt too wide) in paragraph at lines 837--838
 []\OT1/cmr/m/n/10 Table 4[] lists, for rep-re-sen-ta-tive $\OML/cmm/m/it/10 Ca$
  \OT1/cmr/m/n/10 val-ues, the cor-re-spond-ing crit-i-cal Reynolds
  []
 
+[23 <./Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/12-CaRecFit.eps>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 658686 bytes
 (epstopdf)             Output file: <Figure/12-CaRecFit-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-11-11 13:27:49
+(epstopdf)                    date: 2024-11-24 22:57:35
 (epstopdf)                    size: 57284 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/12-CaRecFit-eps-con
 verted-to.pdf Figure/12-CaRecFit.eps>
-(epstopdf)             \includegraphics on input line 858.
+(epstopdf)             \includegraphics on input line 869.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/12-CaRecFit-eps-converted-to.pdf, id=155, 341.275pt x 216.81pt>
+<Figure/12-CaRecFit-eps-converted-to.pdf, id=160, 341.275pt x 216.81pt>
 File: Figure/12-CaRecFit-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/12-CaRecFit-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/12-CaRecFit-eps-converted-to.pdf  used on input
- line 858.
+ line 869.
 (pdftex.def)             Requested size: 204.76657pt x 130.08699pt.
-[24 <./Figure/11-BubbleBreakCa0p8Re43-eps-converted-to.pdf>] [25 <./Figure/12-C
-aRecFit-eps-converted-to.pdf>] (./Bubble-deformation-Rev.bbl
+ [24 <./Figure/12-CaRecFit-eps-converted-to.pdf>] (./Bubble-deformation-Rev.bbl
+
 Underfull \hbox (badness 4048) in paragraph at lines 17--29
 []\OT1/cmr/m/n/10 Amani, A., Balc^^Sazar, N., Cas-tro, J., Oliva, A., 2019.  Nu
 -
@@ -671,7 +629,7 @@ Underfull \hbox (badness 6141) in paragraph at lines 17--29
 0 https : / / doi . org / 10 . 1016 / j . ces . 2019 .
  []
 
-
+[25]
 Underfull \hbox (badness 5345) in paragraph at lines 65--78
 []\OT1/cmr/m/n/10 Canedo, E.L., Favelukis, M., Tad-mor, Z., Tal-mon, Y., 1993.
  []
@@ -706,7 +664,7 @@ Overfull \hbox (61.58005pt too wide) in paragraph at lines 65--78
 c.690390403\OT1/cmr/m/n/10 . 
  []
 
-[26]
+
 Underfull \hbox (badness 1521) in paragraph at lines 88--100
 \OT1/cmr/m/n/10 ter-face Sci-ence 270, 108--122.  URL: $\OT1/cmtt/m/n/10 https 
 : / / www . sciencedirect .
@@ -742,7 +700,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--147
 is . 2015 . 04 . 001$\OT1/cmr/m/n/10 . rein-hard Miller,
  []
 
-
+[26]
 Underfull \hbox (badness 6708) in paragraph at lines 148--160
 []\OT1/cmr/m/n/10 Eftekhari, M., Schwarzen-berger, K., Heitkam, S., Eck-ert, K.
 ,
@@ -790,7 +748,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--175
 /10 . pMID:
  []
 
-[27]
+
 Underfull \hbox (badness 10000) in paragraph at lines 184--197
 \OT1/cmr/m/n/10 si-fi-ca-tion of polyethy-lene de-volatiliza-tion in twin-screw
  ex-truder
@@ -866,7 +824,7 @@ Underfull \hbox (badness 3333) in paragraph at lines 239--249
 . sciencedirect . com /
  []
 
-
+[27]
 Underfull \hbox (badness 6141) in paragraph at lines 264--274
 \OT1/cmtt/m/n/10 worldscientific . com / doi / abs / 10 . 1142 / S0217979203017
 035$\OT1/cmr/m/n/10 , doi:$\OT1/cmtt/m/n/10 10 .
@@ -895,7 +853,7 @@ Underfull \hbox (badness 6141) in paragraph at lines 275--285
 s : / / doi . org / 10 . 1016 / j . jocs . 2016 . 03 .
  []
 
-[28]
+
 Underfull \hbox (badness 1609) in paragraph at lines 286--296
 []\OT1/cmr/m/n/10 Janssen, P., An-der-son, P., 2008.  A boundary-integral model
  for
@@ -949,7 +907,7 @@ Underfull \hbox (badness 1917) in paragraph at lines 339--350
 om / science / article / pii /
  []
 
-[29]
+[28]
 Underfull \hbox (badness 2150) in paragraph at lines 413--426
 []\OT1/cmr/m/n/10 Ohta, M., Fu-rukawa, T., Yoshida, Y., Suss-man, M., 2019.  A
  []
@@ -966,7 +924,7 @@ Underfull \hbox (badness 1838) in paragraph at lines 413--426
 om / science / article / pii /
  []
 
-
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 445--457
 []\OT1/cmr/m/n/10 Ohta, M., Suss-man, M., 2012.  The buoyancy-driven mo-
  []
@@ -1017,7 +975,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 466--477
 0 . 1146 / annurev . fl . 16 . 010184 . 000401$\OT1/cmr/m/n/10 ,
  []
 
-[30]
+
 Underfull \hbox (badness 1122) in paragraph at lines 494--503
 []\OT1/cmr/m/n/10 Renardy, Y., 2008.  Ef-fect of startup con-di-tions on drop b
 reakup
@@ -1029,7 +987,7 @@ Underfull \hbox (badness 1248) in paragraph at lines 494--503
 ncedirect . com / science /
  []
 
-
+[30]
 Underfull \hbox (badness 5274) in paragraph at lines 571--583
 []\OT1/cmr/m/n/10 Sharifi, R., Var-maz-yar, M., Mo-ham-madi, A., 2024.  In-ves-
 ti-
@@ -1064,7 +1022,7 @@ Overfull \hbox (364.07748pt too wide) in paragraph at lines 571--583
 e-[]boltzmann-[]method$\OT1/cmr/m/n/10 ,
  []
 
-[31]
+
 Underfull \hbox (badness 2119) in paragraph at lines 605--616
 []\OT1/cmr/m/n/10 Stone, H.A., 1994.  Dy-nam-ics of drop de-for-ma-tion and bre
 akup
@@ -1105,7 +1063,7 @@ Underfull \hbox (badness 1052) in paragraph at lines 628--640
 com-
  []
 
-
+[31]
 Underfull \hbox (badness 3769) in paragraph at lines 641--651
 []\OT1/cmr/m/n/10 Sussman, M., Puck-ett, E.G., 2000.  A cou-pled level set and
  []
@@ -1139,7 +1097,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 652--663
 1999184711557$\OT1/cmr/m/n/10 ,
  []
 
-[32]
+
 Underfull \hbox (badness 3000) in paragraph at lines 707--717
 []\OT1/cmr/m/n/10 Unverdi, S.O., Tryg-gva-son, G., 1992.  A front-tracking meth
 od
@@ -1162,7 +1120,7 @@ Underfull \hbox (badness 1902) in paragraph at lines 718--728
  / / www . sciencedirect .
  []
 
-
+[32]
 Underfull \hbox (badness 1377) in paragraph at lines 752--762
 []\OT1/cmr/m/n/10 Wong, A., Park, C., 2012.  A vi-su-al-iza-tion sys-tem for ob
 -serv-ing
@@ -1186,7 +1144,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 752--762
 cmtt/m/n/10 https : / / doi . org / 10 . 1016 /
  []
 
-[33]
+
 Underfull \hbox (badness 1558) in paragraph at lines 798--810
 []\OT1/cmr/m/n/10 Zhang, J., Shu, S., Guan, X., Yang, N., 2021b.  Regime map-
  []
@@ -1215,45 +1173,41 @@ Underfull \hbox (badness 6141) in paragraph at lines 798--810
 0 https : / / doi . org / 10 . 1016 / j . ces . 2021 .
  []
 
-) [34] (./Bubble-deformation-Rev.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
- ***********
- ) 
+[33]) [34] (./Bubble-deformation-Rev.aux) ) 
 Here is how much of TeX's memory you used:
- 6652 strings out of 474116
- 112478 string characters out of 5743681
- 1946187 words of memory out of 5000000
- 28906 multiletter control sequences out of 15000+600000
- 570621 words of font info for 85 fonts, out of 8000000 for 9000
+ 5084 strings out of 480608
+ 74943 string characters out of 5903631
+ 324505 words of memory out of 5000000
+ 20870 multiletter control sequences out of 15000+600000
+ 544890 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,12n,79p,2868b,462s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/l
-ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
-xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
-ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
-2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/20
-24/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/202
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2024/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2024/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Bubble-deformation-Rev.pdf (34 pages, 7617172 bytes).
+ 38i,12n,37p,2855b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmss8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
+0.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sam10.pfb>
+Output written on Bubble-deformation-Rev.pdf (34 pages, 7591507 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
+ 271 PDF objects out of 1000 (max. 8388607)
  176 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)

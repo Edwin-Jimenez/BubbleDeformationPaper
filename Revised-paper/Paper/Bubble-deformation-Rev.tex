@@ -169,6 +169,7 @@
 
 \author[1,2]{Mitsuhiro Ohta\corref{cor1}} 
 \cortext[cor1]{Corresponding author: m-ohta@tokushima-u.ac.jp}
+\begin{comment} 
 \affiliation[1]{
   organization={Department of Mechanical Science, Graduate School of Technology, 
                 Industrial and Social Sciences, Tokushima University},
@@ -181,32 +182,39 @@
   addressline={2-1 Minamijyousanjima-cho},
   state={Tokushima 770-8506}, 
   country={Japan}}
+\end{comment}
 
 \author[2]{Tetsuya Ueta}
 \author[3]{Yozo Toei}
 
+\begin{comment} 
 \affiliation[3]{
   organization={High Performance Plastics Company, Sekisui Chemical Co., Ltd.},
   addressline={2-1 Hyakuyama, Mishimagun Shimamoto-cho},
   state={Osaka 618-0021}, 
   country={Japan}}
+\end{comment} 
 
 %\collaboration{MUSO Collaboration}%\noaffiliation
 
 \author[4]{Edwin Jimenez}  
+\begin{comment} 
 \affiliation[4]{
   organization={Spectral Numerical, LLC},
   addressline={1942 Broadway St., STE 314C},
   city={Boulder},
   state={CO 80302},
   country={USA}}
+\end{comment} 
 
 \author[5]{Mark Sussman}  
+\begin{comment} 
 \affiliation[5]{
   organization={Department of Mathematics, Florida State University},
   city={Tallahassee},
   state={FL 32306},
   country={USA}}
+\end{comment} 
 
 %\collaboration{CLEO Collaboration}%\noaffiliation
 
@@ -263,7 +271,7 @@ We focus on determining critical physical conditions in which the breakup of a b
 In previous experimental or computational studies on the motion of bubble deformation in a simple shear flow \cite{CanedoETAL,RusMan02, MulTobDreFisWin08}, only findings for bubble deformation under very low $Re$ number conditions ($Re \ll 1$) have been reported.  This is understandable since a low Reynolds number matrix fluid mitigates the effect of gravity on distorting the comparison with the drop case.  In the results reported in \cite{CanedoETAL}, the $x-z$ cross section of the deforming bubble was close to circular in their experiments.  Also in the experiments in \cite{CanedoETAL}, the $x-z$ cross section shows minimal overall bubble rise speed in the (very) viscous fluid in comparison to the rate that the bubble deforms in the $y-z$ cross section.  This is expected since the experiments designed by \cite{CanedoETAL} closely followed the following basic assumptions: (i) ``steady creeping flow with negligible inertial effects,'' (ii) ``Incompressible Newtonian fluids,'' (iii) ``No buoyancy effects,'' (iv) ``No wall effects.''  In this work, we determine, for the first time, the critical Reynolds number ($Re \gg 1$) that leads to bubble breakup.  Additionally, our computational studies reveal characteristics that distinguish a drop's deformation and breakup processes versus those of a bubble.
 \par
 \textcolor{red} {
-	We remark that there have been a number of computational articles on the study of lift of slightly deformable bubbles\cite{ErvinANDTryggvason1997,legendre1998lift}.  We reiterate, though, that for bubble deformation and breakup in shear flows, only a few computational articles exist: \cite{WeiQiaXu12,WanShiZha15,AAMM-16-2}.  These previous studies mainly examined the dynamics (e.g., rotation angle) of bubble deformation in shear flow.  Concerning bubble breakup, Wei et al.~\cite{WeiQiaXu12} presented one numerical result for a bubble breakup process under the condition of $Ca$ (capillary number) = 35. Sharifi et al\cite{AAMM-16-2} presented two results for bubble breakup corresponding to $Ca=7.5$ and $Ca=11.2$.  We point out that all of the previous computational research on bubble deformation (and breakup) under shear driven flow\cite{WeiQiaXu12,WanShiZha15,AAMM-16-2} use the (explicit) Lattice Boltzmann method.  For accurately computing the tensile strength of a bubble, and accurately computing threshold parameters for break-up (what we do in this article, and what was not done in previous work), it is critical that a numerical method directly enforces the velocity continuity condition and the gas-liquid interface normal jump conditions.  We contend that a projection method (i.e. this paper and \cite{zhang2021three,zhang2022three,OhtSus12}) is the more appropriate (albeit slower) method for our study rather than the Lattice Boltzmann method.  Also, in contrast to the Lattice Boltzmann method, our interface ``capturing'' method, the CLSVOF method\cite{SusPuc00,SusSmiHusOhtZhi07}, maintains the gas/liquid interface as sharp, enables accurate approximation of the surface tension force,  and by construction the CLSVOF method preserves mass and volume within a fraction of a percent. The results that we present in this article (see e.g. section \ref{convergence}) regarding measuring the tensile strength of a bubble are unique and validated with respect to comparisons with previous experimental data (where available) and grid refinement studies.  Admittadly, each simulation on the finest resolution takes over a half a year to complete on a workstation because of the following unavoidable factors: (i) the large density-ratio projection method requires the solution of a large sparse, ill-conditioned, matrix system at each time step, (ii) the finer the mesh, the more precise the measured threshold, and right at the threshold (Taylor Deformation parameter $D\approx 1$!), oscillatory behaviour is observed delaying the determination of breakup or not.  Finally, the larger the deformation parameter $D$, the longer one must make the computational domain (and thereby leading to larger domain aspect ratio) thereby adversely effecting the condition number even more for carrying our the pressure projection. 
+	We remark that there have been a number of computational articles on the study of lift of slightly deformable bubbles\cite{ErvinANDTryggvason1997,legendre1998lift}.  We reiterate, though, that for bubble deformation and breakup in shear flows, only a few computational articles exist: \cite{WeiQiaXu12,WanShiZha15,AAMM-16-2}.  These previous studies mainly examined the dynamics (e.g., rotation angle) of bubble deformation in shear flow.  Concerning bubble breakup, Wei et al.~\cite{WeiQiaXu12} presented one numerical result for a bubble breakup process under the condition of $Ca$ (capillary number) = 35. Sharifi et al\cite{AAMM-16-2} presented two results for bubble breakup corresponding to $Ca=7.5$ and $Ca=11.2$.  We point out that all of the previous computational research on bubble deformation (and breakup) under shear driven flow\cite{WeiQiaXu12,WanShiZha15,AAMM-16-2} use the (explicit) Lattice Boltzmann method.  For accurately computing the tensile strength of a bubble, and accurately computing threshold parameters for break-up (what we do in this article, and what was not done in previous work), it is critical that a numerical method directly enforces the velocity continuity condition and the gas-liquid interface normal jump conditions.  We contend that a projection method (i.e. this paper and \cite{zhang2021three,zhang2022three,OhtSus12}) is the more appropriate (albeit slower) method for our study rather than the Lattice Boltzmann method.  Also, in contrast to the Lattice Boltzmann method, our interface ``capturing'' method, the CLSVOF method\cite{SusPuc00,SusSmiHusOhtZhi07}, maintains the gas/liquid interface as sharp, enables accurate approximation of the surface tension force,  and by construction the CLSVOF method preserves mass and volume within a fraction of a percent. The results that we present in this article (see e.g. section \ref{convergence}) regarding measuring the tensile strength of a bubble are unique and validated with respect to comparisons with previous experimental data (where available) and grid refinement studies.  Each simulation on the finest resolution takes over a half a year to complete on a workstation because of the following unavoidable factors: (i) the large density-ratio projection method requires the solution of a large sparse, ill-conditioned, matrix system at each time step, (ii) the finer the mesh, the more precise the measured threshold, and right at the threshold (Taylor Deformation parameter $D\approx 1$), oscillatory behaviour is observed delaying the determination of breakup or not.  Finally, the larger the deformation parameter $D$, the longer one must make the computational domain (and thereby leading to larger domain aspect ratio) thereby adversely effecting the condition number even more for carrying our the pressure projection. 
 }
 \par
 \textcolor{red} {
@@ -395,7 +403,7 @@ Navier-Stokes equations with surface tension forces:
 
 \textcolor{red}
 {
-	We remark that our method is a ``sharp interface method\cite{SusSmiHusOhtZhi07,Sus03,KanFedLiu00}.  Thereby we do not need to specify an empirical interface thickness parameter\cite{SusSmeOsh94,SusPuc00}.
+	We note that our method is a ``sharp interface method\cite{SusSmiHusOhtZhi07,Sus03,KanFedLiu00}.  Thereby we do not need to specify an empirical interface thickness parameter\cite{SusSmeOsh94,SusPuc00}.
 }
 
 %
@@ -413,7 +421,7 @@ Navier-Stokes equations with surface tension forces:
 \par
 $\bmu$ is the velocity vector, $t$ represents time, $p$ is the pressure, $\bmI$ is the unit tensor, $\bmD$ is the rate of deformation tensor ($\bmD=\frac{1}{2}(\nabla\bmu+(\nabla\bmu)^{T})$), $\rho$ is the density, $\mu$ is the viscosity, $\kappa$ is the interfacial curvature, and the Heaviside function $\Hea(\phi)$ is a function of the level set (LS) function $\phi$. The singular Heaviside gradient term in the right-hand side of equation~\eqref{nseqn} is a body force representing the surface tension force and is equivalent to specifying that the jump in the normal stress is equal to $\sigma\kappa$ (\citet{TanguyEtAl2007}).  The surface tension force expressed by the singular Heaviside gradient term acts only on the gas-liquid interface.  The sharp interface ``Ghost Fluid Method'' (\citet{KanFedLiu00}) is used to discretize the gradient of the Heaviside function as it appears in the surface tension force term.  This force, upon discretization, is only non-zero across cells in which the level set function changes sign.
 \par
-The interfacial curvature $\kappa$ is computed with second-order accuracy directly from the volume-of-fluid (VOF) function and the level set function using the height function technique (\citet{Sus03,SusSmiHusOhtZhi07}).  We remark that we would get the same results if we compute $\kappa$ directly from the LS function using the ``level set'' height function technique.
+The interfacial curvature $\kappa$ is computed with second-order accuracy directly from the volume-of-fluid (VOF) function and the level set function using the height function technique (\citet{Sus03,SusSmiHusOhtZhi07}).  We note that we would get the same results if we compute $\kappa$ directly from the LS function using the ``level set'' height function technique.
 \par
 Since $\rho$ and $\mu$ are taken to be constant in each fluid, with a jump at
 the interface, they can be expressed in terms of the Heaviside function,
@@ -754,8 +762,11 @@ For the case of bubble breakup (Figure~\ref{fig:BubbleBreakCa0p3Re93}), we obser
 {
 The previous section discussed bubble deformation and breakup. Large deformation and breakup of the bubble are expected to be closely related to the state of shear stress acting on the bubble.  Figure~\ref{fig:ShearStress} shows the shear stress profile around a bubble for two Reynolds numbers under the condition of $Ca = 0.3$: Reynolds number equal to 50 and 93.  The shear stress profile on the left corresponds to the case of $Re = 50$, and the right side shows the shear stress profile for the case of $Re = 93$.  The normalized shear stress, $\tau^{\ast} = \tau / \tau_{0}$, is defined as a ratio of the local shear stress $\tau = \mu_{\rm m}$$\sqrt{2\bmD:\bmD}$ and the apparent shear stress $\tau_{0} = \mu_{\rm m}$$\mathit{\Gamma}$.  In this study, for a given $Ca$ condition, the same value of $\tau_{0}$ is used regardless of $Re$.  For the case of $Re = 50$, the bubble reached a deformed stable state, and the shear stress profile around the bubble was drawn after the bubble attained a stable deformed state.  As observed in previous sections, when the value of $Re$ is slightly below the critical $Re$ condition, the bubble does not settle into a deformed stable state. Instead, it alternates in an elongation and contraction process.  The shear stress profile for the case of $Re$ = 93 was depicted when the bubble sufficiently elongated ($T$ = 14.9).  In comparison to the $Re=50$ case on the left, the right image in Fig.~\ref{fig:ShearStress} ($Re=93$) shows a higher shear stress profile near the bubble endpoints as it undergoes an elongation state in the process toward breakup.  The value of the maximum shear stress for the case of $Re = 50$ is $\tau ^{\ast} \approx 6$ and the maximum shear stress for the case of $Re = 93$ at the moment shown in Fig.~\ref{fig:ShearStress} has the value of $\tau ^{\ast} \approx 8$.  The shear stress profile in Fig.~\ref{fig:ShearStress} (color contour) is drawn in the range from $\tau^{\ast} = 1$ to $\tau ^{\ast} = 8$, but, for emphasis, shear stress regions with $\tau ^{\ast} \geqq 6$ are illustrated in red.  As shown in the figure, the strongest shear stresses are concentrated on the ends of the bubble for both $Re$ conditions.  This indicates that the strong shear stresses acting on the ends of the bubble are responsible for much of the bubble stretching.  It is important to note that the magnitude of the shear stress acting on the ends of the bubble for the case of $Re = 93$ is much larger than that for the case of $Re = 50$.  
 }
-
+\par
+\textcolor{red}
+{
 We also observed that the shear stress inside the bubble was very small relative to that of the matrix fluid due to the bubble's very small density and viscosity. Since the force of strong shear stresses acting on the ends of the bubble is difficult to transfer across the interface, a sufficiently large $Re$ condition is required for large bubble deformations.
+}
 
 \par\noindent
 
